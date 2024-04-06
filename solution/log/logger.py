@@ -19,6 +19,9 @@ scheduler_logger = logging.getLogger('scheduler')
 # robot 用于记录小车的运动状态变化
 robot_logger = logging.getLogger('robot')
 
+# 
+boat_logger = logging.getLogger('boat')
+
 if RELEASE == False:
     fh_for_root_logger = logging.FileHandler('solution/log/root.log', mode="w+")
     fh_for_root_logger.setLevel(logging.ERROR)
@@ -39,10 +42,15 @@ if RELEASE == False:
     fh_for_robot_logger = logging.FileHandler("solution/log/robot.log", mode="w+")
     fh_for_robot_logger.setFormatter(fmt)
     robot_logger.addHandler(fh_for_robot_logger)
+
+    boat_logger.setLevel(logging.DEBUG)
+    fh_for_boat_logger = logging.FileHandler("solution/log/boat.log", mode="w+")
+    fh_for_boat_logger.setFormatter(fmt)
+    boat_logger.addHandler(fh_for_boat_logger)
 else:
     root_logger.addHandler(null_handler)
     main_logger.addHandler(null_handler)
     scheduler_logger.addHandler(null_handler)
     root_logger.addHandler(null_handler)
-
+    boat_logger.addHandler(null_handler)
 

@@ -1,19 +1,19 @@
 from __future__ import annotations
 import multiprocessing
 import concurrent.futures
-from typing import List, Tuple
+from typing import List, Tuple, Dict
 from dataclasses import dataclass
 from queue import PriorityQueue
 
 from cfg import N
 from log import func_timer, main_logger
-from path_planing import Point, Point, Pixel_Attrs
+from path_planing import Point, Point, Pixel_Attrs, sVec
 from path_planing import Boat_Direction, Boat_Action
 from path_planing import robot_bfs, boat_bfs
 
 from .robot import Robot
 from .berth import Berth
-from .boat import Boat, cmd_boatDirection_map
+from .boat import Boat, int_boatDirection_map
         
 @dataclass
 class Env:
@@ -34,16 +34,19 @@ class Env:
         self.ch_grid: List[List[str]] = [[' ' for _ in range(N)] for _ in range(N)]
         self.attrs_grid: List[List[Pixel_Attrs]] = [[Pixel_Attrs() for _ in range(N)] for _ in range(N)]
         self.gds_grid:List[List[int]] = [[0 for _ in range(N)] for _ in range(N)]
-        self.boat_direction_grid:List[List[ (List[str]) ]] = [[ [] for _ in range(N)] for _ in range(N)]
+        self.boat_direction_grid:List[List[ (List[Boat_Direction]) ]] = [[ [] for _ in range(N)] for _ in range(N)]
 
         # 机器人购买点、船购买点、运输点、
         self.robot_purchase_point: List[Point] = []
-        self.boat_purchase_point: List[Point] = []
+        self.boat_purchase_sVec_list: List[sVec] = []
         self.delivery_point: List[Point] = []
+        self.delivery_sVec_list: List[sVec] = []
         
         self.berths:List[Berth] = []
         self.robots:List[Robot] = []
         self.boats:List[Boat] = []
+
+        self.boat_route_dict: Dict[Tuple[sVec, sVec], List[str]] = {}
         
         # 全局帧
         self.global_zhen_ref:List[int] = [0]
@@ -98,7 +101,7 @@ class Env:
                 if ch == 'R':
                     self.robot_purchase_point.append(Point(x, y))
                 elif ch == 'S':
-                    self.boat_purchase_point.append(Point(x, y))
+                    self.boat_purchase_sVec_list.append(sVec(Point(x, y), Boat_Direction.RIGHT))
                 elif ch == 'T':
                     self.delivery_point.append(Point(x, y))
     
@@ -157,7 +160,7 @@ class Env:
         
         for i in range(N):
             for j in range(N):
-                directions: List[str] = []
+                directions: List[Boat_Direction] = []
                 if self.attrs_grid[i][j].is_ocean:
                     if can_place_down(i, j): directions.append(Boat_Direction.DOWN)
                     if can_place_right(i, j): directions.append(Boat_Direction.RIGHT)
@@ -168,11 +171,15 @@ class Env:
     @func_timer
     def boat_bfs(self):
         self.gen_boat_direction_grid()
-        T = Point(2, 195)
-        D = Boat_Direction.DOWN
-        self.boat0_actions = boat_bfs(self.attrs_grid, self.boat_direction_grid, 
-                                      (self.boat_purchase_point[0], cmd_boatDirection_map[0]), (T, D))
-        main_logger.error(self.boat0_actions)
+
+        # 处理交货！！！！！！！！！！！！！！！！！！！！！！！！可能导致无法离开
+        for pos in self.delivery_point:
+            self.delivery_sVec_list.append(sVec(pos, self.boat_direction_grid[pos.x][pos.y][0]))
+
+        id = (self.boat_purchase_sVec_list[0], self.delivery_sVec_list[1])
+        self.boat_route_dict[id] = boat_bfs(self.attrs_grid, self.boat_direction_grid, 
+                                            id[0], id[1])
+        # main_logger.error(self.boat0_actions)
 
     @func_timer
     def init_env(self):
@@ -218,7 +225,7 @@ class Env:
         # 船只更新
         self.boat_num = int(input())
         while (len(self.boats) < self.boat_num):
-            self.boats.append(Boat())
+            self.boats.append(Boat(-1, self))
         for boat in self.boats:
             boat.boat_id, boat.goods_num, boat.x, boat.y, boat.dir, boat.status = map(int, input().split())
         

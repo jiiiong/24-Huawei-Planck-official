@@ -4,7 +4,7 @@ from typing import List, Tuple, Dict, Any
 from cfg import N
 from log import main_logger
 
-from .base import Pixel_Attrs, Point
+from .base import Pixel_Attrs, Point, sVec
 from .base import Robot_Move, INFINIT_COST
 from .base import Boat_Action, Boat_Direction
 
@@ -78,23 +78,24 @@ def one_move_avoidance(attrs_grid: List[List[Pixel_Attrs]], source_point: Point)
 
 # boat相关
 
-def boat_bfs(attrs_grid: List[List[Pixel_Attrs]], boat_direction_grid:List[List[ (List[str]) ]],
-             start_sVec: Tuple[Point, str], end_sVec: Tuple[Point, str]) -> List:
+def boat_bfs(attrs_grid: List[List[Pixel_Attrs]], boat_direction_grid:List[List[ (List[Boat_Direction]) ]],
+             start_sVec: sVec, end_sVec: sVec) -> List:
     queue = PriorityQueue()
     queue.put((0, 0, start_sVec, []))
     visited = set()
     g_scores = {start_sVec: 0}
     ret = []
-
+    count = 0
     while not queue.empty():
-        
+        count += 1
         (f_current, g_current, cur_sVec, actions) = queue.get()
-        cur_sVec: Tuple[Point, str]
+        cur_sVec: sVec
         actions: List[str]
         g_current: int
 
         # main_logger.error(f"!! {current_position} {current_direction}")
         if cur_sVec == end_sVec:
+            main_logger.error(f"++{count}") 
             return actions
         if cur_sVec in visited:
             continue
@@ -102,21 +103,15 @@ def boat_bfs(attrs_grid: List[List[Pixel_Attrs]], boat_direction_grid:List[List[
 
         # 尝试 ship_one_move
         okk, new_sVec = ship_one_move(cur_sVec, boat_direction_grid)
-        # main_logger.error(f"{okk} {new_position}")
         if okk:
             okk = ship_position_available(new_sVec, boat_direction_grid, attrs_grid)
-            # main_logger.error(f"{okk} {new_position} {new_position not in g_scores}")
         if okk:
             new_g = g_current + 1  # 假设每次移动成本为1
             
             if new_sVec not in g_scores or new_g < g_scores[new_sVec]:
                 g_scores[new_sVec] = new_g
-                f = new_g + heuristic(new_sVec[0], end_sVec[0])
+                f = new_g + heuristic(new_sVec.pos, end_sVec.pos)
                 queue.put((f, new_g, new_sVec, actions + ["ship"]))
-                # test = actions + ["ship"]
-                # main_logger.error(f"okkkk {new_position} {test}")
-        # if okk == False:
-        #     main_logger.error(f"invalid {new_position} {test}")
 
         # 尝试 rotate_one_move，顺时针和逆时针旋转
         for rotation in [1, 0]:
@@ -125,21 +120,21 @@ def boat_bfs(attrs_grid: List[List[Pixel_Attrs]], boat_direction_grid:List[List[
                 new_g = g_current + 1  # 假设旋转成本为1
                 if new_sVec not in g_scores or new_g < g_scores[new_sVec]:
                     g_scores[new_sVec] = new_g
-                    f = new_g + heuristic(new_sVec[0], end_sVec[0])
+                    f = new_g + heuristic(new_sVec.pos, end_sVec.pos)
                     queue.put((f, new_g, new_sVec, actions + [f"rot {rotation}"]))
                     # test = actions + [f"rot {rotation}"]
                     # main_logger.error(f"okkkk {new_pos_after_rot} {test}")
             # else:
             #     main_logger.error(f"invalid {new_pos_after_rot} {test}")
 
-    #main_logger.error(f"++{count}")     
+    main_logger.error(f"++{count}")     
     return ret
 
 # 判断当前船的位置是否合法
-def ship_position_available(cur_sVec: Tuple[Point, str], 
-                            boat_direction_grid:List[List[(List[str])]], attrs_grid: List[List[Pixel_Attrs]]):
-    current_position = cur_sVec[0]
-    current_direction = cur_sVec[1]
+def ship_position_available(cur_sVec: sVec, 
+                            boat_direction_grid:List[List[(List[Boat_Direction])]], attrs_grid: List[List[Pixel_Attrs]]):
+    current_position = cur_sVec.pos
+    current_direction = cur_sVec.dir
 
     if current_position.x < 0 or current_position.x >= N or current_position.y < 0 or current_position.y >= N:
         return False
@@ -149,11 +144,11 @@ def ship_position_available(cur_sVec: Tuple[Point, str],
         return False
     return True
 
-def rotate_one_move(cur_sVec: Tuple[Point, str], rotation,
-                    boat_direction_grid:List[List[(List[str])]], attrs_grid: List[List[Pixel_Attrs]]):
-    x = cur_sVec[0].x
-    y = cur_sVec[0].y
-    current_direction = cur_sVec[1]
+def rotate_one_move(cur_sVec: sVec, rotation,
+                    boat_direction_grid:List[List[(List[Boat_Direction])]], attrs_grid: List[List[Pixel_Attrs]]):
+    x = cur_sVec.x
+    y = cur_sVec.y
+    current_direction = cur_sVec.dir
     # 方向转换逻辑
     def direction_transfer(current_direction, rotation):
         direction_order = [Boat_Direction.RIGHT, Boat_Direction.DOWN, Boat_Direction.LEFT, Boat_Direction.UP]
@@ -190,42 +185,42 @@ def rotate_one_move(cur_sVec: Tuple[Point, str], rotation,
         elif current_direction == Boat_Direction.UP:
             new_x, new_y = x - 1, y + 1
 
-    new_sVec = (Point(new_x, new_y), new_direction)
+    new_sVec = sVec(Point(new_x, new_y), new_direction)
     okk = ship_position_available(new_sVec, boat_direction_grid, attrs_grid)
 
     return okk, new_sVec
 
 # 用于前进 ship, 返回一个 bool 类型表示成功或失败，返回一个新的坐标，表示移动后核心点的位置
-def ship_one_move(cur_Svec: Tuple[Point, str], boat_direction_grid:List[List[ (List[str]) ]]) -> Tuple[bool, Tuple[Point, str]]:
-    current_pos = cur_Svec[0]
-    current_direction = cur_Svec[1]
+def ship_one_move(cur_Svec: sVec, boat_direction_grid:List[List[ (List[Boat_Direction]) ]]) -> Tuple[bool, sVec]:
+    current_pos = cur_Svec.pos
+    current_direction = cur_Svec.dir
     okk = False
     # 向上移动一步
     if (current_direction == Boat_Direction.UP and current_pos.x - 1 >= 0 
         and current_direction in boat_direction_grid[current_pos.x - 1][current_pos.y]):
         new_pos = Point(current_pos.x - 1, current_pos.y)
         okk = True
-        return okk, (new_pos, current_direction)
+        return okk, sVec(new_pos, current_direction)
     # 向下移动一步
     elif (current_direction == Boat_Direction.DOWN and current_pos.x + 1 < N 
           and current_direction in boat_direction_grid[current_pos.x + 1][current_pos.y]):
         new_pos = Point(current_pos.x + 1, current_pos.y)
         okk = True
-        return okk, (new_pos, current_direction)
+        return okk, sVec(new_pos, current_direction)
     # 向左移动一步
     elif (current_direction == Boat_Direction.LEFT and current_pos.y - 1 >= 0 
           and current_direction in boat_direction_grid[current_pos.x][current_pos.y - 1]):
         new_pos = Point(current_pos.x, current_pos.y - 1)
         okk = True
-        return okk, (new_pos, current_direction)
+        return okk, sVec(new_pos, current_direction)
     # 向右移动一步
     elif (current_direction == Boat_Direction.RIGHT and current_pos.y + 1 < N 
           and current_direction in boat_direction_grid[current_pos.x][current_pos.y + 1]):
         new_pos = Point(current_pos.x, current_pos.y + 1)
         okk = True
-        return okk, (new_pos, current_direction)
+        return okk, sVec(new_pos, current_direction)
     else:
-        return False, (Point(), "")
+        return False, sVec()
     
 def heuristic(a: Point, b: Point):
     # 使用曼哈顿距离作为启发式函数

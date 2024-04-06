@@ -196,6 +196,8 @@ class Scheduler:
 
     def boats_zhen_handler(self):
         self.schedule_boats()
+        for boat in self.env.boats:
+            boat.boat_execute()
 
     def scheduler_buy(self):
 
@@ -204,7 +206,7 @@ class Scheduler:
             print("lbot", self.env.robot_purchase_point[0].x, self.env.robot_purchase_point[0].y)
 
         if self.env.boat_num <= 1:
-            print("lboat", self.env.boat_purchase_point[0].x, self.env.boat_purchase_point[0].y)
+            print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
 
     def schedule_gds(self, goods: Goods):
         pass        
@@ -225,21 +227,9 @@ class Scheduler:
 
     def schedule_boats(self):
         for i in range(self.env.boat_num):
-            main_logger.error(f"{self.env.boats[0].x} {self.env.boats[0].y} {self.env.boats[0].dir} {self.env.boats[0].status}")
-            if i == 0 and self.env.boats[0].status == 0:
-                if self.env.boat0_actions:
-                    action = self.env.boat0_actions.pop(0)
-                    # logger.info(action)
-                    if action == "ship":
-                        print("ship", 0)
-                    elif action == "rot 0":
-                        print("rot", 0, 0)
-                    elif action == "rot 1":
-                        print("rot", 0, 1)
-                else:
-                    print("berth 0")
-            elif i == 0 and self.env.boats[0].status == 2:
-                print("ship", 0)
+            if i == 0 and self.env.boats[0].sVec == (self.env.boat_purchase_sVec_list[0]):
+                self.env.boats[0].ship_from_A_to_B(self.env.boat_purchase_sVec_list[0], self.env.delivery_sVec_list[1])
+
             # else:
             #     status = random.randint(0, 1)
             #     if status == 0:

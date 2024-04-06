@@ -80,9 +80,9 @@ priority_for_robot_extended_status = {
 
 class Robot():
 
-    def __init__(self, robot_id: int, env: Env, startX=0, startY=0, goods=0):
+    def __init__(self, robot_id: int, env: 'Env', startX=0, startY=0, goods=0):
         self.robot_id = robot_id
-        self.env = env
+        self.env= env
         self.pos = Point(x = startX, y = startY)
         self.goods = goods
         

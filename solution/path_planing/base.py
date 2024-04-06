@@ -1,4 +1,5 @@
 from __future__ import annotations
+from enum import Enum
 from dataclasses import dataclass
 from cfg import N
 Nm1 = N - 1
@@ -9,6 +10,7 @@ class Pixel_Attrs():
     is_ocean: bool= False
     is_free_ground: bool = False  
     is_free_ocean: bool = False
+
 
 class Point():
     def __init__(self, x = 0, y = 0) -> None:
@@ -37,6 +39,8 @@ class Point():
     def distance(self, b: Point):
         return abs(self.x - b.x) + abs(self.y - b.y)
 
+
+    
 INFINIT_COST = (2**31) -1
 UNREACHABLE_POS = Point(-2, -2)
 
@@ -62,8 +66,42 @@ class Boat_Action():
     ROTATE0 = "rotate0"
     STAY = "stay"
 
-class Boat_Direction():
-    DOWN = "D"
-    RIGHT = "R"
-    UP = "U"
-    LEFT = "L"
+class Boat_Direction(Enum):
+    RIGHT = 0
+    LEFT = 1
+    UP = 2
+    DOWN = 3
+
+class sVec():
+    def __init__(self, pos: Point = Point(), dir: Boat_Direction = Boat_Direction.RIGHT):
+        self.pos = pos
+        self.dir = dir
+
+    def __hash__(self) -> int:
+        return hash((self.pos, self.dir))
+    def __eq__(self, value) -> bool:
+        return (self.pos == value.pos and self.dir == value.dir)
+    def __lt__(self, b):
+        return True
+    
+    @property
+    def dir(self):
+        return self._dir
+    @dir.setter
+    def dir(self, value):
+        if isinstance(value, int):
+            self._dir = Boat_Direction(value)
+        elif isinstance(value, Boat_Direction):
+            self._dir = value
+    @property
+    def x(self):
+        return self.pos.x
+    @x.setter
+    def x(self, value):
+        self.pos.x = value
+    @property
+    def y(self):
+        return self.pos.y
+    @y.setter
+    def y(self, value):
+        self.pos.y = value

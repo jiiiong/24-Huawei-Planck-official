@@ -1,7 +1,7 @@
 from __future__ import annotations
 import multiprocessing
 import concurrent.futures
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Callable
 from dataclasses import dataclass
 from queue import PriorityQueue
 
@@ -14,7 +14,7 @@ from path_planing import robot_bfs, boat_bfs
 from .robot import Robot
 from .berth import Berth
 from .boat import Boat, int_boatDirection_map
-        
+
 @dataclass
 class Env:
 
@@ -34,7 +34,7 @@ class Env:
         self.ch_grid: List[List[str]] = [[' ' for _ in range(N)] for _ in range(N)]
         self.attrs_grid: List[List[Pixel_Attrs]] = [[Pixel_Attrs() for _ in range(N)] for _ in range(N)]
         self.gds_grid:List[List[int]] = [[0 for _ in range(N)] for _ in range(N)]
-        self.boat_direction_grid:List[List[ (List[Boat_Direction]) ]] = [[ [] for _ in range(N)] for _ in range(N)]
+        self.boat_valid_grid:List[List[ (List[Boat_Direction]) ]] = [[ [] for _ in range(N)] for _ in range(N)]
 
         # 机器人购买点、船购买点、运输点、
         self.robot_purchase_point: List[Point] = []
@@ -105,26 +105,27 @@ class Env:
                 elif ch == 'T':
                     self.delivery_point.append(Point(x, y))
     
-    def robot_bfs(self):
-        for berth in self.berths:
-            p = multiprocessing.Process(target=robot_bfs, args=(self.attrs_grid, berth.pos))
-            berth.robot_move_grid, berth.robot_cost_grid  = robot_bfs(self.attrs_grid, berth.pos)
-            # from path_planing import apply_move_grid_to_ch_grid, save_grid_to_file
-            # save_grid_to_file(apply_move_grid_to_ch_grid(self.ch_grid, berth.robot_move_grid), 'move')
+    # def robot_bfs(self):
+    #     for berth in self.berths:
+    #         p = multiprocessing.Process(target=robot_bfs, args=(self.attrs_grid, berth.pos))
+    #         berth.robot_move_grid, berth.robot_cost_grid  = robot_bfs(self.attrs_grid, berth.pos)
+    #         # from path_planing import apply_move_grid_to_ch_grid, save_grid_to_file
+    #         # save_grid_to_file(apply_move_grid_to_ch_grid(self.ch_grid, berth.robot_move_grid), 'move')
     
     @func_timer
     def robot_bfs_multi_core(self):
-        results: List[Tuple[ (List[List[Point]]), (List[List[int]])]] = []
         with concurrent.futures.ProcessPoolExecutor(2) as executor:
-            future_results = [executor.submit(robot_bfs, self.attrs_grid, berth.pos) for berth in self.berths]
-            results = [future.result() for future in concurrent.futures.as_completed(future_results)]
-        for i, berth in enumerate(self.berths):
-            berth.robot_move_grid, berth.robot_cost_grid = results[i]
-            # from path_planing import apply_move_grid_to_ch_grid, save_grid_to_file
-            # save_grid_to_file(apply_move_grid_to_ch_grid(self.ch_grid, berth.robot_move_grid), 'move')
+            future_results = [(executor.submit(robot_bfs, berth.berth_id, self.attrs_grid, berth.pos)) for berth in self.berths]
+            results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
+        for result in results:
+            berth_id, robot_move_grid, robot_cost_grid = result
+            for berth in self.berths:
+                if berth_id == berth.berth_id:
+                    berth.robot_cost_grid = robot_cost_grid
+                    berth.robot_move_grid = robot_move_grid
 
     @func_timer
-    def gen_boat_direction_grid(self):
+    def gen_boat_valid_grid(self):
         def can_place_down(x, y):
             if x + 2 >= N or y - 1 < 0 or x + 1 >= N:
                 return False
@@ -166,19 +167,40 @@ class Env:
                     if can_place_right(i, j): directions.append(Boat_Direction.RIGHT)
                     if can_place_up(i, j): directions.append(Boat_Direction.UP)
                     if can_place_left(i, j): directions.append(Boat_Direction.LEFT)
-                self.boat_direction_grid[i][j] = directions
+                self.boat_valid_grid[i][j] = directions
 
     @func_timer
-    def boat_bfs(self):
-        self.gen_boat_direction_grid()
+    def boat_bfs_multi_core(self):
+        self.gen_boat_valid_grid()
 
         # 处理交货！！！！！！！！！！！！！！！！！！！！！！！！可能导致无法离开
         for pos in self.delivery_point:
-            self.delivery_sVec_list.append(sVec(pos, self.boat_direction_grid[pos.x][pos.y][0]))
+            self.delivery_sVec_list.append(sVec(pos, self.boat_valid_grid[pos.x][pos.y][0]))
 
-        id = (self.boat_purchase_sVec_list[0], self.delivery_sVec_list[1])
-        self.boat_route_dict[id] = boat_bfs(self.attrs_grid, self.boat_direction_grid, 
-                                            id[0], id[1])
+        task_ids: List[Tuple[sVec, sVec]] = []
+        # 生成S到B的路径
+        for S_sVec in self.boat_purchase_sVec_list:
+            for berth in self.berths:
+                task_ids.append((S_sVec, berth.sVec))
+        for berth_A in self.berths:
+            for berth_B in self.berths:
+                task_ids.append((berth_A.sVec, berth_B.sVec))
+                task_ids.append((berth_B.sVec, berth_A.sVec))
+        for T_sVec in self.delivery_sVec_list:
+            for berth in self.berths:
+                task_ids.append((T_sVec, berth.sVec))
+                task_ids.append((berth.sVec, T_sVec))
+        
+        with concurrent.futures.ProcessPoolExecutor(2) as executor:
+            future_results = [executor.submit(boat_bfs, id, self.attrs_grid, self.boat_valid_grid, id[0], id[1]) for id in task_ids]
+            results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
+        for result in results:
+            id, actions = result
+            # main_logger.error(f"{actions}")
+            self.boat_route_dict[id] = actions
+        self.test_route = task_ids
+        
+        
         # main_logger.error(self.boat0_actions)
 
     @func_timer
@@ -201,7 +223,7 @@ class Env:
         okk = input()
         
         self.robot_bfs_multi_core()
-        self.boat_bfs()
+        self.boat_bfs_multi_core()
     
     #@func_timer
     def input(self):
@@ -231,7 +253,6 @@ class Env:
         
         # 判题器更新结束
         okk = input()
-
 
                     
 # class My_Stream():

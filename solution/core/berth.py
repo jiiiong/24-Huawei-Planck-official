@@ -6,7 +6,7 @@ from log import logger
 from cfg import TYPE_CHECKING
 if TYPE_CHECKING:
     from .env import Env
-from path_planing import Point
+from path_planing import Point, sVec
 from path_planing import Boat_Direction
 
 class Berth:
@@ -42,7 +42,7 @@ class Berth:
         
     @property
     def sVec(self):
-        return (self.pos, self.dir)
+        return sVec(self.pos, self.dir)
     
     @property
     def x(self):

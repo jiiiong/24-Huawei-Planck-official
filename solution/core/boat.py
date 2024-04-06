@@ -22,7 +22,7 @@ class Boat:
         self.env: 'Env' = env
         self.goods_num = num
         self.pos = Point(x,y)
-        self._dir = int_boatDirection_map[dir]
+        self._dir: Boat_Direction = int_boatDirection_map[dir]
         self.status = status
         self.actions: List[str] = []
 
@@ -30,8 +30,11 @@ class Boat:
     def dir(self):
         return self._dir
     @dir.setter
-    def dir(self, value: int):
-        self._dir = int_boatDirection_map[value]
+    def dir(self, value):
+        if isinstance(value, int):
+            self._dir = int_boatDirection_map[value]
+        elif isinstance(value, Boat_Direction):
+            self._dir = value
 
     @property
     def sVec(self):

@@ -205,7 +205,7 @@ class Scheduler:
             scheduler_logger.info(f"lbot {self.env.robot_purchase_point[0]}!\n")
             print("lbot", self.env.robot_purchase_point[0].x, self.env.robot_purchase_point[0].y)
 
-        if self.env.boat_num <= 1:
+        if self.env.boat_num < 1:
             print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
 
     def schedule_gds(self, goods: Goods):
@@ -227,8 +227,20 @@ class Scheduler:
 
     def schedule_boats(self):
         for i in range(self.env.boat_num):
-            if i == 0 and self.env.boats[0].sVec == (self.env.boat_purchase_sVec_list[0]):
-                self.env.boats[0].ship_from_A_to_B(self.env.boat_purchase_sVec_list[0], self.env.delivery_sVec_list[1])
+            if i == 0 and len(self.env.boats[0].actions) == 0:
+                while(len(self.env.test_route)>0):
+                    start_sVec, end_sVec = self.env.test_route.pop(0)
+                    if self.env.boats[0].sVec ==  start_sVec:
+                        self.env.boats[0].ship_from_A_to_B(start_sVec, end_sVec)
+                        break
+                    else:
+                        continue
+                # if self.env.boats[0].sVec == (self.env.boat_purchase_sVec_list[0]):
+                #     self.env.boats[0].ship_from_A_to_B(self.env.boat_purchase_sVec_list[0], self.env.berths[0].sVec)
+                # else:
+                #     for id, berth in enumerate(self.env.berths):
+                #         if self.env.boats[0].sVec == berth.sVec:
+                #             self.env.boats[0].ship_from_A_to_B(self.env.berths[id].sVec, self.env.berths[((id+1)%len(self.env.berths))].sVec)
 
             # else:
             #     status = random.randint(0, 1)

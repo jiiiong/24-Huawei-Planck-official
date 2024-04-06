@@ -72,6 +72,20 @@ class Boat_Direction(Enum):
     UP = 2
     DOWN = 3
 
+boat_oppsite_points_offset = {   
+    Boat_Direction.UP: Point(-2, 1),
+    Boat_Direction.RIGHT: Point(1, 2),
+    Boat_Direction.DOWN: Point(2, -1),
+    Boat_Direction.LEFT: Point(-1, -2),
+    }
+
+Boat_Ship_Offset = {
+    Boat_Direction.RIGHT: Point(0, 1),
+    Boat_Direction.LEFT: Point(0, -1),
+    Boat_Direction.UP: Point(-1, 0),
+    Boat_Direction.DOWN: Point(1, 0),
+}
+
 class sVec():
     def __init__(self, pos: Point = Point(), dir: Boat_Direction = Boat_Direction.RIGHT):
         self.pos = pos
@@ -83,7 +97,23 @@ class sVec():
         return (self.pos == value.pos and self.dir == value.dir)
     def __lt__(self, b):
         return True
+    def __str__(self):
+        return f"{self.pos}, {self.dir}"
     
+    
+    def proj(self):
+        oppsite_pos = self.pos + boat_oppsite_points_offset[self.dir]
+        if (self.dir == Boat_Direction.RIGHT):
+            return (Point(self.pos.x, self.pos.y), Point(oppsite_pos.x, oppsite_pos.y))
+        elif (self.dir == Boat_Direction.LEFT):
+            return (Point(oppsite_pos.x, oppsite_pos.y), Point(self.pos.x, self.pos.y))
+        elif (self.dir == Boat_Direction.UP):
+            return (Point(oppsite_pos.x, self.pos.y), Point(self.pos.x, oppsite_pos.y))
+        elif (self.dir == Boat_Direction.DOWN):
+            return (Point(self.pos.x, oppsite_pos.y), Point(oppsite_pos.x, self.pos.y))
+        else:
+            return (Point(), Point())
+        
     @property
     def dir(self):
         return self._dir

@@ -13,7 +13,7 @@ from path_planing import robot_bfs, boat_bfs
 
 from .robot import Robot
 from .berth import Berth
-from .boat import Boat, transfer_direction
+from .boat import Boat, cmd_boatDirection_map
         
 @dataclass
 class Env:
@@ -169,7 +169,9 @@ class Env:
     def boat_bfs(self):
         self.gen_boat_direction_grid()
         T = Point(2, 195)
-        self.boat0_actions = boat_bfs(self.attrs_grid, self.boat_direction_grid, self.boat_purchase_point[0], transfer_direction(0), T)
+        D = Boat_Direction.DOWN
+        self.boat0_actions = boat_bfs(self.attrs_grid, self.boat_direction_grid, 
+                                      (self.boat_purchase_point[0], cmd_boatDirection_map[0]), (T, D))
         main_logger.error(self.boat0_actions)
 
     @func_timer
@@ -218,7 +220,7 @@ class Env:
         while (len(self.boats) < self.boat_num):
             self.boats.append(Boat())
         for boat in self.boats:
-            boat.id, boat.goods_num, boat.x, boat.y, boat.dir, boat.status = map(int, input().split())
+            boat.boat_id, boat.goods_num, boat.x, boat.y, boat.dir, boat.status = map(int, input().split())
         
         # 判题器更新结束
         okk = input()

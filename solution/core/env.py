@@ -182,6 +182,8 @@ class Env:
         for S_sVec in self.boat_purchase_sVec_list:
             for berth in self.berths:
                 task_ids.append((S_sVec, berth.sVec))
+            #     break
+            # break
         for berth_A in self.berths:
             for berth_B in self.berths:
                 task_ids.append((berth_A.sVec, berth_B.sVec))
@@ -190,18 +192,21 @@ class Env:
             for berth in self.berths:
                 task_ids.append((T_sVec, berth.sVec))
                 task_ids.append((berth.sVec, T_sVec))
-        
+                
+        # for id_a, T_sVec in enumerate(self.delivery_sVec_list):
+        #     for id_b, berth in enumerate(self.berths):
+        #         if id_a == 0 and id_b == 4:
+        #             task_ids.append((T_sVec, berth.sVec))
+        #             task_ids.append((berth.sVec, T_sVec))
+            
         with concurrent.futures.ProcessPoolExecutor(2) as executor:
             future_results = [executor.submit(boat_bfs, id, self.attrs_grid, self.boat_valid_grid, id[0], id[1]) for id in task_ids]
             results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
         for result in results:
             id, actions = result
-            # main_logger.error(f"{actions}")
             self.boat_route_dict[id] = actions
         self.test_route = task_ids
         
-        
-        # main_logger.error(self.boat0_actions)
 
     @func_timer
     def init_env(self):

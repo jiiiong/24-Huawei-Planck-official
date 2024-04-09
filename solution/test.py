@@ -1,6 +1,13 @@
-import numpy as np
+import matplotlib.pyplot as plt
 
-grid: np.ndarray = np.full((200,200), '*')
-grid[0][0] = 'adas'
-print(grid.shape, grid.dtype)
-print(grid[0][0], grid[1][1])
+# 定义网格数据
+grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# 绘制网格
+plt.imshow(grid, cmap='viridis', interpolation='nearest')
+plt.colorbar()  # 添加颜色条
+plt.savefig('fg.png')

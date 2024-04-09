@@ -174,6 +174,7 @@ class Scheduler:
 
         # 调度器调度robots
         robot_logger.debug(f"schdule robots")
+        
         self.schedule_robots()
 
         # 避障
@@ -195,7 +196,9 @@ class Scheduler:
         print(robot_cmd_tran)
 
     def boats_zhen_handler(self):
+
         self.schedule_boats()
+
         for boat in self.env.boats:
             boat.boat_execute()
 
@@ -205,9 +208,11 @@ class Scheduler:
             scheduler_logger.info(f"lbot {self.env.robot_purchase_point[0]}!\n")
             print("lbot", self.env.robot_purchase_point[0].x, self.env.robot_purchase_point[0].y)
 
-        if self.env.boat_num < 1:
-            print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
-
+        if self.env.boat_num <= 1:
+            if (self.env.boat_num < 1):
+                print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
+            elif(self.env.global_zhen == 100):
+                print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
     def schedule_gds(self, goods: Goods):
         pass        
         # # delegated_berth_id = self.env.divide_matrix[goods.y][goods.x]
@@ -226,15 +231,28 @@ class Scheduler:
         #     self.env.berths[berth_id].add_goods(goods)
 
     def schedule_boats(self):
+        # for i in range(self.env.boat_num):
+        #     if i == 0 and len(self.env.boats[0].actions) == 0:
+        #         while(len(self.env.route_ids)>0):
+        #             start_sVec, end_sVec = self.env.route_ids.pop(0)
+        #             if self.env.boats[0].sVec ==  start_sVec:
+        #                 self.env.boats[0].ship_from_A_to_B(start_sVec, end_sVec)
+        #                 break
+        #             else:
+        #                 continue
         for i in range(self.env.boat_num):
-            if i == 0 and len(self.env.boats[0].actions) == 0:
-                while(len(self.env.test_route)>0):
-                    start_sVec, end_sVec = self.env.test_route.pop(0)
-                    if self.env.boats[0].sVec ==  start_sVec:
-                        self.env.boats[0].ship_from_A_to_B(start_sVec, end_sVec)
-                        break
-                    else:
-                        continue
+            # if i == 0 and len(self.env.boats[0].actions) == 0:
+                # 采用手动控制
+            if len(self.env.boats[i].actions) == 0:
+                scheduler_logger.info("now %s",self.env.boats[0].sVec)
+                boat_purchase_sVec = self.env.boat_purchase_sVec_list[0]
+                delivery_sVec = self.env.delivery_sVec_list[0]
+                if self.env.boats[i].sVec == boat_purchase_sVec:
+                    self.env.boats[i].ship_from_A_to_B(boat_purchase_sVec, self.env.berths[0].sVec)
+                if self.env.boats[i].sVec == self.env.berths[0].sVec:
+                    self.env.boats[i].ship_from_A_to_B(self.env.berths[0].sVec,delivery_sVec)
+                if self.env.boats[i].sVec == delivery_sVec:
+                    self.env.boats[i].ship_from_A_to_B(delivery_sVec, self.env.berths[0].sVec)
                 # if self.env.boats[0].sVec == (self.env.boat_purchase_sVec_list[0]):
                 #     self.env.boats[0].ship_from_A_to_B(self.env.boat_purchase_sVec_list[0], self.env.berths[0].sVec)
                 # else:

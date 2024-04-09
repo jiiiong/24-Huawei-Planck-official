@@ -471,10 +471,10 @@ class Robot():
 
         avoidance_grid: List[List[Pixel_Attrs]] = []
         col = -1
-        for y in range(t, b+1):
+        for x in range(t, b+1):
             avoidance_grid.append([])
             col += 1
-            for x in range(l, r+1):
+            for y in range(l, r+1):
                 avoidance_grid[col].append(self.env.attrs_grid[x][y])
         
         # 1. 尝试针对所有周围的对象进行避障
@@ -500,7 +500,7 @@ class Robot():
 
             # 尝试一条避障路径
             list_avoidance_paths, success = one_move_avoidance(ins_avoidance_grid,
-                                                            Point(self.pos.x-l, self.pos.y-t))
+                                                            Point(self.pos.x-t, self.pos.y-l))
             predict_steps -= 1
         
 
@@ -525,11 +525,11 @@ class Robot():
                         p_a.is_ground = (False or p_a.is_free_ground)
                 # 尝试一条避障路径
                 list_avoidance_paths, success_second = one_move_avoidance(ins_avoidance_grid,
-                                                            Point(self.pos.x-l, self.pos.y-t))
+                                                            Point(self.pos.x-t, self.pos.y-l))
                 predict_steps -= 1
 
         for item in list_avoidance_paths:
-            item = Point(item.x + l, item.y + t)
+            item = Point(item.x + t, item.y + l)
             avoidance_paths_stk.put(item)
 
         return success, avoidance_paths_stk

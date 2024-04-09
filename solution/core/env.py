@@ -1,19 +1,20 @@
 from __future__ import annotations
 import multiprocessing
 import concurrent.futures
-from typing import List, Tuple, Dict, Callable
+from typing import List, Tuple, Dict, Callable, Set
 from dataclasses import dataclass
 from queue import PriorityQueue
+import copy
 
 from cfg import N
 from log import func_timer, main_logger
 from path_planing import Point, Point, Pixel_Attrs, sVec
 from path_planing import Boat_Direction, Boat_Action
-from path_planing import robot_bfs, boat_bfs
+from path_planing import robot_bfs, boat_bfs, boat_actions_to_sVecs, save_grid_to_file, boat_actions_to_poses, boat_actions_to_poses_per_action
 
 from .robot import Robot
 from .berth import Berth
-from .boat import Boat, int_boatDirection_map
+from .boat import Boat, int_boatDirection_map, Boat_Route_Lock
 
 @dataclass
 class Env:
@@ -47,7 +48,7 @@ class Env:
         self.boats:List[Boat] = []
 
         self.boat_route_dict: Dict[Tuple[sVec, sVec], List[str]] = {}
-        
+        self.lock_dict: Dict[int, Boat_Route_Lock] = {}
         # 全局帧
         self.global_zhen_ref:List[int] = [0]
 
@@ -177,37 +178,73 @@ class Env:
         for pos in self.delivery_point:
             self.delivery_sVec_list.append(sVec(pos, self.boat_valid_grid[pos.x][pos.y][0]))
 
-        task_ids: List[Tuple[sVec, sVec]] = []
+        self.route_ids: List[Tuple[sVec, sVec]] = []
         # 生成S到B的路径
         for S_sVec in self.boat_purchase_sVec_list:
             for berth in self.berths:
-                task_ids.append((S_sVec, berth.sVec))
-            #     break
-            # break
-        for berth_A in self.berths:
-            for berth_B in self.berths:
-                task_ids.append((berth_A.sVec, berth_B.sVec))
-                task_ids.append((berth_B.sVec, berth_A.sVec))
+                self.route_ids.append((S_sVec, berth.sVec))
+                break
+            break
+        # for berth_A in self.berths:
+        #     for berth_B in self.berths:
+        #         self.route_ids.append((berth_A.sVec, berth_B.sVec))
+        #         self.route_ids.append((berth_B.sVec, berth_A.sVec))
+        #         # break
+        #     # break
         for T_sVec in self.delivery_sVec_list:
             for berth in self.berths:
-                task_ids.append((T_sVec, berth.sVec))
-                task_ids.append((berth.sVec, T_sVec))
-                
+                self.route_ids.append((T_sVec, berth.sVec))
+                self.route_ids.append((berth.sVec, T_sVec))
+                break
+            break
+
         # for id_a, T_sVec in enumerate(self.delivery_sVec_list):
         #     for id_b, berth in enumerate(self.berths):
-        #         if id_a == 0 and id_b == 4:
-        #             task_ids.append((T_sVec, berth.sVec))
+        #         if id_a == 0 and id_b == 3:
+        #             # task_ids.append((T_sVec, berth.sVec))
         #             task_ids.append((berth.sVec, T_sVec))
-            
-        with concurrent.futures.ProcessPoolExecutor(2) as executor:
-            future_results = [executor.submit(boat_bfs, id, self.attrs_grid, self.boat_valid_grid, id[0], id[1]) for id in task_ids]
-            results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
-        for result in results:
-            id, actions = result
-            self.boat_route_dict[id] = actions
-        self.test_route = task_ids
         
+        self.lock_grid: List[List[Boat_Route_Lock]] = [[ Boat_Route_Lock() for _ in range(N)] for _ in range(N)]
+        for i, id in enumerate(self.route_ids):
+            _, self.boat_route_dict[id] = boat_bfs(id, self.attrs_grid, self.boat_valid_grid, id[0], id[1], self.lock_grid)
+            # sVec_list = boat_actions_to_sVecs(id[0], self.boat_route_dict[id])
+            # 划分航道
+            self.update_lock_grid(id, i)
+        # 划分为区块
+        main_logger.error(f"''{self.union_lock_grid()}")
+        
+        # 生成拓扑图，采用邻接矩阵
+        self.gen_boat_route_topylogy_graph()
+        main_logger.error(self.boat_route_topology_graph)
+        
+        # 使用matplot打印可视化的道路网格
+        self.visualize_lock_grid()
 
+        self.test_route = self.route_ids
+
+        # # 打印lock_grid
+        # test_grid = copy.deepcopy(self.ch_grid)
+        # for x, line in enumerate(self.lock_grid):
+        #     for y, lock in enumerate(line):
+        #         if lock.num_shared_roads > 0:
+        #             main_logger.error(f"{x} {y} {lock.route_id}")
+
+        # 尝试打印航道
+        # self.boat_route_grid: List[List[List[int]]] = []
+        # for id in task_ids:
+        #     # 产生path
+        #     self.print_boat_route_id(id)
+
+        
+        # 多进程版本
+        # with concurrent.futures.ProcessPoolExecutor(1) as executor:
+        #     future_results = [executor.submit(boat_bfs, id, self.attrs_grid, self.boat_valid_grid, id[0], id[1]) for id in task_ids]
+        #     results = [ future.result() for future in concurrent.futures.as_completed(future_results
+        # for result in results:
+        #     id, actions = result
+        #     self.boat_route_dict[id] = actions
+        # self.test_route = task_ids
+        
     @func_timer
     def init_env(self):
 
@@ -259,7 +296,156 @@ class Env:
         # 判题器更新结束
         okk = input()
 
+    @func_timer
+    def print_boat_route_id(self, id: Tuple[sVec, sVec]):
+        _ch_grid = copy.deepcopy(self.ch_grid)
+        poses = boat_actions_to_poses(id[0], self.boat_route_dict[id])
+        for pos in poses:
+            _ch_grid[pos.x][pos.y] = '@'
+        save_grid_to_file(_ch_grid, "boat_route")
+
+    @func_timer
+    def update_lock_grid(self, id: Tuple[sVec, sVec], id_index: int):
+        poses = boat_actions_to_poses(id[0], self.boat_route_dict[id])
+        # 一段路占据的不重复的位置
+        for pos in poses:
+            self.lock_grid[pos.x][pos.y].update(str(100+id_index))
+
+    @func_timer
+    def union_lock_grid(self):
+        # 解决道路被切割的问题
+        for route_id in self.route_ids:
+            previous_block_ids: Dict[str, int] = {}
+            last_block_ids: Set[str] = set()
+            poses_per_action_list = boat_actions_to_poses_per_action(route_id[0], self.boat_route_dict[route_id])
+            # 遍历每一次action后所占的位置
+            for poses_per_action in poses_per_action_list:
+                cur_block_ids: Set[str] = set()
+                # 求出这些位置使用的block id
+                for pos in poses_per_action:
+                    cur_block_ids.add(self.lock_grid[pos.x][pos.y].route_id)
+                for cur_block_id in cur_block_ids:
+                    # 如果还占据当前区块
+                    if cur_block_id in last_block_ids:
+                        pass
+                    else:
+                        # 如果到达一个全新的区块
+                        if cur_block_id not in previous_block_ids:
+                            previous_block_ids[cur_block_id] = 0
+                        # 如果之前到达过
+                        else:
+                            previous_block_ids[cur_block_id] += 1
+
+                for pos in poses_per_action:
+                    route_id = self.lock_grid[pos.x][pos.y].route_id
+                    if route_id in previous_block_ids:
+                        self.lock_grid[pos.x][pos.y].times = previous_block_ids[route_id]
+                
+                last_block_ids = cur_block_ids
+                # to_new_block = False
+                # for cur_block_id in cur_block_ids:
+                #     if cur_block_id in last_block_ids:
+                #         continue
+                #     else:
+                #         to_new_block = True
+                #         break
+
+                # if to_new_block:
+                #     for cur_block_id in cur_block_ids:
+                #         if cur_block_id not in previous_block_ids:
+                #             previous_block_ids[cur_block_id] = 0
+                #         # 如果之前到达过
+                #         else:
+                #             previous_block_ids[cur_block_id] += 1
+
+                # for pos in poses_per_action:
+                #     route_id = self.lock_grid[pos.x][pos.y].route_id
+                #     if to_new_block:
+                #         self.lock_grid[pos.x][pos.y].times = previous_block_ids[route_id]
+                # last_block_ids = cur_block_ids
+
+
+        for x, line in enumerate(self.lock_grid):
+            for y, lock in enumerate(line):
+                self.lock_grid[x][y].route_id = self.lock_grid[x][y].route_id + 'T' * self.lock_grid[x][y].times
+            
+                
+        lock_dict: Dict[str, Boat_Route_Lock] = {}
+        for x, line in enumerate(self.lock_grid):
+            for y, lock in enumerate(line):
+                route_id = self.lock_grid[x][y].route_id
+                if route_id in lock_dict:
+                    self.lock_grid[x][y] = lock_dict[route_id]
+                else:
+                    lock_dict[route_id] = lock
+
+        return len(lock_dict)
+
+    @func_timer
+    def gen_boat_route_topylogy_graph(self):
+        # 重新规定编号
+        unique_id: int = 0
+        for line in self.lock_grid:
+            for lock in line:
+                if lock.unique_route_id == -1:
+                    lock.unique_route_id = unique_id
+                    self.lock_dict[unique_id] = lock
+                    unique_id += 1
                     
+        save_grid_to_file(self.lock_grid)
+        self.boat_route_topology_graph = [[ False for _ in range(unique_id)] for _ in range(unique_id)]
+        for x in range(unique_id):
+            self.boat_route_topology_graph[x][x] = True
+
+
+        for route_id in self.route_ids:
+            last_unique_route_ids: Set[int] = set()
+            poses_per_action_list = boat_actions_to_poses_per_action(route_id[0], self.boat_route_dict[route_id])
+            # 遍历每一次action后所占的位置
+            for poses_per_action in poses_per_action_list:
+                cur_unique_route_ids: Set[int] = set()
+                # 求出这些位置使用的block id
+                for pos in poses_per_action:
+                    cur_unique_route_ids.add(self.lock_grid[pos.x][pos.y].unique_route_id)
+
+                for cur_unique_route_id in cur_unique_route_ids:
+                    if cur_unique_route_id in last_unique_route_ids:
+                        pass
+                    else:
+                        for last_uni_route_id in last_unique_route_ids:
+                            self.boat_route_topology_graph[last_uni_route_id][cur_unique_route_id] = True
+                last_unique_route_ids = cur_unique_route_ids
+        # save_grid_to_file(self.boat_route_topology_graph)
+
+    def visualize_lock_grid(self):
+        import matplotlib.pyplot as plt
+        from matplotlib.colors import ListedColormap
+        colors = ['blue', 'green', 'red', 'cyan', 'magenta', 'yellow', 'orange', 'purple', 'brown', 'black']
+
+
+
+        # 创建 ListedColormap 对象
+        cmap = ListedColormap(colors)
+
+        unique_id = 1
+        id_int_map = {}
+        grid = [[0 for _ in range(N)] for _ in range(N)]
+        for x, line in enumerate(self.lock_grid):
+            for y, lock in enumerate(line):
+                route_id = lock.route_id
+                if 1:#'100' in route_id:
+                    if route_id in id_int_map:
+                        grid[x][y] = id_int_map[route_id]
+                    else:
+                        id_int_map[route_id] = unique_id
+                        grid[x][y] = id_int_map[route_id]
+                        unique_id += 1
+        plt.imshow(grid, cmap=cmap, interpolation='nearest')
+        plt.colorbar()  # 添加颜色条
+        plt.savefig('fg.png')
+
+        
+    
 # class My_Stream():
 
 #     def __init__(self, in_file = None, out_file = None) -> None:

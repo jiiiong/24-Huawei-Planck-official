@@ -1,5 +1,6 @@
 from __future__ import annotations
 from enum import Enum
+from typing import List, Any
 from dataclasses import dataclass
 from cfg import N
 Nm1 = N - 1
@@ -113,7 +114,13 @@ class sVec():
             return (Point(self.pos.x, oppsite_pos.y), Point(oppsite_pos.x, self.pos.y))
         else:
             return (Point(), Point())
-        
+    
+    def draw_on_projected_area(self, grid: List[List[Any]], value: Any):
+        lt_pos, rb_pos = self.proj()
+        for x in range(lt_pos.x, rb_pos.x+1):
+            for y in range(lt_pos.y, rb_pos.y+1):
+                grid[x][y] = value
+    
     @property
     def dir(self):
         return self._dir

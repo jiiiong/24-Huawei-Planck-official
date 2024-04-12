@@ -1,215 +1,160 @@
-2197 - scheduler - INFO - lbot (109, 143)!
+3815 - scheduler - INFO - berth information: 
+3815 - scheduler - INFO - berth_id: 0 at (93, 71), loading speed: 2
+3815 - scheduler - INFO - berth_id: 1 at (93, 147), loading speed: 1
+3816 - scheduler - INFO - berth_id: 2 at (102, 51), loading speed: 2
+3816 - scheduler - INFO - berth_id: 3 at (102, 91), loading speed: 1
+3816 - scheduler - INFO - berth_id: 4 at (102, 130), loading speed: 1
+3816 - scheduler - INFO - berth_id: 5 at (102, 168), loading speed: 1
+3816 - scheduler - INFO - 
+3818 - scheduler - INFO - zhen 1 boat_id:0  lboat (95, 26), Boat_Direction.RIGHT!
 
-2199 - scheduler - INFO - now (49, 120), Boat_Direction.RIGHT
-2199 - scheduler - INFO - lbot (109, 143)!
+3818 - scheduler - INFO - robot_number:18
+3820 - scheduler - INFO - robot_number:18
+3821 - scheduler - INFO - robot_number:18
+3822 - scheduler - INFO - robot_number:18
+3823 - scheduler - INFO - robot_number:18
+3825 - scheduler - INFO - robot_number:18
+3826 - scheduler - INFO - robot_number:18
+3827 - scheduler - INFO - robot_number:18
+3828 - scheduler - INFO - robot_number:18
+3829 - scheduler - INFO - robot_number:18
+3829 - scheduler - INFO - zhen 10 robot_id:0 lbot (0, 100) !
 
-2330 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-2435 - scheduler - INFO - now (35, 142), Boat_Direction.RIGHT
-2500 - scheduler - INFO - now (35, 186), Boat_Direction.RIGHT
-2569 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-2742 - scheduler - INFO - now (16, 98), Boat_Direction.DOWN
-2783 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-2980 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-2994 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-3193 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-3195 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-3405 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-3420 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-3634 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-3637 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-3846 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-3863 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-4059 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-4062 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-4251 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-4268 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-4461 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-4464 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-4661 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-4676 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-4877 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-4879 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-5080 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-5095 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-5301 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-5303 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-5495 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-5510 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-5707 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-5710 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-5910 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-5926 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-6115 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-6118 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-6309 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-6325 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-6514 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-6516 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-6705 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-6720 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-6917 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-6919 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-7134 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-7150 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-7344 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-7346 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-7557 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-7572 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-7775 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-7777 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-7987 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-8002 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-8195 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-8197 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-8392 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-8407 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-8597 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-8600 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-8787 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-8802 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-8993 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-8996 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-9192 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-9210 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-9406 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-9409 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-9648 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-9663 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-9862 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-9865 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-10066 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-10082 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-10294 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-10296 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-10500 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-10518 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-10725 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-10728 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-10926 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-10941 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-11128 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-11131 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-11318 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-11333 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-11528 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-11531 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-11718 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-11733 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-11950 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-11953 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-12141 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-12156 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-12349 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-12352 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-12544 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-12560 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-12749 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-12751 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-12949 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-12964 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-13151 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-13155 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-13363 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-13378 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-13567 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-13571 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-13764 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-13779 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-13978 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-13980 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-14180 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-14197 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-14393 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-14395 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-14590 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-14605 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-14800 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-14803 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-15009 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-15024 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-15242 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-15244 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-15436 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-15452 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-15640 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-15643 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-15840 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-15855 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-16061 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-16064 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-16252 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-16267 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-16468 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-16471 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-16694 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-16710 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-16910 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-16914 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-17144 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-17162 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-17359 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-17361 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-17589 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-17606 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-17815 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-17818 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-18057 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-18075 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-18299 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-18301 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-18500 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-18515 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-18715 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-18717 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-18915 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-18930 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-19125 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-19127 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-19316 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-19331 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-19531 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-19534 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-19745 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-19760 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-19963 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-19966 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-20169 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-20183 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-20384 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-20387 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-20585 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-20602 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-20801 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-20805 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-21001 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-21017 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-21217 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-21221 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-21426 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-21442 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-21637 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-21640 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-21836 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-21856 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-22055 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-22059 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-22265 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-22281 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-22484 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-22487 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-22709 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-22725 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-22928 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-22931 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-23141 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-23163 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-23393 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-23395 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-23605 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-23623 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-23820 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-23823 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
-24022 - scheduler - INFO - now (9, 196), Boat_Direction.UP
-24040 - scheduler - INFO - now (2, 196), Boat_Direction.DOWN
-24236 - scheduler - INFO - now (35, 98), Boat_Direction.DOWN
-24239 - scheduler - INFO - now (36, 98), Boat_Direction.DOWN
+3832 - scheduler - INFO - robot_number:18
+3833 - scheduler - INFO - robot_number:18
+3834 - scheduler - INFO - robot_number:18
+3835 - scheduler - INFO - robot_number:18
+3837 - scheduler - INFO - robot_number:18
+3841 - scheduler - INFO - robot_number:18
+3842 - scheduler - INFO - robot_number:18
+3843 - scheduler - INFO - robot_number:18
+3845 - scheduler - INFO - robot_number:18
+3847 - scheduler - INFO - robot_number:18
+3847 - scheduler - INFO - zhen 20 robot_id:1 lbot (0, 100) !
+
+3848 - scheduler - INFO - robot_number:18
+3849 - scheduler - INFO - robot_number:18
+3850 - scheduler - INFO - robot_number:18
+3852 - scheduler - INFO - robot_number:18
+3856 - scheduler - INFO - robot_number:18
+3857 - scheduler - INFO - robot_number:18
+3866 - scheduler - INFO - robot_number:18
+3869 - scheduler - INFO - robot_number:18
+3870 - scheduler - INFO - robot_number:18
+3872 - scheduler - INFO - robot_number:18
+3872 - scheduler - INFO - zhen 30 robot_id:2 lbot (0, 100) !
+
+3875 - scheduler - INFO - robot_number:18
+3877 - scheduler - INFO - robot_number:18
+3878 - scheduler - INFO - robot_number:18
+3881 - scheduler - INFO - robot_number:18
+3887 - scheduler - INFO - robot_number:18
+3890 - scheduler - INFO - robot_number:18
+3892 - scheduler - INFO - robot_number:18
+3894 - scheduler - INFO - robot_number:18
+3898 - scheduler - INFO - robot_number:18
+3902 - scheduler - INFO - robot_number:18
+3902 - scheduler - INFO - zhen 40 robot_id:3 lbot (0, 100) !
+
+3908 - scheduler - INFO - robot_number:18
+3919 - scheduler - INFO - robot_number:18
+3921 - scheduler - INFO - robot_number:18
+3923 - scheduler - INFO - robot_number:18
+3925 - scheduler - INFO - robot_number:18
+3926 - scheduler - INFO - robot_number:18
+3929 - scheduler - INFO - robot_number:18
+3937 - scheduler - INFO - robot_number:18
+3942 - scheduler - INFO - robot_number:18
+3944 - scheduler - INFO - robot_number:18
+3944 - scheduler - INFO - zhen 50 robot_id:4 lbot (0, 100) !
+
+3949 - scheduler - INFO - robot_number:18
+3951 - scheduler - INFO - robot_number:18
+3952 - scheduler - INFO - robot_number:18
+3954 - scheduler - INFO - robot_number:18
+3957 - scheduler - INFO - robot_number:18
+3962 - scheduler - INFO - robot_number:18
+3980 - scheduler - INFO - robot_number:18
+3982 - scheduler - INFO - robot_number:18
+3984 - scheduler - INFO - robot_number:18
+3986 - scheduler - INFO - robot_number:18
+3986 - scheduler - INFO - zhen 60 robot_id:5 lbot (0, 100) !
+
+3992 - scheduler - INFO - robot_number:18
+3996 - scheduler - INFO - robot_number:18
+3999 - scheduler - INFO - robot_number:18
+4001 - scheduler - INFO - robot_number:18
+4002 - scheduler - INFO - robot_number:18
+4005 - scheduler - INFO - robot_number:18
+4007 - scheduler - INFO - robot_number:18
+4010 - scheduler - INFO - robot_number:18
+4015 - scheduler - INFO - robot_number:18
+4020 - scheduler - INFO - robot_number:18
+4020 - scheduler - INFO - zhen 70 robot_id:6 lbot (0, 100) !
+
+4025 - scheduler - INFO - robot_number:18
+4029 - scheduler - INFO - robot_number:18
+4034 - scheduler - INFO - robot_number:18
+4037 - scheduler - INFO - robot_number:18
+4041 - scheduler - INFO - robot_number:18
+4044 - scheduler - INFO - robot_number:18
+4047 - scheduler - INFO - robot_number:18
+4050 - scheduler - INFO - robot_number:18
+4055 - scheduler - INFO - robot_number:18
+4059 - scheduler - INFO - robot_number:18
+4059 - scheduler - INFO - zhen 80 robot_id:7 lbot (0, 100) !
+
+4065 - scheduler - INFO - robot_number:18
+4068 - scheduler - INFO - robot_number:18
+4072 - scheduler - INFO - robot_number:18
+4075 - scheduler - INFO - robot_number:18
+4077 - scheduler - INFO - robot_number:18
+4080 - scheduler - INFO - robot_number:18
+4084 - scheduler - INFO - robot_number:18
+4087 - scheduler - INFO - robot_number:18
+4091 - scheduler - INFO - robot_number:18
+4094 - scheduler - INFO - robot_number:18
+4099 - scheduler - INFO - robot_number:18
+4103 - scheduler - INFO - robot_number:18
+4107 - scheduler - INFO - robot_number:18
+4110 - scheduler - INFO - robot_number:18
+4114 - scheduler - INFO - robot_number:18
+4117 - scheduler - INFO - robot_number:18
+4121 - scheduler - INFO - robot_number:18
+4125 - scheduler - INFO - robot_number:18
+4127 - scheduler - INFO - robot_number:18
+4131 - scheduler - INFO - robot_number:18
+4135 - scheduler - INFO - robot_number:18
+4140 - scheduler - INFO - robot_number:18
+4143 - scheduler - INFO - robot_number:18
+4145 - scheduler - INFO - robot_number:18
+4149 - scheduler - INFO - robot_number:18
+4152 - scheduler - INFO - robot_number:18
+4154 - scheduler - INFO - robot_number:18
+4158 - scheduler - INFO - robot_number:18
+4161 - scheduler - INFO - robot_number:18
+4164 - scheduler - INFO - robot_number:18
+4168 - scheduler - INFO - robot_number:18
+4172 - scheduler - INFO - robot_number:18
+4177 - scheduler - INFO - robot_number:18
+4180 - scheduler - INFO - robot_number:18
+4184 - scheduler - INFO - robot_number:18
+4188 - scheduler - INFO - robot_number:18
+4191 - scheduler - INFO - robot_number:18
+4195 - scheduler - INFO - robot_number:18
+4200 - scheduler - INFO - robot_number:18
+4202 - scheduler - INFO - robot_number:18
+4205 - scheduler - INFO - robot_number:18
+4209 - scheduler - INFO - robot_number:18
+4214 - scheduler - INFO - robot_number:18
+4219 - scheduler - INFO - robot_number:18
+4223 - scheduler - INFO - robot_number:18
+4226 - scheduler - INFO - robot_number:18
+4229 - scheduler - INFO - robot_number:18
+4234 - scheduler - INFO - robot_number:18
+4237 - scheduler - INFO - robot_number:18
+4242 - scheduler - INFO - robot_number:18
+4245 - scheduler - INFO - robot_number:18
+4248 - scheduler - INFO - robot_number:18
+4250 - scheduler - INFO - id: 0, target_gds:gds: (76, 103) 167
+4252 - scheduler - INFO - robot_number:18

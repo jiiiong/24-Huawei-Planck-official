@@ -196,10 +196,14 @@ class Scheduler:
         print(robot_cmd_tran)
 
     def boats_zhen_handler(self):
+        for boat in self.env.boats:
+            boat.collision_recovery()
 
         self.schedule_boats()
 
-        for boat in self.env.boats:
+        waiting_time_ordered = [(boat.boat_id, boat) for boat in self.env.boats]
+        waiting_time_ordered.sort(key=lambda tup: -tup[1].waiting_time)
+        for _, boat in waiting_time_ordered:
             boat.boat_execute()
 
     def scheduler_buy(self):
@@ -209,10 +213,11 @@ class Scheduler:
             print("lbot", self.env.robot_purchase_point[0].x, self.env.robot_purchase_point[0].y)
 
         if self.env.boat_num <= 1:
-            if (self.env.boat_num < 1):
+            if (self.env.boat_num <= 1):
                 print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
-            elif(self.env.global_zhen == 100):
-                print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
+            # elif(self.env.global_zhen == 100):
+            #     print("lboat", self.env.boat_purchase_sVec_list[0].x, self.env.boat_purchase_sVec_list[0].y)
+
     def schedule_gds(self, goods: Goods):
         pass        
         # # delegated_berth_id = self.env.divide_matrix[goods.y][goods.x]
@@ -240,6 +245,7 @@ class Scheduler:
         #                 break
         #             else:
         #                 continue
+
         for i in range(self.env.boat_num):
             # if i == 0 and len(self.env.boats[0].actions) == 0:
                 # 采用手动控制

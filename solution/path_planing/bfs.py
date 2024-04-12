@@ -1,8 +1,9 @@
 from queue import Queue, PriorityQueue
 from typing import List, Tuple, Dict, Any, Set
+import time
 
 from cfg import N
-from log import main_logger
+from log import main_logger, func_timer
 
 from .base import Pixel_Attrs, Point, sVec
 from .base import Robot_Move, INFINIT_COST
@@ -10,7 +11,7 @@ from .base import Boat_Action, Boat_Direction, Boat_Ship_Offset
 
 # robot相关
 
-robot_move_list = [Robot_Move.UP, Robot_Move.DOWN, Robot_Move.LEFT, Robot_Move.RIGHT]
+robot_move_list = [Robot_Move.UP, Robot_Move.DOWN, Robot_Move.LEFT, Robot_Move.RIGHT, Robot_Move.HOLD]
 
 def robot_bfs(task_id: int, attrs_grid: List[List[Pixel_Attrs]], source_point: Point) -> Tuple[int, List[List[Point]], List[List[int]]]:
     '''
@@ -77,19 +78,20 @@ def one_move_avoidance(attrs_grid: List[List[Pixel_Attrs]], source_point: Point)
     return (avoidance_paths, success)
 
 # boat相关
-
+@func_timer
 def boat_bfs(task_id: Tuple[sVec,sVec],
              attrs_grid: List[List[Pixel_Attrs]], boat_valid_grid:List[List[ (List[Boat_Direction]) ]],
              start_sVec: sVec, end_sVec: sVec, lock_grid) -> Tuple[Tuple[sVec,sVec], List[str]]:
-    queue: PriorityQueue[Tuple[float, int, int, int, sVec, List[str]]] = PriorityQueue()
-    queue.put((0, 0, 0, 0,start_sVec, []))
+    queue: PriorityQueue[Tuple[float, int, int, sVec, List[str]]] = PriorityQueue()
+    queue.put((0, 0, 0,start_sVec, []))
     visited = set()
     g_scores = {start_sVec: 0}
     ret = []
     count = 0
     while not queue.empty():
+        
         count += 1
-        (h_current, f_current, g_current, cur_penalty, cur_sVec, actions) = queue.get()
+        (f_current, h_current, g_current, cur_sVec, actions) = queue.get()
         cur_sVec: sVec
         actions: List[str]
         g_current: int
@@ -97,52 +99,57 @@ def boat_bfs(task_id: Tuple[sVec,sVec],
         # main_logger.error(f"!! {cur_sVec} \t\tf:{f_current} h:{h_current} g:{g_current}")
         if cur_sVec == end_sVec:
             main_logger.error(f"--{start_sVec}, {end_sVec}, {count}")
-            # main_logger.error(f"{actions}") 
             return task_id, actions
         if cur_sVec in visited:
             continue
         visited.add(cur_sVec)
-        p_c = 1
+        
+        # p_c = 1
+
         # 尝试 ship_one_move
         okk, new_sVec = ship_one_move(cur_sVec, boat_valid_grid, attrs_grid)
         # new_sVec = sVec(cur_sVec.pos+Boat_Ship_Offset[cur_sVec.dir], cur_sVec.dir)
         # okk = ship_position_available(new_sVec, boat_valid_grid)
         if okk:
             new_g = g_current + boat_gen_cost(attrs_grid, new_sVec, lock_grid)  # 假设每次移动成本为1
-            new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec, lock_grid) - 1) * p_c
+            # new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec, lock_grid) - 1) * p_c
             if new_sVec not in g_scores or new_g < g_scores[new_sVec]:
                 g_scores[new_sVec] = new_g
-                new_h = heuristic(new_sVec.pos, end_sVec.pos) + new_p
+                new_h = heuristic(new_sVec.pos, end_sVec.pos)#  + new_p
                 f = new_g + new_h
                 # f = 0
-                queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["ship"]))
+                queue.put((f, new_h, new_g, new_sVec, actions + ["ship"]))
+                # queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["ship"]))
 
         # 尝试 rotate_one_move，顺时针和逆时针旋转
         for rotation in [1, 0]:
             okk, new_sVec = rotate_one_move(cur_sVec, rotation, boat_valid_grid)
             if okk:
                 new_g = g_current + boat_gen_cost(attrs_grid, new_sVec, lock_grid)  # 假设旋转成本为1
-                new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec, lock_grid) - 1) * p_c
+                # new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec, lock_grid) - 1) * p_c
                 if new_sVec not in g_scores or new_g < g_scores[new_sVec]:
                     g_scores[new_sVec] = new_g
-                    new_h = heuristic(new_sVec.pos, end_sVec.pos) + new_p 
+                    new_h = heuristic(new_sVec.pos, end_sVec.pos)#  + new_p 
                     f = new_g + new_h
                     # f = 0
-                    queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["rot " + str(rotation)]))
-
-    main_logger.error(f"++{count}")     
+                    # queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["rot " + str(rotation)]))
+                    queue.put((f, new_h, new_g, new_sVec, actions + ["rot " + str(rotation)]))
+        
+    main_logger.error(f"++{count}")  
     return task_id, ret
 
+# @func_timer
 def boat_gen_cost(attrs_grid: List[List[Pixel_Attrs]], cur_sVec: sVec, lock_grid) -> int:
     lt_pos, rb_pos = cur_sVec.proj()
     max_num_shared_roads = 0
     for x in range(lt_pos.x, rb_pos.x+1):
         for y in range(lt_pos.y, rb_pos.y+1):
             if attrs_grid[x][y].is_free_ocean:
-                return 2 + lock_grid[x][y].num_shared_roads
-            elif lock_grid[x][y].num_shared_roads > max_num_shared_roads:
-                max_num_shared_roads = lock_grid[x][y].num_shared_roads
-    return 1 + max_num_shared_roads
+                return 2
+            #     return 2 + lock_grid[x][y].num_shared_roads
+            # elif lock_grid[x][y].num_shared_roads > max_num_shared_roads:
+            #     max_num_shared_roads = lock_grid[x][y].num_shared_roads
+    return 1 # + max_num_shared_roads
 
 # 判断当前船的位置是否合法
 def ship_position_available(cur_sVec: sVec, boat_valid_grid:List[List[(List[Boat_Direction])]]):

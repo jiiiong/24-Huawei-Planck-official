@@ -98,15 +98,21 @@ def boat_bfs_one_core(route_ids: List[Tuple[sVec, sVec]],
     #     id, actions = result
     #     self.boat_route_dict[id] = actions
     #     self.update_lock_grid(id, i)
+    from time import time
+    t0 = time()
     boat_route_dict: Dict[Tuple[sVec, sVec], List[str]] = {}
     for i in range(low, high):
         id = route_ids[i]
         _, boat_route_dict[id] = boat_bfs(id, attrs_grid, boat_valid_grid, id[0], id[1])
+    t1 = time()
+    main_logger.error(f"!!!{((t1-t0)*1000)} ms")
     return boat_route_dict
+    
     # for i, id in enumerate(self.route_ids):
     #     if i in range(low, high):
     #         _, self.boat_route_dict[id] = boat_bfs(id, self.attrs_grid, self.boat_valid_grid, id[0], id[1])
 
+@func_timer
 def boat_bfs(task_id: Tuple[sVec,sVec],
              attrs_grid: List[List[Pixel_Attrs]], boat_valid_grid:List[List[ (List[Boat_Direction]) ]],
              start_sVec: sVec, end_sVec: sVec) -> Tuple[Tuple[sVec,sVec], List[str]]:
@@ -127,7 +133,7 @@ def boat_bfs(task_id: Tuple[sVec,sVec],
 
         # main_logger.error(f"!! {cur_sVec} \t\tf:{f_current} h:{h_current} g:{g_current}")
         if cur_sVec == end_sVec:
-            # main_logger.error(f"--{start_sVec}, {end_sVec}, {count}")
+            main_logger.error(f"--{start_sVec}, {end_sVec}, {count}")
             # main_logger.error(f"{actions}") 
             return task_id, actions
         if cur_sVec in visited:

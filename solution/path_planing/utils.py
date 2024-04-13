@@ -33,5 +33,5 @@ def save_grid_to_file(grid: List[List[Any]], name: str = 'unnamed') -> None:
 
     with open(file_name, "w+") as fd:
         for x in range(len(grid)):
-            line = str(' ').join([str(item) for item in grid[x]])
+            line = str('\t').join([str(item) for item in grid[x]])
             fd.write(line + "\n")

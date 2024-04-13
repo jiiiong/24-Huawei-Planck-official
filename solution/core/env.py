@@ -4,12 +4,14 @@ import concurrent.futures
 from typing import List, Tuple, Dict, Callable, Set
 from dataclasses import dataclass
 from queue import PriorityQueue
-import copy
+from copy import deepcopy
 
+from core import Goods
 from cfg import N
-from log import func_timer, main_logger
+from log import func_timer, main_logger,goods_logger
 from path_planing import Point, Point, Pixel_Attrs, sVec
 from path_planing import Boat_Direction, Boat_Action
+from path_planing import boat_bfs_one_core, robot_bfs_single_core
 from path_planing import robot_bfs, boat_bfs, boat_actions_to_sVecs, save_grid_to_file, boat_actions_to_poses, boat_actions_to_poses_per_action
 
 from .robot import Robot
@@ -26,6 +28,8 @@ class Env:
 
     money:int = 0
     boat_capacity:int = 0
+
+    goods_total_value:int =0
 
     
     def __init__(self):
@@ -48,10 +52,12 @@ class Env:
         self.boats:List[Boat] = []
 
         self.boat_route_dict: Dict[Tuple[sVec, sVec], List[str]] = {}
+        self.lock_grid: List[List[Boat_Route_Lock]] = [[ Boat_Route_Lock() for _ in range(N)] for _ in range(N)]
         self.lock_dict: Dict[int, Boat_Route_Lock] = {}
-        self.boat_route_all_locks_id_map: Dict[Tuple[sVec, sVec], Set[int]] = {}
+        self.boat_route_all_locks_id_map: Dict[Tuple[sVec, sVec], Dict[int, int]] = {}
         # 全局帧
         self.global_zhen_ref:List[int] = [0]
+
 
     @property
     def global_zhen(self):
@@ -106,15 +112,7 @@ class Env:
                     self.boat_purchase_sVec_list.append(sVec(Point(x, y), Boat_Direction.RIGHT))
                 elif ch == 'T':
                     self.delivery_point.append(Point(x, y))
-        # test_grid = copy.deepcopy(self.ch_grid)
-        # for x, test_line in enumerate(test_grid):
-        #     for y, ch in enumerate(test_line):
-        #         if test_grid[x][y] in ['#', '.']:
-        #             for move in [Point(-1, -1), Point(-1, 0), Point(0, -1), Point(1, 1), Point(1, 0), Point(0, 1) ]:
-        #                 pos = Point(x,y) + move
-        #                 if pos.is_in_grid() and test_grid[pos.x][pos.y] not in ['#', '.']:
-        #                     test_grid[pos.x][pos.y] = 'x'
-        # save_grid_to_file(test_grid, 'covered')
+    
     # def robot_bfs(self):
     #     for berth in self.berths:
     #         p = multiprocessing.Process(target=robot_bfs, args=(self.attrs_grid, berth.pos))
@@ -122,8 +120,36 @@ class Env:
     #         # from path_planing import apply_move_grid_to_ch_grid, save_grid_to_file
     #         # save_grid_to_file(apply_move_grid_to_ch_grid(self.ch_grid, berth.robot_move_grid), 'move')
     
+    # @func_timer
+    # def robot_bfs_single_core(self):
+    #     for berth in self.berths:
+    #         _, berth.robot_move_grid, berth.robot_cost_grid = robot_bfs(berth.berth_id, self.attrs_grid, berth.pos)
+    #     # with concurrent.futures.ProcessPoolExecutor(2) as executor:
+    #     #     future_results = [(executor.submit(robot_bfs, berth.berth_id, self.attrs_grid, berth.pos)) for berth in self.berths]
+    #     #     results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
+    #     # for result in results:
+    #     #     berth_id, robot_move_grid, robot_cost_grid = result
+    #     #     for berth in self.berths:
+    #     #         if berth_id == berth.berth_id:
+    #     #             berth.robot_cost_grid = robot_cost_grid
+    #     #             berth.robot_move_grid = robot_move_grid
+
     @func_timer
     def robot_bfs_multi_core(self):
+
+        # berth_list: List[Tuple[int, Point]] = [(berth.berth_id, berth.pos)for berth in self.berths]
+        # with concurrent.futures.ProcessPoolExecutor(2) as executor:
+        #     future_results = [executor.submit(robot_bfs_single_core, berth_list, self.attrs_grid, 0, int(self.berth_num/2)),
+        #                       executor.submit(robot_bfs_single_core, berth_list, self.attrs_grid, int(self.berth_num/2), self.berth_num)]
+        #     results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
+        
+        # robot_bfs_result = results[0]
+        # robot_bfs_result.update(results[1])
+        # for i, triple in robot_bfs_result.items():
+        #     self.berths[i].robot_move_grid= triple[1]
+        #     self.berths[i].robot_cost_grid = triple[2]
+            
+
         with concurrent.futures.ProcessPoolExecutor(2) as executor:
             future_results = [(executor.submit(robot_bfs, berth.berth_id, self.attrs_grid, berth.pos)) for berth in self.berths]
             results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
@@ -180,56 +206,142 @@ class Env:
                 self.boat_valid_grid[i][j] = directions
 
     @func_timer
+    def init_env(self):
+
+        # 初始化各种 字符网格和属性网格
+        self.process_map_input()
+
+        # 初始化 berths
+        self.berth_num = int(input())
+        for _ in range(self.berth_num):
+            berth_id, x, y, loading_speed = map(int, input().split())
+            berth = Berth(berth_id, self, x, y, loading_speed)
+            self.berths.append(berth)
+
+        # 初始化 船只容量
+        self.boat_capacity = int(input())
+
+        # 初始化输入结束
+        okk = input()
+        # self.robot_bfs_single_core()
+        self.robot_bfs_multi_core()
+        self.boat_bfs_multi_core()
+    
+    def schedule_gds(self, goods: Goods):
+               
+        # delegated_berth_id = self.env.divide_matrix[goods.y][goods.x]
+        # if (delegated_berth_id != -1):
+        #     self.env.berths[delegated_berth_id].add_goods(goods)
+        
+        bid_cost_list: List[Tuple[int, float]] = []
+        berths = self.berths
+        for berth_id in range(self.berth_num):
+            cost = berths[berth_id].robot_cost_grid[goods.x][goods.y]
+            bid_cost_list.append((berth_id, cost))
+        bid_cost_list.sort(key=lambda x: x[1])
+        # 将货物放入当前最近的3个港口中
+        if goods.price > 0:
+            partner_number = 1
+            for order in range(partner_number):
+                berth_id = bid_cost_list[order][0]
+                berths[berth_id].add_goods(goods)
+            berths[bid_cost_list[0][0]].num_allocated_gds +=1
+            
+            
+
+    #@func_timer
+    def input(self):
+        # 帧、金币更新
+        self.global_zhen, self.money = map(int, input().split(" "))
+
+        # 物品更新
+        self.goods_num = int(input())
+        for i in range(self.goods_num):
+            x, y, val = map(int, input().split())
+            self.gds_grid[x][y] = val
+            self.goods_total_value +=val
+            # if val!=0:
+            self.schedule_gds(Goods(gen_zhen=self.global_zhen, global_zhen_ref=self.global_zhen_ref, pos=Point(x,y), price=val))
+            
+       
+        
+        # 机器人更新
+        self.robot_num = int(input())
+        # 动态扩充新买的机器人
+        while (len(self.robots) < self.robot_num):
+            self.robots.append(Robot(-1, self))
+        for robot in self.robots:
+            robot.robot_id, robot.goods, robot.x, robot.y = map(int, input().split())
+
+        # 船只更新
+        self.boat_num = int(input())
+        while (len(self.boats) < self.boat_num):
+            self.boats.append(Boat(-1, self))
+        for boat in self.boats:
+            boat.boat_id, boat.goods_num, boat.x, boat.y, boat.dir, boat.status = map(int, input().split())
+        
+        # 判题器更新结束
+        okk = input()
+
+
+    @func_timer
     def boat_bfs_multi_core(self):
+        
         self.gen_boat_valid_grid()
 
         # 处理交货！！！！！！！！！！！！！！！！！！！！！！！！可能导致无法离开
         for pos in self.delivery_point:
             self.delivery_sVec_list.append(sVec(pos, self.boat_valid_grid[pos.x][pos.y][0]))
-
+        
         self.route_ids: List[Tuple[sVec, sVec]] = []
         # 生成S到B的路径
         for S_sVec in self.boat_purchase_sVec_list:
             for berth in self.berths:
                 self.route_ids.append((S_sVec, berth.sVec))
-            #     break
-            # break
         for berth_A in self.berths:
             for berth_B in self.berths:
                 self.route_ids.append((berth_A.sVec, berth_B.sVec))
-                self.route_ids.append((berth_B.sVec, berth_A.sVec))
-        #         # break
-        #     # break
+                # self.route_ids.append((berth_B.sVec, berth_A.sVec))
         for T_sVec in self.delivery_sVec_list:
             for berth in self.berths:
                 self.route_ids.append((T_sVec, berth.sVec))
+                # self.route_ids.append((berth.sVec, T_sVec))
+        for berth_A in self.berths:
+            for berth_B in self.berths:
+                self.route_ids.append((berth_B.sVec, berth_A.sVec))
+        for T_sVec in self.delivery_sVec_list:
+            for berth in self.berths:
                 self.route_ids.append((berth.sVec, T_sVec))
-            #     break
-            # break
 
-        # for id_a, T_sVec in enumerate(self.delivery_sVec_list):
-        #     for id_b, berth in enumerate(self.berths):
-        #         if id_a == 0 and id_b == 3:
-        #             # task_ids.append((T_sVec, berth.sVec))
-        #             task_ids.append((berth.sVec, T_sVec))
-
-        self.lock_grid: List[List[Boat_Route_Lock]] = [[ Boat_Route_Lock() for _ in range(N)] for _ in range(N)]
-        for i, id in enumerate(self.route_ids):
-            _, self.boat_route_dict[id] = boat_bfs(id, self.attrs_grid, self.boat_valid_grid, id[0], id[1], self.lock_grid)
-            # sVec_list = boat_actions_to_sVecs(id[0], self.boat_route_dict[id])
-            # 划分航道
+        with concurrent.futures.ProcessPoolExecutor(2) as executor:
+            num_tasks = len(self.route_ids)
+            future_results = [executor.submit(boat_bfs_one_core, self.route_ids, self.attrs_grid, self.boat_valid_grid, 0, int(num_tasks/2)), 
+                              executor.submit(boat_bfs_one_core, self.route_ids, self.attrs_grid, self.boat_valid_grid, int(num_tasks/2), num_tasks)]
+            results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
+        
+        self.boat_route_dict = results[0]
+        self.boat_route_dict.update(results[1])
+                
+        for i, (id, actions) in enumerate(self.boat_route_dict.items()):
             self.update_lock_grid(id, i)
+            
+
+
+        # for i, id in enumerate(self.route_ids):
+        #     _, self.boat_route_dict[id] = boat_bfs(id, self.attrs_grid, self.boat_valid_grid, id[0], id[1])
+        #     self.update_lock_grid(id, i)
+
         # 划分为区块
-        main_logger.error(f"''{self.union_lock_grid()}")
+        self.union_lock_grid()
         
         # 生成拓扑图，采用邻接矩阵
         self.gen_boat_route_topylogy_graph()
         # main_logger.error(self.boat_route_topology_graph)
         
         # 使用matplot打印可视化的道路网格
-        self.visualize_lock_grid()
-        
-        self.test_route = self.route_ids
+        #self.visualize_lock_grid()
+
+        # self.test_route = self.route_ids
 
         # # 打印lock_grid
         # test_grid = copy.deepcopy(self.ch_grid)
@@ -254,69 +366,7 @@ class Env:
         #     self.boat_route_dict[id] = actions
         # self.test_route = task_ids
         
-    @func_timer
-    def init_env(self):
-
-        # 初始化各种 字符网格和属性网格
-        self.process_map_input()
-
-        # 初始化 berths
-        self.berth_num = int(input())
-        for _ in range(self.berth_num):
-            berth_id, x, y, loading_speed = map(int, input().split())
-            berth = Berth(berth_id, self, x, y, loading_speed)
-            self.berths.append(berth)
-
-        # 初始化 船只容量
-        self.boat_capacity = int(input())
-
-        # 初始化输入结束
-        okk = input()
-        
-        self.robot_bfs_multi_core()
-        self.boat_bfs_multi_core()
-    
     #@func_timer
-    def input(self):
-        # 帧、金币更新
-        self.global_zhen, self.money = map(int, input().split())
-
-        # 物品更新
-        self.goods_num = int(input())
-        for i in range(self.goods_num):
-            x, y, val = map(int, input().split())
-            self.gds_grid[x][y] = val
-        
-        # 机器人更新
-        self.robot_num = int(input())
-        # 动态扩充新买的机器人
-        while (len(self.robots) < self.robot_num):
-            self.robots.append(Robot(-1, self))
-        for robot in self.robots:
-            robot.robot_id, robot.goods, robot.x, robot.y = map(int, input().split())
-
-        # 船只更新
-        self.boat_num = int(input())
-        cur_boat_num = len(self.boats)
-        while (len(self.boats) < self.boat_num):
-            self.boats.append(Boat(-1, self))
-        for i, boat in enumerate(self.boats):
-            boat.boat_id, boat.goods_num, boat.x, boat.y, boat.dir, boat.status = map(int, input().split())
-            # 初始化期望的位置
-            if i >= cur_boat_num:
-                boat.supposed_sVec = boat.sVec
-        # 判题器更新结束
-        okk = input()
-
-    # @func_timer
-    # def print_boat_route_id(self, id: Tuple[sVec, sVec]):
-    #     _ch_grid = copy.deepcopy(self.ch_grid)
-    #     poses = boat_actions_to_poses(id[0], self.boat_route_dict[id])
-    #     for pos in poses:
-    #         _ch_grid[pos.x][pos.y] = '@'
-    #     save_grid_to_file(_ch_grid, "boat_route")
-
-    @func_timer
     def update_lock_grid(self, id: Tuple[sVec, sVec], id_index: int):
         poses = boat_actions_to_poses(id[0], self.boat_route_dict[id])
         # 一段路占据的不重复的位置
@@ -328,6 +378,19 @@ class Env:
                 # self.lock_grid[pos.x][pos.y].route_id = 'Free'
                 self.lock_grid[pos.x][pos.y].free_lock = True
     
+    @func_timer
+    def copytest(self):
+        attr_list = []
+        valid_list = []
+        for i in range(len(self.route_ids)):
+            attr = [sublist[:] for sublist in self.attrs_grid]
+            valid = [sublist[:] for sublist in self.boat_valid_grid]
+            attr_list.append(attr)
+            valid_list.append(valid)
+        return attr_list, valid_list
+            # for x in range(N):
+            #     for y in range(N):
+
     @func_timer
     def union_lock_grid(self):
         # 解决道路被切割的问题
@@ -397,15 +460,18 @@ class Env:
 
             # 某route_id需要的所有lock
             all_locks_id: Set[int] = set()
+            all_locks_id_dict: Dict[int, int] = {}
             # 拓扑路径
             route_id_list: List[Tuple[int, int]] = []
             
             poses_per_action_list = boat_actions_to_poses_per_action(route_id[0], self.boat_route_dict[route_id])
 
             last_unique_route_ids: Set[int] = set()
-            for pos in poses_per_action_list[0]:
-                    last_unique_route_ids.add(self.lock_grid[pos.x][pos.y].unique_route_id)
-                    all_locks_id.add(self.lock_grid[pos.x][pos.y].unique_route_id)
+            # for pos in poses_per_action_list[0]:
+            #         last_unique_route_ids.add(self.lock_grid[pos.x][pos.y].unique_route_id)
+            #         # all_locks_id.add(self.lock_grid[pos.x][pos.y].unique_route_id)
+            #         if self.lock_grid[pos.x][pos.y].unique_route_id not in all_locks_id_dict:
+            #             all_locks_id_dict[self.lock_grid[pos.x][pos.y].unique_route_id] = 1
 
             # 遍历每一次action后所占的位置
             for poses_per_action in poses_per_action_list:
@@ -413,7 +479,14 @@ class Env:
                 # 求出这些位置使用的block id
                 for pos in poses_per_action:
                     cur_unique_route_ids.add(self.lock_grid[pos.x][pos.y].unique_route_id)
-                    all_locks_id.add(self.lock_grid[pos.x][pos.y].unique_route_id)
+                    # all_locks_id.add(self.lock_grid[pos.x][pos.y].unique_route_id)
+                for cur_id in cur_unique_route_ids:
+                    if cur_id not in last_unique_route_ids:
+                        if cur_id not in all_locks_id_dict:
+                            all_locks_id_dict[cur_id] = 1
+                        else:
+                            all_locks_id_dict[cur_id] += 1
+
                 for cur_unique_route_id in cur_unique_route_ids:
                     if cur_unique_route_id in last_unique_route_ids:
                         pass
@@ -424,66 +497,6 @@ class Env:
                 # main_logger.error(f"{last_unique_route_ids}  {cur_unique_route_ids}")
                 last_unique_route_ids = cur_unique_route_ids
             # main_logger.error(f"{route_id}  {route_id_list}")
-            self.boat_route_all_locks_id_map[route_id] = all_locks_id
+            self.boat_route_all_locks_id_map[route_id] = all_locks_id_dict
             # main_logger.error(f"{route_id}  {all_locks_id}")
-        # save_grid_to_file(self.boat_route_topology_graph)
-    
-    @func_timer
-    def visualize_lock_grid(self):
-        import matplotlib.pyplot as plt
-        from matplotlib import colors
-        from matplotlib.colors import ListedColormap
-        # colors = ['blue', 'green', 'red', 'cyan', 'magenta', 'yellow', 'orange', 'purple', 'brown', 'black']
-
-
-
-        # 创建 ListedColormap 对象
-        tableau_colors = colors.CSS4_COLORS
-        color_list = list(tableau_colors.values())
-        cmap = ListedColormap(color_list)
-
-        unique_id = 1
-        id_int_map = {}
-        grid = [[0 for _ in range(N)] for _ in range(N)]
-        for x, line in enumerate(self.lock_grid):
-            for y, lock in enumerate(line):
-                route_id = lock.route_id
-                if 1:#'100' or '101' in route_id:
-                    if route_id in id_int_map:
-                        grid[x][y] = id_int_map[route_id]
-                    else:
-                        id_int_map[route_id] = unique_id
-                        grid[x][y] = id_int_map[route_id]
-                        unique_id += 1
-        from matplotlib import colormaps
-        plt.imshow(grid, cmap=cmap, interpolation='nearest')
-        plt.colorbar()  # 添加颜色条
-        plt.savefig('fg.png')
-
-        
-    
-# class My_Stream():
-
-#     def __init__(self, in_file = None, out_file = None) -> None:
-
-#         if in_file:
-#             self.in_stream = open(in_file, 'r')
-#         else:
-#             self.in_stream = sys.stdin
-        
-#         if out_file:
-#             self.out_stream = open(out_file, 'w+')
-#         else:
-#             self.out_stream = sys.stdout
-
-#     def input(self):
-#         # return input()
-#         return self.in_stream.readline().rstrip('\n')
-
-#     def print(self, value: str):
-#         if self.out_stream:
-#             print(value, file = self.out_stream)
-#         print(value)
-
-#     def flush(self):
-#         sys.stdout.flush()
+        # save_grid_to_file(self.boat_route_topology_graph)           

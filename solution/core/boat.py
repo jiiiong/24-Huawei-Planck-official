@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Tuple, List, Set
+from typing import Tuple, List, Set, Dict
 from queue import Queue
 from copy import deepcopy
 
@@ -34,11 +34,11 @@ class Boat:
         
         self.route_allocated: bool = False
         self.checked_run: bool = False
-        self.waiting_time: int = 0
 
         self.route_id: Tuple[sVec, sVec]
         self.required_lock_ids: List[int] = []
-        self.my_locks: Set[int] = set()
+        # self.my_locks: Set[int] = set()
+        self.my_locks: Dict[int, int] = {}
 
     @property
     def dir(self):
@@ -97,7 +97,7 @@ class Boat:
     def collision_recovery(self):
         if self.sVec != self.supposed_sVec:
             self.actions.insert(0, self.last_action)
-        boat_logger.error(f"{self.boat_id}, {self.my_locks}")
+        # boat_logger.error(f"{self.boat_id}, {self.last_locks_id_set}")
         # 如果任务还未完成，即action还有东西
         if self.route_allocated == True:
             if  len(self.actions) > 0 and self.checked_run:
@@ -107,12 +107,14 @@ class Boat:
                 for x in range(lt_pos.x, rb_pos.x+1):
                     for y in range(lt_pos.y, rb_pos.y+1):
                         cur_locks_id_set.add(self.env.lock_grid[x][y].unique_route_id)
-                #boat_logger.error(f"{self.boat_id} {self.last_locks_id_set}, {cur_locks_id_set}")
+                # boat_logger.error(f"{self.boat_id} {self.last_locks_id_set}, {cur_locks_id_set}")
                 for lock_id in self.last_locks_id_set:
                     if lock_id not in cur_locks_id_set:
                         if 1:#self.env.lock_dict[lock_id].free_lock is False:
-                            self.env.lock_dict[lock_id].release_lock()
-                            self.my_locks.remove(lock_id)
+                            self.my_locks[lock_id] -= 1
+                            if self.my_locks[lock_id] <= 0:
+                                self.env.lock_dict[lock_id].release_lock()
+                            # self.my_locks.remove(lock_id)
                 self.last_locks_id_set = cur_locks_id_set
             # 结束一次任务
             elif len(self.actions) == 0:
@@ -128,8 +130,11 @@ class Boat:
                 for lock_id in self.last_locks_id_set:
                     if lock_id not in cur_locks_id_set:
                         if 1:#self.env.lock_dict[lock_id].free_lock is False:
-                            self.env.lock_dict[lock_id].release_lock()
-                            self.my_locks.remove(lock_id)
+                            self.my_locks[lock_id] -= 1
+                            if self.my_locks[lock_id] <= 0:
+                                self.env.lock_dict[lock_id].release_lock()
+                            
+                            # self.my_locks.remove(lock_id)
                 self.last_locks_id_set = cur_locks_id_set
             # self.release_all_locks()
             # lt_pos, rb_pos = self.sVec.proj()
@@ -147,12 +152,15 @@ class Boat:
                 # 如果还没检查过路径是否能够分配，则检查
                 if not self.checked_run:
                     # 如果检查能够并获取所需要的所有lock。则则表示检查完成
-                    if self.action_valid_check_once(self.actions[0]):
+                    if self.action_valid_check_once():
                         self.checked_run = True
                 # 如果已经获取所有的锁
                 if self.checked_run:
                     self.supposed_sVec = self.next_sVec
-                    action = self.actions.pop(0)
+                    boat_logger.error(f"{self.boat_id} {self.actions}")
+                    action = ' '
+                    if len(self.actions) > 0:
+                        action = self.actions.pop(0)
                     if action == "ship":
                         print("ship", self.boat_id)
                     elif action == "rot 0":
@@ -163,16 +171,12 @@ class Boat:
                         pass
                     self.last_action = action
 
-    def action_valid_check_once(self, action: str):
+    def action_valid_check_once(self):
         okk = self.all_lock_check()
         if okk:
             okk = self.collision_check()
             if okk:
                 self.get_all_locks()
-        if not okk:
-            self.waiting_time += 1
-        else:
-            self.waiting_time = 0
         return okk
         okk, cur_owned_locks, next_owned_locks = self.lock_check(action)
         boat_logger.error(f"{self.boat_id}, {self.sVec},{okk} {cur_owned_locks} {next_owned_locks}")
@@ -195,28 +199,30 @@ class Boat:
 
     def all_lock_check(self) -> bool: 
         '''检查是否能够获得所有lock，保证进入前route_id已经设置'''
-        main_logger.error(f"{self.boat_id}+++{self.env.boat_route_all_locks_id_map[self.route_id]}")
         for lock_id in self.env.boat_route_all_locks_id_map[self.route_id]:
             if self.env.lock_dict[lock_id].check_available(self.boat_id) == False:
-                main_logger.error(f"{lock_id}")
                 return False
         return True
     
     def get_all_locks(self): 
         '''检查是否能够获得所有lock，保证进入前route_id已经设置'''
+        self.my_locks = deepcopy(self.env.boat_route_all_locks_id_map[self.route_id])
         for lock_id in self.env.boat_route_all_locks_id_map[self.route_id]:
+            
             self.env.lock_dict[lock_id].get_lock(self.boat_id)
-            self.my_locks.add(lock_id)
-            lt_pos, rb_pos = self.sVec.proj()
-            for x in range(lt_pos.x, rb_pos.x+1):
-                for y in range(lt_pos.y, rb_pos.y+1):
-                    self.last_locks_id_set.add(self.env.lock_grid[x][y].unique_route_id)
+            # self.my_locks.add(lock_id)
+            
+            # self.last_locks_id_set = set()
+            # lt_pos, rb_pos = self.sVec.proj()
+            # for x in range(lt_pos.x, rb_pos.x+1):
+            #     for y in range(lt_pos.y, rb_pos.y+1):
+            #         self.last_locks_id_set.add(self.env.lock_grid[x][y].unique_route_id)
 
     def release_all_locks(self): 
         '''检查是否能够获得所有lock，保证进入前route_id已经设置'''
         for lock_id in self.my_locks:
             self.env.lock_dict[lock_id].release_lock()
-        self.my_locks = set()
+        self.my_locks = {}
 
     def lock_check(self, action: str) -> Tuple[bool, Set[int], Set[int]]: 
         '''检查是否能够获得lock'''
@@ -265,7 +271,7 @@ class Boat_Route_Lock:
         self.num_shared_roads: int = 0
         self.locked: bool = False
         self.free_lock: bool = False
-        self.acquire_lock_queue = Queue()
+        # self.acquire_lock_queue = Queue()
         self.cur_owner: int = -1
 
     def __str__(self):
@@ -288,3 +294,82 @@ class Boat_Route_Lock:
         if (self.check_available(boat_id)):
             self.locked = True
             self.cur_owner = boat_id
+
+
+# from typing import Tuple, List
+# from copy import deepcopy
+
+# from cfg import TYPE_CHECKING
+# from log import main_logger
+# from path_planing import Point, sVec
+# from path_planing import Boat_Direction
+
+# if TYPE_CHECKING:
+#     from .env import Env
+
+# int_boatDirection_map = {
+#     0: Boat_Direction.RIGHT,
+#     1: Boat_Direction.LEFT,
+#     2: Boat_Direction.UP,
+#     3: Boat_Direction.DOWN
+# }
+
+
+# class Boat:
+#     def __init__(self, boat_id, env: 'Env', x=0, y=0, dir=0, num=0, status=0):
+#         self.boat_id = boat_id
+#         self.env: 'Env' = env
+#         self.goods_num = num
+#         self.pos = Point(x,y)
+#         self._dir: Boat_Direction = int_boatDirection_map[dir]
+#         self.status = status
+#         self.actions: List[str] = []
+
+#     @property
+#     def dir(self):
+#         return self._dir
+#     @dir.setter
+#     def dir(self, value):
+#         if isinstance(value, int):
+#             self._dir = int_boatDirection_map[value]
+#         elif isinstance(value, Boat_Direction):
+#             self._dir = value
+
+#     @property
+#     def sVec(self):
+#         return sVec(self.pos, self.dir)
+
+#     @property
+#     def x(self):
+#         return self.pos.x
+#     @x.setter
+#     def x(self, value):
+#         self.pos.x = value
+#     @property
+#     def y(self):
+#         return self.pos.y
+#     @y.setter
+#     def y(self, value):
+#         self.pos.y = value
+
+#     def ship_from_A_to_B(self, start_sVec: 'sVec', end_sVec: 'sVec'):
+#         if start_sVec == self.sVec:
+#             if ((start_sVec, end_sVec) in self.env.boat_route_dict):
+#                 self.actions = deepcopy(self.env.boat_route_dict[(start_sVec, end_sVec)])
+#                 main_logger.error("actions:%s",self.actions)
+#             else:
+#                 main_logger.error(f"boat{self.boat_id} 尝试在 {self.sVec} 从 {start_sVec} 出发到 {end_sVec}，路径不存在")
+#         else:
+#             main_logger.error(f"boat{self.boat_id} 尝试在 {self.sVec} 从 {start_sVec} 出发到 {end_sVec}，初始位置错误")
+    
+#     def boat_execute(self):
+#         if self.status == 0 or self.status == 2:
+#             if len(self.actions) > 0:
+#                 action = self.actions.pop(0)
+#                 if action == "ship":
+#                     print("ship", self.boat_id)
+#                 elif action == "rot 0":
+#                     print("rot", self.boat_id, 0)
+#                 elif action == "rot 1":
+#                     print("rot", self.boat_id, 1)
+

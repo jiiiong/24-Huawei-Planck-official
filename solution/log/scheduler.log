@@ -1,160 +1,30 @@
-3815 - scheduler - INFO - berth information: 
-3815 - scheduler - INFO - berth_id: 0 at (93, 71), loading speed: 2
-3815 - scheduler - INFO - berth_id: 1 at (93, 147), loading speed: 1
-3816 - scheduler - INFO - berth_id: 2 at (102, 51), loading speed: 2
-3816 - scheduler - INFO - berth_id: 3 at (102, 91), loading speed: 1
-3816 - scheduler - INFO - berth_id: 4 at (102, 130), loading speed: 1
-3816 - scheduler - INFO - berth_id: 5 at (102, 168), loading speed: 1
-3816 - scheduler - INFO - 
-3818 - scheduler - INFO - zhen 1 boat_id:0  lboat (95, 26), Boat_Direction.RIGHT!
+3530 - scheduler - INFO - berth information: 
+3530 - scheduler - INFO - berth_id: 0 at (3, 98), loading speed: 1
+3530 - scheduler - INFO - berth_id: 1 at (92, 3), loading speed: 1
+3530 - scheduler - INFO - berth_id: 2 at (92, 194), loading speed: 1
+3530 - scheduler - INFO - 
+3531 - scheduler - INFO - zhen 1 boat_id:0  lboat (2, 2), Boat_Direction.RIGHT!
 
-3818 - scheduler - INFO - robot_number:18
-3820 - scheduler - INFO - robot_number:18
-3821 - scheduler - INFO - robot_number:18
-3822 - scheduler - INFO - robot_number:18
-3823 - scheduler - INFO - robot_number:18
-3825 - scheduler - INFO - robot_number:18
-3826 - scheduler - INFO - robot_number:18
-3827 - scheduler - INFO - robot_number:18
-3828 - scheduler - INFO - robot_number:18
-3829 - scheduler - INFO - robot_number:18
-3829 - scheduler - INFO - zhen 10 robot_id:0 lbot (0, 100) !
-
-3832 - scheduler - INFO - robot_number:18
-3833 - scheduler - INFO - robot_number:18
-3834 - scheduler - INFO - robot_number:18
-3835 - scheduler - INFO - robot_number:18
-3837 - scheduler - INFO - robot_number:18
-3841 - scheduler - INFO - robot_number:18
-3842 - scheduler - INFO - robot_number:18
-3843 - scheduler - INFO - robot_number:18
-3845 - scheduler - INFO - robot_number:18
-3847 - scheduler - INFO - robot_number:18
-3847 - scheduler - INFO - zhen 20 robot_id:1 lbot (0, 100) !
-
-3848 - scheduler - INFO - robot_number:18
-3849 - scheduler - INFO - robot_number:18
-3850 - scheduler - INFO - robot_number:18
-3852 - scheduler - INFO - robot_number:18
-3856 - scheduler - INFO - robot_number:18
-3857 - scheduler - INFO - robot_number:18
-3866 - scheduler - INFO - robot_number:18
-3869 - scheduler - INFO - robot_number:18
-3870 - scheduler - INFO - robot_number:18
-3872 - scheduler - INFO - robot_number:18
-3872 - scheduler - INFO - zhen 30 robot_id:2 lbot (0, 100) !
-
-3875 - scheduler - INFO - robot_number:18
-3877 - scheduler - INFO - robot_number:18
-3878 - scheduler - INFO - robot_number:18
-3881 - scheduler - INFO - robot_number:18
-3887 - scheduler - INFO - robot_number:18
-3890 - scheduler - INFO - robot_number:18
-3892 - scheduler - INFO - robot_number:18
-3894 - scheduler - INFO - robot_number:18
-3898 - scheduler - INFO - robot_number:18
-3902 - scheduler - INFO - robot_number:18
-3902 - scheduler - INFO - zhen 40 robot_id:3 lbot (0, 100) !
-
-3908 - scheduler - INFO - robot_number:18
-3919 - scheduler - INFO - robot_number:18
-3921 - scheduler - INFO - robot_number:18
-3923 - scheduler - INFO - robot_number:18
-3925 - scheduler - INFO - robot_number:18
-3926 - scheduler - INFO - robot_number:18
-3929 - scheduler - INFO - robot_number:18
-3937 - scheduler - INFO - robot_number:18
-3942 - scheduler - INFO - robot_number:18
-3944 - scheduler - INFO - robot_number:18
-3944 - scheduler - INFO - zhen 50 robot_id:4 lbot (0, 100) !
-
-3949 - scheduler - INFO - robot_number:18
-3951 - scheduler - INFO - robot_number:18
-3952 - scheduler - INFO - robot_number:18
-3954 - scheduler - INFO - robot_number:18
-3957 - scheduler - INFO - robot_number:18
-3962 - scheduler - INFO - robot_number:18
-3980 - scheduler - INFO - robot_number:18
-3982 - scheduler - INFO - robot_number:18
-3984 - scheduler - INFO - robot_number:18
-3986 - scheduler - INFO - robot_number:18
-3986 - scheduler - INFO - zhen 60 robot_id:5 lbot (0, 100) !
-
-3992 - scheduler - INFO - robot_number:18
-3996 - scheduler - INFO - robot_number:18
-3999 - scheduler - INFO - robot_number:18
-4001 - scheduler - INFO - robot_number:18
-4002 - scheduler - INFO - robot_number:18
-4005 - scheduler - INFO - robot_number:18
-4007 - scheduler - INFO - robot_number:18
-4010 - scheduler - INFO - robot_number:18
-4015 - scheduler - INFO - robot_number:18
-4020 - scheduler - INFO - robot_number:18
-4020 - scheduler - INFO - zhen 70 robot_id:6 lbot (0, 100) !
-
-4025 - scheduler - INFO - robot_number:18
-4029 - scheduler - INFO - robot_number:18
-4034 - scheduler - INFO - robot_number:18
-4037 - scheduler - INFO - robot_number:18
-4041 - scheduler - INFO - robot_number:18
-4044 - scheduler - INFO - robot_number:18
-4047 - scheduler - INFO - robot_number:18
-4050 - scheduler - INFO - robot_number:18
-4055 - scheduler - INFO - robot_number:18
-4059 - scheduler - INFO - robot_number:18
-4059 - scheduler - INFO - zhen 80 robot_id:7 lbot (0, 100) !
-
-4065 - scheduler - INFO - robot_number:18
-4068 - scheduler - INFO - robot_number:18
-4072 - scheduler - INFO - robot_number:18
-4075 - scheduler - INFO - robot_number:18
-4077 - scheduler - INFO - robot_number:18
-4080 - scheduler - INFO - robot_number:18
-4084 - scheduler - INFO - robot_number:18
-4087 - scheduler - INFO - robot_number:18
-4091 - scheduler - INFO - robot_number:18
-4094 - scheduler - INFO - robot_number:18
-4099 - scheduler - INFO - robot_number:18
-4103 - scheduler - INFO - robot_number:18
-4107 - scheduler - INFO - robot_number:18
-4110 - scheduler - INFO - robot_number:18
-4114 - scheduler - INFO - robot_number:18
-4117 - scheduler - INFO - robot_number:18
-4121 - scheduler - INFO - robot_number:18
-4125 - scheduler - INFO - robot_number:18
-4127 - scheduler - INFO - robot_number:18
-4131 - scheduler - INFO - robot_number:18
-4135 - scheduler - INFO - robot_number:18
-4140 - scheduler - INFO - robot_number:18
-4143 - scheduler - INFO - robot_number:18
-4145 - scheduler - INFO - robot_number:18
-4149 - scheduler - INFO - robot_number:18
-4152 - scheduler - INFO - robot_number:18
-4154 - scheduler - INFO - robot_number:18
-4158 - scheduler - INFO - robot_number:18
-4161 - scheduler - INFO - robot_number:18
-4164 - scheduler - INFO - robot_number:18
-4168 - scheduler - INFO - robot_number:18
-4172 - scheduler - INFO - robot_number:18
-4177 - scheduler - INFO - robot_number:18
-4180 - scheduler - INFO - robot_number:18
-4184 - scheduler - INFO - robot_number:18
-4188 - scheduler - INFO - robot_number:18
-4191 - scheduler - INFO - robot_number:18
-4195 - scheduler - INFO - robot_number:18
-4200 - scheduler - INFO - robot_number:18
-4202 - scheduler - INFO - robot_number:18
-4205 - scheduler - INFO - robot_number:18
-4209 - scheduler - INFO - robot_number:18
-4214 - scheduler - INFO - robot_number:18
-4219 - scheduler - INFO - robot_number:18
-4223 - scheduler - INFO - robot_number:18
-4226 - scheduler - INFO - robot_number:18
-4229 - scheduler - INFO - robot_number:18
-4234 - scheduler - INFO - robot_number:18
-4237 - scheduler - INFO - robot_number:18
-4242 - scheduler - INFO - robot_number:18
-4245 - scheduler - INFO - robot_number:18
-4248 - scheduler - INFO - robot_number:18
-4250 - scheduler - INFO - id: 0, target_gds:gds: (76, 103) 167
-4252 - scheduler - INFO - robot_number:18
+3635 - scheduler - INFO - id: 1, target_gds:gds: (165, 25) 194
+3639 - scheduler - INFO - id: 4, target_gds:gds: (100, 76) 92
+3642 - scheduler - INFO - id: 2, target_gds:gds: (83, 137) 94
+3646 - scheduler - INFO - id: 5, target_gds:gds: (126, 176) 44
+3835 - scheduler - INFO - id: 5, target_gds:gds: (105, 134) 2
+3905 - scheduler - INFO - id: 2, target_gds:gds: (48, 163) 40
+3916 - scheduler - INFO - id: 0, target_gds:gds: (26, 151) 92
+3920 - scheduler - INFO - id: 3, target_gds:gds: (43, 126) 80
+3956 - scheduler - INFO - id: 4, target_gds:gds: (119, 45) 70
+4017 - scheduler - INFO - id: 1, target_gds:gds: (99, 15) 91
+4089 - scheduler - INFO - id: 1, target_gds:gds: (93, 65) 75
+4131 - scheduler - INFO - id: 5, target_gds:gds: (110, 190) 84
+4182 - scheduler - INFO - id: 3, target_gds:gds: (9, 132) 199
+4209 - scheduler - INFO - id: 5, target_gds:gds: (116, 103) 191
+4215 - scheduler - INFO - id: 2, target_gds:gds: (112, 171) 68
+4217 - scheduler - INFO - id: 0, target_gds:gds: (16, 98) 94
+4217 - scheduler - INFO - id: 4, target_gds:gds: (68, 22) 190
+4314 - scheduler - INFO - id: 1, target_gds:gds: (104, 6) 60
+4321 - scheduler - INFO - id: 3, target_gds:gds: (5, 138) 72
+4362 - scheduler - INFO - id: 2, target_gds:gds: (117, 185) 44
+4369 - scheduler - INFO - id: 1, target_gds:gds: (137, 24) 183
+4371 - scheduler - INFO - id: 0, target_gds:gds: (16, 137) 84
+4380 - scheduler - INFO - id: 4, target_gds:gds: (83, 19) 57

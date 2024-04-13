@@ -1,48 +1,46 @@
-import sys
+import numpy as np
+import matplotlib.pyplot as plt
 
-def weighted_prim(adj_matrix):
-    num_vertices = len(adj_matrix)
-    mst = [None] * num_vertices  # 存储最小生成树的边
-    key = [sys.maxsize] * num_vertices  # 用于存储每个顶点的关键值
-    visited = [False] * num_vertices  # 记录每个顶点是否已经加入到最小生成树中
-    key[0] = 0  # 选择第一个顶点作为起始顶点
-    mst[0] = -1  # 根节点没有父节点
+# 文件路径
+file_path = 'solution/log/boat.log'
 
-    for _ in range(num_vertices):
-        u = min_key_vertex(key, visited)
-        visited[u] = True
-        for v in range(num_vertices):
-            if adj_matrix[u][v] != 0 and not visited[v] and adj_matrix[u][v] < key[v]:
-                mst[v] = u
-                key[v] = adj_matrix[u][v]
+# 使用numpy读取数据：假设每个值都是浮点数，数据被空格分隔
+data = np.loadtxt(file_path)
 
-    return construct_mst(adj_matrix, mst)
+# 时间轴，假设每一行代表一个时间单位
+time = np.arange(0, data.shape[0])
 
-def min_key_vertex(key, visited):
-    min_key = sys.maxsize
-    min_index = -1
-    for v in range(len(key)):
-        if not visited[v] and key[v] < min_key:
-            min_key = key[v]
-            min_index = v
-    return min_index
+for j in range((data.shape[1]-1)//3):
+    plt.figure(figsize=(15, 10))
+    # 配置横坐标间隔为1000
+    plt.xticks(np.arange(0, len(time) + 1, 500))
+    plt.ylim(0, 2000)
+    for i in range(1):  # 对于每个港口
+        index = 3 * j + 1
+        plt.plot(data[:, 0], data[:, index : index+3], label=f'Port {j}')
 
-def construct_mst(adj_matrix, mst):
-    mst_edges = []
-    for i in range(1, len(mst)):
-        mst_edges.append((mst[i], i, adj_matrix[i][mst[i]]))
-    return mst_edges
+    plt.xlabel('zhen')
+    plt.ylabel('cur_num_gds')
+    plt.legend()
+    plt.grid(True)
+    plt.savefig(f'./fg{j}')
 
-# Example adjacency matrix
-adj_matrix = [[0,  4,  3,  5,  0,  0,  0,  0],
-[4,  0,  6,  0,  7,  0,  0,  0],
-[3,  6,  0,  0,  0,  2,  0,  0],
-[5,  0,  0,  0,  0,  0,  8,  0],
-[0,  7,  0,  0,  0,  0,  0,  9],
-[0,  0,  2,  0,  0,  0,  1,  0],
-[0,  0,  0,  8,  0,  1,  0,  0],
-[0,  0,  0,  0,  9,  0,  0,  0]]
-
-print(weighted_prim(adj_matrix))
-
-
+# boat_berths_map = {
+# 0 : [9, 0],
+# 1 : [6, 4],
+# 2 : [1, 8],
+# 3 : [7, 2],
+# 4 : [5, 3],
+# }
+# for j in range(5):
+#     plt.figure(figsize=(15, 10))
+#     # 配置横坐标间隔为1000
+#     plt.xticks(np.arange(0, len(time) + 1, 500))
+#     plt.ylim(0, 200)
+#     for i in boat_berths_map[j]:  # 对于每个港口
+#         plt.plot(data[:, 0], data[:, i+1], label=f'Port {i}')
+#     plt.xlabel('zhen')
+#     plt.ylabel('Cargo Arrival Rate')
+#     plt.legend()
+#     plt.grid(True)
+#     plt.savefig(f'./solution/test/boat_group_{j}.png')

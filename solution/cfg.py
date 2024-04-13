@@ -1,7 +1,11 @@
-N = 200
 
-from typing import TYPE_CHECKING
 
-TYPE_CHECKING = False
 
 RELEASE = False
+
+if RELEASE:
+    TYPE_CHECKING = False
+else:
+    from typing import TYPE_CHECKING
+
+N = 200

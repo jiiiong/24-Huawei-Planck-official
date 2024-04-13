@@ -1,9 +1,8 @@
 from queue import Queue, PriorityQueue
 from typing import List, Tuple, Dict, Any, Set
-import time
 
 from cfg import N
-from log import main_logger, func_timer
+from log import main_logger,func_timer
 
 from .base import Pixel_Attrs, Point, sVec
 from .base import Robot_Move, INFINIT_COST
@@ -12,6 +11,12 @@ from .base import Boat_Action, Boat_Direction, Boat_Ship_Offset
 # robot相关
 
 robot_move_list = [Robot_Move.UP, Robot_Move.DOWN, Robot_Move.LEFT, Robot_Move.RIGHT, Robot_Move.HOLD]
+
+def robot_bfs_single_core(berths:List[Tuple[int, Point]], attrs_grid: List[List[Pixel_Attrs]], low, high)->Dict[int, Tuple[int, List[List[Point]], List[List[int]]]]:
+    ret = {}
+    for i in range(low, high):
+        ret[i] = robot_bfs(berths[i][0], attrs_grid, berths[i][1])
+    return ret
 
 def robot_bfs(task_id: int, attrs_grid: List[List[Pixel_Attrs]], source_point: Point) -> Tuple[int, List[List[Point]], List[List[int]]]:
     '''
@@ -64,7 +69,6 @@ def one_move_avoidance(attrs_grid: List[List[Pixel_Attrs]], source_point: Point)
     # 未考虑初始点为障碍物时的情况
     x_len = len(attrs_grid)
     y_len = len(attrs_grid[0])
-
     global robot_move_list
     for move in robot_move_list:
         next_pos:Point = source_point + move
@@ -73,83 +77,101 @@ def one_move_avoidance(attrs_grid: List[List[Pixel_Attrs]], source_point: Point)
             and attrs_grid[next_pos.x][next_pos.y].is_ground): # 下一个位置不会碰撞
             avoidance_paths.append(next_pos)
             success = True
+            # main_logger.error(f"f11, {avoidance_paths}")
             break
 
     return (avoidance_paths, success)
 
 # boat相关
-@func_timer
+
+def boat_bfs_one_core(route_ids: List[Tuple[sVec, sVec]],
+                      attrs_grid: List[List[Pixel_Attrs]], boat_valid_grid:List[List[ (List[Boat_Direction]) ]],
+                      # boat_route_dict: Dict[Tuple[sVec, sVec], List[str]],
+                      low, high):
+    # with concurrent.futures.ProcessPoolExecutor(4) as executor:
+    #     future_results = [executor.submit(boat_bfs, id, self.attrs_grid, 
+    #                                       self.boat_valid_grid, id[0], id[1]) for i, id in enumerate(self.route_ids)]
+    #     # future_results = [executor.submit(boat_bfs, id, attr_list[i], 
+    #     #                                   valid_list[i], id[0], id[1]) for i, id in enumerate(self.route_ids)]
+    #     results = [ future.result() for future in concurrent.futures.as_completed(future_results)]
+    # for i, result in enumerate(results):
+    #     id, actions = result
+    #     self.boat_route_dict[id] = actions
+    #     self.update_lock_grid(id, i)
+    boat_route_dict: Dict[Tuple[sVec, sVec], List[str]] = {}
+    for i in range(low, high):
+        id = route_ids[i]
+        _, boat_route_dict[id] = boat_bfs(id, attrs_grid, boat_valid_grid, id[0], id[1])
+    return boat_route_dict
+    # for i, id in enumerate(self.route_ids):
+    #     if i in range(low, high):
+    #         _, self.boat_route_dict[id] = boat_bfs(id, self.attrs_grid, self.boat_valid_grid, id[0], id[1])
+
 def boat_bfs(task_id: Tuple[sVec,sVec],
              attrs_grid: List[List[Pixel_Attrs]], boat_valid_grid:List[List[ (List[Boat_Direction]) ]],
-             start_sVec: sVec, end_sVec: sVec, lock_grid) -> Tuple[Tuple[sVec,sVec], List[str]]:
-    queue: PriorityQueue[Tuple[float, int, int, sVec, List[str]]] = PriorityQueue()
-    queue.put((0, 0, 0,start_sVec, []))
+             start_sVec: sVec, end_sVec: sVec) -> Tuple[Tuple[sVec,sVec], List[str]]:
+    # attrs_grid = [sublist[:] for sublist in attrs_grid]
+    # boat_valid_grid =  [sublist[:] for sublist in boat_valid_grid]
+    queue: PriorityQueue[Tuple[float, int, int, int, sVec, List[str]]] = PriorityQueue()
+    queue.put((0, 0, 0, 0,start_sVec, []))
     visited = set()
     g_scores = {start_sVec: 0}
     ret = []
     count = 0
     while not queue.empty():
-        
         count += 1
-        (f_current, h_current, g_current, cur_sVec, actions) = queue.get()
+        (f_current, h_current, g_current, cur_penalty, cur_sVec, actions) = queue.get()
         cur_sVec: sVec
         actions: List[str]
         g_current: int
 
         # main_logger.error(f"!! {cur_sVec} \t\tf:{f_current} h:{h_current} g:{g_current}")
         if cur_sVec == end_sVec:
-            main_logger.error(f"--{start_sVec}, {end_sVec}, {count}")
+            # main_logger.error(f"--{start_sVec}, {end_sVec}, {count}")
+            # main_logger.error(f"{actions}") 
             return task_id, actions
         if cur_sVec in visited:
             continue
         visited.add(cur_sVec)
-        
-        # p_c = 1
-
+        p_c = 1
         # 尝试 ship_one_move
         okk, new_sVec = ship_one_move(cur_sVec, boat_valid_grid, attrs_grid)
         # new_sVec = sVec(cur_sVec.pos+Boat_Ship_Offset[cur_sVec.dir], cur_sVec.dir)
         # okk = ship_position_available(new_sVec, boat_valid_grid)
         if okk:
-            new_g = g_current + boat_gen_cost(attrs_grid, new_sVec, lock_grid)  # 假设每次移动成本为1
-            # new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec, lock_grid) - 1) * p_c
+            new_g = g_current + boat_gen_cost(attrs_grid, new_sVec)  # 假设每次移动成本为1
+            new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec) - 1) * p_c
             if new_sVec not in g_scores or new_g < g_scores[new_sVec]:
                 g_scores[new_sVec] = new_g
-                new_h = heuristic(new_sVec.pos, end_sVec.pos)#  + new_p
+                new_h = heuristic(new_sVec.pos, end_sVec.pos) + new_p
                 f = new_g + new_h
                 # f = 0
-                queue.put((f, new_h, new_g, new_sVec, actions + ["ship"]))
-                # queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["ship"]))
+                queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["ship"]))
 
         # 尝试 rotate_one_move，顺时针和逆时针旋转
         for rotation in [1, 0]:
             okk, new_sVec = rotate_one_move(cur_sVec, rotation, boat_valid_grid)
             if okk:
-                new_g = g_current + boat_gen_cost(attrs_grid, new_sVec, lock_grid)  # 假设旋转成本为1
-                # new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec, lock_grid) - 1) * p_c
+                new_g = g_current + boat_gen_cost(attrs_grid, new_sVec)  # 假设旋转成本为1
+                new_p = cur_penalty + (boat_gen_cost(attrs_grid, new_sVec) - 1) * p_c
                 if new_sVec not in g_scores or new_g < g_scores[new_sVec]:
                     g_scores[new_sVec] = new_g
-                    new_h = heuristic(new_sVec.pos, end_sVec.pos)#  + new_p 
+                    new_h = heuristic(new_sVec.pos, end_sVec.pos) + new_p 
                     f = new_g + new_h
-                    # f = 0
-                    # queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["rot " + str(rotation)]))
-                    queue.put((f, new_h, new_g, new_sVec, actions + ["rot " + str(rotation)]))
-        
-    main_logger.error(f"++{count}")  
+                    queue.put((new_h,f,  new_g, new_p, new_sVec, actions + ["rot " + str(rotation)]))
+
+    # main_logger.error(f"++{count}")     
     return task_id, ret
 
-# @func_timer
-def boat_gen_cost(attrs_grid: List[List[Pixel_Attrs]], cur_sVec: sVec, lock_grid) -> int:
+def boat_gen_cost(attrs_grid: List[List[Pixel_Attrs]], cur_sVec: sVec) -> int:
     lt_pos, rb_pos = cur_sVec.proj()
-    max_num_shared_roads = 0
     for x in range(lt_pos.x, rb_pos.x+1):
         for y in range(lt_pos.y, rb_pos.y+1):
             if attrs_grid[x][y].is_free_ocean:
+                #main_logger.error("dsbiusbdo")
                 return 2
-            #     return 2 + lock_grid[x][y].num_shared_roads
-            # elif lock_grid[x][y].num_shared_roads > max_num_shared_roads:
-            #     max_num_shared_roads = lock_grid[x][y].num_shared_roads
-    return 1 # + max_num_shared_roads
+    #main_logger.error("shit")
+    return 1
 
 # 判断当前船的位置是否合法
 def ship_position_available(cur_sVec: sVec, boat_valid_grid:List[List[(List[Boat_Direction])]]):
@@ -215,7 +237,6 @@ def ship_one_move(cur_sVec: sVec, boat_valid_grid:List[List[ (List[Boat_Directio
         return False, new_sVec
     
 def heuristic(a: Point, b: Point):
-
     dis = abs(a.x - b.x) + abs(a.y - b.y)
     # return dis 
     # 使用曼哈顿距离作为启发式函数
@@ -223,7 +244,7 @@ def heuristic(a: Point, b: Point):
         return -10
     else:
         return dis 
-
+    
 def boat_actions_to_poses(start_sVec:sVec, actions: List[str]) -> Set[Point]:
 
     pos_list: Set[Point]= set()
@@ -292,6 +313,7 @@ def boat_actions_to_poses_per_action(start_sVec:sVec, actions: List[str]) -> Lis
         for y in range(lt_pos.y, rb_pos.y+1):
             poses.append(Point(x,y))
     ret.append(poses)
+    
     for action in actions:
         
         if action == "ship":

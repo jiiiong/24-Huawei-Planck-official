@@ -1,723 +1,2685 @@
-3818 - berth - INFO - zhen 1 cur_num_gds:0 
-3818 - berth - INFO - zhen 1 cur_num_gds:0 
-3818 - berth - INFO - zhen 1 cur_num_gds:0 
-3818 - berth - INFO - zhen 1 cur_num_gds:0 
-3818 - berth - INFO - zhen 1 cur_num_gds:0 
-3818 - berth - INFO - zhen 1 cur_num_gds:0 
-3819 - berth - INFO - zhen 2 cur_num_gds:0 
-3819 - berth - INFO - zhen 2 cur_num_gds:0 
-3819 - berth - INFO - zhen 2 cur_num_gds:0 
-3819 - berth - INFO - zhen 2 cur_num_gds:0 
-3819 - berth - INFO - zhen 2 cur_num_gds:0 
-3819 - berth - INFO - zhen 2 cur_num_gds:0 
-3821 - berth - INFO - zhen 3 cur_num_gds:0 
-3821 - berth - INFO - zhen 3 cur_num_gds:0 
-3821 - berth - INFO - zhen 3 cur_num_gds:0 
-3821 - berth - INFO - zhen 3 cur_num_gds:0 
-3821 - berth - INFO - zhen 3 cur_num_gds:0 
-3821 - berth - INFO - zhen 3 cur_num_gds:0 
-3822 - berth - INFO - zhen 4 cur_num_gds:0 
-3822 - berth - INFO - zhen 4 cur_num_gds:0 
-3822 - berth - INFO - zhen 4 cur_num_gds:0 
-3822 - berth - INFO - zhen 4 cur_num_gds:0 
-3822 - berth - INFO - zhen 4 cur_num_gds:0 
-3822 - berth - INFO - zhen 4 cur_num_gds:0 
-3823 - berth - INFO - zhen 5 cur_num_gds:0 
-3823 - berth - INFO - zhen 5 cur_num_gds:0 
-3823 - berth - INFO - zhen 5 cur_num_gds:0 
-3823 - berth - INFO - zhen 5 cur_num_gds:0 
-3823 - berth - INFO - zhen 5 cur_num_gds:0 
-3823 - berth - INFO - zhen 5 cur_num_gds:0 
-3824 - berth - INFO - zhen 6 cur_num_gds:0 
-3824 - berth - INFO - zhen 6 cur_num_gds:0 
-3824 - berth - INFO - zhen 6 cur_num_gds:0 
-3824 - berth - INFO - zhen 6 cur_num_gds:0 
-3824 - berth - INFO - zhen 6 cur_num_gds:0 
-3824 - berth - INFO - zhen 6 cur_num_gds:0 
-3826 - berth - INFO - zhen 7 cur_num_gds:0 
-3826 - berth - INFO - zhen 7 cur_num_gds:0 
-3826 - berth - INFO - zhen 7 cur_num_gds:0 
-3826 - berth - INFO - zhen 7 cur_num_gds:0 
-3826 - berth - INFO - zhen 7 cur_num_gds:0 
-3826 - berth - INFO - zhen 7 cur_num_gds:0 
-3827 - berth - INFO - zhen 8 cur_num_gds:0 
-3827 - berth - INFO - zhen 8 cur_num_gds:0 
-3827 - berth - INFO - zhen 8 cur_num_gds:0 
-3827 - berth - INFO - zhen 8 cur_num_gds:0 
-3827 - berth - INFO - zhen 8 cur_num_gds:0 
-3827 - berth - INFO - zhen 8 cur_num_gds:0 
-3828 - berth - INFO - zhen 9 cur_num_gds:0 
-3828 - berth - INFO - zhen 9 cur_num_gds:0 
-3828 - berth - INFO - zhen 9 cur_num_gds:0 
-3828 - berth - INFO - zhen 9 cur_num_gds:0 
-3828 - berth - INFO - zhen 9 cur_num_gds:0 
-3828 - berth - INFO - zhen 9 cur_num_gds:0 
-3831 - berth - INFO - zhen 11 cur_num_gds:0 
-3831 - berth - INFO - zhen 11 cur_num_gds:0 
-3831 - berth - INFO - zhen 11 cur_num_gds:0 
-3831 - berth - INFO - zhen 11 cur_num_gds:0 
-3831 - berth - INFO - zhen 11 cur_num_gds:0 
-3831 - berth - INFO - zhen 11 cur_num_gds:0 
-3833 - berth - INFO - zhen 12 cur_num_gds:0 
-3833 - berth - INFO - zhen 12 cur_num_gds:0 
-3833 - berth - INFO - zhen 12 cur_num_gds:0 
-3833 - berth - INFO - zhen 12 cur_num_gds:0 
-3833 - berth - INFO - zhen 12 cur_num_gds:0 
-3833 - berth - INFO - zhen 12 cur_num_gds:0 
-3834 - berth - INFO - zhen 13 cur_num_gds:0 
-3834 - berth - INFO - zhen 13 cur_num_gds:0 
-3834 - berth - INFO - zhen 13 cur_num_gds:0 
-3834 - berth - INFO - zhen 13 cur_num_gds:0 
-3834 - berth - INFO - zhen 13 cur_num_gds:0 
-3834 - berth - INFO - zhen 13 cur_num_gds:0 
-3835 - berth - INFO - zhen 14 cur_num_gds:0 
-3835 - berth - INFO - zhen 14 cur_num_gds:0 
-3835 - berth - INFO - zhen 14 cur_num_gds:0 
-3835 - berth - INFO - zhen 14 cur_num_gds:0 
-3835 - berth - INFO - zhen 14 cur_num_gds:0 
-3835 - berth - INFO - zhen 14 cur_num_gds:0 
-3836 - berth - INFO - zhen 15 cur_num_gds:0 
-3836 - berth - INFO - zhen 15 cur_num_gds:0 
-3836 - berth - INFO - zhen 15 cur_num_gds:0 
-3836 - berth - INFO - zhen 15 cur_num_gds:0 
-3836 - berth - INFO - zhen 15 cur_num_gds:0 
-3836 - berth - INFO - zhen 15 cur_num_gds:0 
-3837 - berth - INFO - zhen 16 cur_num_gds:0 
-3837 - berth - INFO - zhen 16 cur_num_gds:0 
-3837 - berth - INFO - zhen 16 cur_num_gds:0 
-3837 - berth - INFO - zhen 16 cur_num_gds:0 
-3838 - berth - INFO - zhen 16 cur_num_gds:0 
-3838 - berth - INFO - zhen 16 cur_num_gds:0 
-3841 - berth - INFO - zhen 17 cur_num_gds:0 
-3841 - berth - INFO - zhen 17 cur_num_gds:0 
-3841 - berth - INFO - zhen 17 cur_num_gds:0 
-3841 - berth - INFO - zhen 17 cur_num_gds:0 
-3841 - berth - INFO - zhen 17 cur_num_gds:0 
-3841 - berth - INFO - zhen 17 cur_num_gds:0 
-3843 - berth - INFO - zhen 18 cur_num_gds:0 
-3843 - berth - INFO - zhen 18 cur_num_gds:0 
-3843 - berth - INFO - zhen 18 cur_num_gds:0 
-3843 - berth - INFO - zhen 18 cur_num_gds:0 
-3843 - berth - INFO - zhen 18 cur_num_gds:0 
-3843 - berth - INFO - zhen 18 cur_num_gds:0 
-3844 - berth - INFO - zhen 19 cur_num_gds:0 
-3844 - berth - INFO - zhen 19 cur_num_gds:0 
-3844 - berth - INFO - zhen 19 cur_num_gds:0 
-3844 - berth - INFO - zhen 19 cur_num_gds:0 
-3844 - berth - INFO - zhen 19 cur_num_gds:0 
-3844 - berth - INFO - zhen 19 cur_num_gds:0 
-3847 - berth - INFO - zhen 21 cur_num_gds:0 
-3847 - berth - INFO - zhen 21 cur_num_gds:0 
-3847 - berth - INFO - zhen 21 cur_num_gds:0 
-3847 - berth - INFO - zhen 21 cur_num_gds:0 
-3847 - berth - INFO - zhen 21 cur_num_gds:0 
-3847 - berth - INFO - zhen 21 cur_num_gds:0 
-3849 - berth - INFO - zhen 22 cur_num_gds:0 
-3849 - berth - INFO - zhen 22 cur_num_gds:0 
-3849 - berth - INFO - zhen 22 cur_num_gds:0 
-3849 - berth - INFO - zhen 22 cur_num_gds:0 
-3849 - berth - INFO - zhen 22 cur_num_gds:0 
-3849 - berth - INFO - zhen 22 cur_num_gds:0 
-3850 - berth - INFO - zhen 23 cur_num_gds:0 
-3850 - berth - INFO - zhen 23 cur_num_gds:0 
-3850 - berth - INFO - zhen 23 cur_num_gds:0 
-3850 - berth - INFO - zhen 23 cur_num_gds:0 
-3850 - berth - INFO - zhen 23 cur_num_gds:0 
-3850 - berth - INFO - zhen 23 cur_num_gds:0 
-3851 - berth - INFO - zhen 24 cur_num_gds:0 
-3851 - berth - INFO - zhen 24 cur_num_gds:0 
-3851 - berth - INFO - zhen 24 cur_num_gds:0 
-3851 - berth - INFO - zhen 24 cur_num_gds:0 
-3851 - berth - INFO - zhen 24 cur_num_gds:0 
-3851 - berth - INFO - zhen 24 cur_num_gds:0 
-3854 - berth - INFO - zhen 25 cur_num_gds:0 
-3854 - berth - INFO - zhen 25 cur_num_gds:0 
-3854 - berth - INFO - zhen 25 cur_num_gds:0 
-3854 - berth - INFO - zhen 25 cur_num_gds:0 
-3854 - berth - INFO - zhen 25 cur_num_gds:0 
-3854 - berth - INFO - zhen 25 cur_num_gds:0 
-3857 - berth - INFO - zhen 26 cur_num_gds:0 
-3857 - berth - INFO - zhen 26 cur_num_gds:0 
-3857 - berth - INFO - zhen 26 cur_num_gds:0 
-3857 - berth - INFO - zhen 26 cur_num_gds:0 
-3857 - berth - INFO - zhen 26 cur_num_gds:0 
-3857 - berth - INFO - zhen 26 cur_num_gds:0 
-3858 - berth - INFO - zhen 27 cur_num_gds:0 
-3858 - berth - INFO - zhen 27 cur_num_gds:0 
-3859 - berth - INFO - zhen 27 cur_num_gds:0 
-3859 - berth - INFO - zhen 27 cur_num_gds:0 
-3859 - berth - INFO - zhen 27 cur_num_gds:0 
-3859 - berth - INFO - zhen 27 cur_num_gds:0 
-3868 - berth - INFO - zhen 28 cur_num_gds:0 
-3868 - berth - INFO - zhen 28 cur_num_gds:0 
-3868 - berth - INFO - zhen 28 cur_num_gds:0 
-3868 - berth - INFO - zhen 28 cur_num_gds:0 
-3868 - berth - INFO - zhen 28 cur_num_gds:0 
-3868 - berth - INFO - zhen 28 cur_num_gds:0 
-3870 - berth - INFO - zhen 29 cur_num_gds:0 
-3870 - berth - INFO - zhen 29 cur_num_gds:0 
-3870 - berth - INFO - zhen 29 cur_num_gds:0 
-3870 - berth - INFO - zhen 29 cur_num_gds:0 
-3870 - berth - INFO - zhen 29 cur_num_gds:0 
-3870 - berth - INFO - zhen 29 cur_num_gds:0 
-3872 - berth - INFO - zhen 31 cur_num_gds:0 
-3873 - berth - INFO - zhen 31 cur_num_gds:0 
-3873 - berth - INFO - zhen 31 cur_num_gds:0 
-3873 - berth - INFO - zhen 31 cur_num_gds:0 
-3873 - berth - INFO - zhen 31 cur_num_gds:0 
-3873 - berth - INFO - zhen 31 cur_num_gds:0 
-3876 - berth - INFO - zhen 32 cur_num_gds:0 
-3876 - berth - INFO - zhen 32 cur_num_gds:0 
-3876 - berth - INFO - zhen 32 cur_num_gds:0 
-3876 - berth - INFO - zhen 32 cur_num_gds:0 
-3876 - berth - INFO - zhen 32 cur_num_gds:0 
-3876 - berth - INFO - zhen 32 cur_num_gds:0 
-3877 - berth - INFO - zhen 33 cur_num_gds:0 
-3877 - berth - INFO - zhen 33 cur_num_gds:0 
-3878 - berth - INFO - zhen 33 cur_num_gds:0 
-3878 - berth - INFO - zhen 33 cur_num_gds:0 
-3878 - berth - INFO - zhen 33 cur_num_gds:0 
-3878 - berth - INFO - zhen 33 cur_num_gds:0 
-3879 - berth - INFO - zhen 34 cur_num_gds:0 
-3879 - berth - INFO - zhen 34 cur_num_gds:0 
-3879 - berth - INFO - zhen 34 cur_num_gds:0 
-3879 - berth - INFO - zhen 34 cur_num_gds:0 
-3879 - berth - INFO - zhen 34 cur_num_gds:0 
-3879 - berth - INFO - zhen 34 cur_num_gds:0 
-3883 - berth - INFO - zhen 35 cur_num_gds:0 
-3883 - berth - INFO - zhen 35 cur_num_gds:0 
-3883 - berth - INFO - zhen 35 cur_num_gds:0 
-3883 - berth - INFO - zhen 35 cur_num_gds:0 
-3883 - berth - INFO - zhen 35 cur_num_gds:0 
-3884 - berth - INFO - zhen 35 cur_num_gds:0 
-3889 - berth - INFO - zhen 36 cur_num_gds:0 
-3889 - berth - INFO - zhen 36 cur_num_gds:0 
-3889 - berth - INFO - zhen 36 cur_num_gds:0 
-3889 - berth - INFO - zhen 36 cur_num_gds:0 
-3889 - berth - INFO - zhen 36 cur_num_gds:0 
-3889 - berth - INFO - zhen 36 cur_num_gds:0 
-3892 - berth - INFO - zhen 37 cur_num_gds:0 
-3892 - berth - INFO - zhen 37 cur_num_gds:0 
-3892 - berth - INFO - zhen 37 cur_num_gds:0 
-3892 - berth - INFO - zhen 37 cur_num_gds:0 
-3892 - berth - INFO - zhen 37 cur_num_gds:0 
-3892 - berth - INFO - zhen 37 cur_num_gds:0 
-3893 - berth - INFO - zhen 38 cur_num_gds:0 
-3893 - berth - INFO - zhen 38 cur_num_gds:0 
-3893 - berth - INFO - zhen 38 cur_num_gds:0 
-3894 - berth - INFO - zhen 38 cur_num_gds:0 
-3894 - berth - INFO - zhen 38 cur_num_gds:0 
-3894 - berth - INFO - zhen 38 cur_num_gds:0 
-3897 - berth - INFO - zhen 39 cur_num_gds:0 
-3897 - berth - INFO - zhen 39 cur_num_gds:0 
-3897 - berth - INFO - zhen 39 cur_num_gds:0 
-3897 - berth - INFO - zhen 39 cur_num_gds:0 
-3897 - berth - INFO - zhen 39 cur_num_gds:0 
-3897 - berth - INFO - zhen 39 cur_num_gds:0 
-3905 - berth - INFO - zhen 41 cur_num_gds:0 
-3905 - berth - INFO - zhen 41 cur_num_gds:0 
-3905 - berth - INFO - zhen 41 cur_num_gds:0 
-3905 - berth - INFO - zhen 41 cur_num_gds:0 
-3905 - berth - INFO - zhen 41 cur_num_gds:0 
-3905 - berth - INFO - zhen 41 cur_num_gds:0 
-3917 - berth - INFO - zhen 42 cur_num_gds:0 
-3917 - berth - INFO - zhen 42 cur_num_gds:0 
-3917 - berth - INFO - zhen 42 cur_num_gds:0 
-3917 - berth - INFO - zhen 42 cur_num_gds:0 
-3917 - berth - INFO - zhen 42 cur_num_gds:0 
-3918 - berth - INFO - zhen 42 cur_num_gds:0 
-3920 - berth - INFO - zhen 43 cur_num_gds:0 
-3920 - berth - INFO - zhen 43 cur_num_gds:0 
-3920 - berth - INFO - zhen 43 cur_num_gds:0 
-3920 - berth - INFO - zhen 43 cur_num_gds:0 
-3920 - berth - INFO - zhen 43 cur_num_gds:0 
-3920 - berth - INFO - zhen 43 cur_num_gds:0 
-3922 - berth - INFO - zhen 44 cur_num_gds:0 
-3922 - berth - INFO - zhen 44 cur_num_gds:0 
-3922 - berth - INFO - zhen 44 cur_num_gds:0 
-3922 - berth - INFO - zhen 44 cur_num_gds:0 
-3922 - berth - INFO - zhen 44 cur_num_gds:0 
-3922 - berth - INFO - zhen 44 cur_num_gds:0 
-3924 - berth - INFO - zhen 45 cur_num_gds:0 
-3924 - berth - INFO - zhen 45 cur_num_gds:0 
-3924 - berth - INFO - zhen 45 cur_num_gds:0 
-3924 - berth - INFO - zhen 45 cur_num_gds:0 
-3924 - berth - INFO - zhen 45 cur_num_gds:0 
-3924 - berth - INFO - zhen 45 cur_num_gds:0 
-3926 - berth - INFO - zhen 46 cur_num_gds:0 
-3926 - berth - INFO - zhen 46 cur_num_gds:0 
-3926 - berth - INFO - zhen 46 cur_num_gds:0 
-3926 - berth - INFO - zhen 46 cur_num_gds:0 
-3926 - berth - INFO - zhen 46 cur_num_gds:0 
-3926 - berth - INFO - zhen 46 cur_num_gds:0 
-3927 - berth - INFO - zhen 47 cur_num_gds:0 
-3927 - berth - INFO - zhen 47 cur_num_gds:0 
-3927 - berth - INFO - zhen 47 cur_num_gds:0 
-3927 - berth - INFO - zhen 47 cur_num_gds:0 
-3927 - berth - INFO - zhen 47 cur_num_gds:0 
-3927 - berth - INFO - zhen 47 cur_num_gds:0 
-3935 - berth - INFO - zhen 48 cur_num_gds:0 
-3935 - berth - INFO - zhen 48 cur_num_gds:0 
-3935 - berth - INFO - zhen 48 cur_num_gds:0 
-3935 - berth - INFO - zhen 48 cur_num_gds:0 
-3935 - berth - INFO - zhen 48 cur_num_gds:0 
-3935 - berth - INFO - zhen 48 cur_num_gds:0 
-3941 - berth - INFO - zhen 49 cur_num_gds:0 
-3941 - berth - INFO - zhen 49 cur_num_gds:0 
-3941 - berth - INFO - zhen 49 cur_num_gds:0 
-3941 - berth - INFO - zhen 49 cur_num_gds:0 
-3941 - berth - INFO - zhen 49 cur_num_gds:0 
-3941 - berth - INFO - zhen 49 cur_num_gds:0 
-3945 - berth - INFO - zhen 51 cur_num_gds:0 
-3945 - berth - INFO - zhen 51 cur_num_gds:0 
-3945 - berth - INFO - zhen 51 cur_num_gds:0 
-3945 - berth - INFO - zhen 51 cur_num_gds:0 
-3945 - berth - INFO - zhen 51 cur_num_gds:0 
-3945 - berth - INFO - zhen 51 cur_num_gds:0 
-3950 - berth - INFO - zhen 52 cur_num_gds:0 
-3950 - berth - INFO - zhen 52 cur_num_gds:0 
-3950 - berth - INFO - zhen 52 cur_num_gds:0 
-3950 - berth - INFO - zhen 52 cur_num_gds:0 
-3950 - berth - INFO - zhen 52 cur_num_gds:0 
-3950 - berth - INFO - zhen 52 cur_num_gds:0 
-3951 - berth - INFO - zhen 53 cur_num_gds:0 
-3951 - berth - INFO - zhen 53 cur_num_gds:0 
-3951 - berth - INFO - zhen 53 cur_num_gds:0 
-3951 - berth - INFO - zhen 53 cur_num_gds:0 
-3951 - berth - INFO - zhen 53 cur_num_gds:0 
-3951 - berth - INFO - zhen 53 cur_num_gds:0 
-3953 - berth - INFO - zhen 54 cur_num_gds:0 
-3953 - berth - INFO - zhen 54 cur_num_gds:0 
-3953 - berth - INFO - zhen 54 cur_num_gds:0 
-3953 - berth - INFO - zhen 54 cur_num_gds:0 
-3953 - berth - INFO - zhen 54 cur_num_gds:0 
-3953 - berth - INFO - zhen 54 cur_num_gds:0 
-3955 - berth - INFO - zhen 55 cur_num_gds:0 
-3955 - berth - INFO - zhen 55 cur_num_gds:0 
-3956 - berth - INFO - zhen 55 cur_num_gds:0 
-3956 - berth - INFO - zhen 55 cur_num_gds:0 
-3956 - berth - INFO - zhen 55 cur_num_gds:0 
-3956 - berth - INFO - zhen 55 cur_num_gds:0 
-3957 - berth - INFO - boatid 0 berth 0
-3957 - berth - INFO - boatid 0 boat sVec (93, 71), Boat_Direction.RIGHT
-3957 - berth - INFO - boat_id:0 next_index:1
-3959 - berth - INFO - zhen 56 cur_num_gds:0 
-3959 - berth - INFO - zhen 56 cur_num_gds:0 
-3959 - berth - INFO - zhen 56 cur_num_gds:0 
-3959 - berth - INFO - zhen 56 cur_num_gds:0 
-3959 - berth - INFO - zhen 56 cur_num_gds:0 
-3959 - berth - INFO - zhen 56 cur_num_gds:0 
-3979 - berth - INFO - zhen 57 cur_num_gds:0 
-3979 - berth - INFO - zhen 57 cur_num_gds:0 
-3979 - berth - INFO - zhen 57 cur_num_gds:0 
-3979 - berth - INFO - zhen 57 cur_num_gds:0 
-3979 - berth - INFO - zhen 57 cur_num_gds:0 
-3979 - berth - INFO - zhen 57 cur_num_gds:0 
-3981 - berth - INFO - zhen 58 cur_num_gds:0 
-3981 - berth - INFO - zhen 58 cur_num_gds:0 
-3981 - berth - INFO - zhen 58 cur_num_gds:0 
-3981 - berth - INFO - zhen 58 cur_num_gds:0 
-3981 - berth - INFO - zhen 58 cur_num_gds:0 
-3981 - berth - INFO - zhen 58 cur_num_gds:0 
-3983 - berth - INFO - zhen 59 cur_num_gds:0 
-3983 - berth - INFO - zhen 59 cur_num_gds:0 
-3983 - berth - INFO - zhen 59 cur_num_gds:0 
-3983 - berth - INFO - zhen 59 cur_num_gds:0 
-3983 - berth - INFO - zhen 59 cur_num_gds:0 
-3983 - berth - INFO - zhen 59 cur_num_gds:0 
-3987 - berth - INFO - zhen 61 cur_num_gds:0 
-3987 - berth - INFO - zhen 61 cur_num_gds:0 
-3987 - berth - INFO - zhen 61 cur_num_gds:0 
-3987 - berth - INFO - zhen 61 cur_num_gds:0 
-3987 - berth - INFO - zhen 61 cur_num_gds:0 
-3987 - berth - INFO - zhen 61 cur_num_gds:0 
-3993 - berth - INFO - zhen 62 cur_num_gds:0 
-3993 - berth - INFO - zhen 62 cur_num_gds:0 
-3993 - berth - INFO - zhen 62 cur_num_gds:0 
-3993 - berth - INFO - zhen 62 cur_num_gds:0 
-3993 - berth - INFO - zhen 62 cur_num_gds:0 
-3993 - berth - INFO - zhen 62 cur_num_gds:0 
-3997 - berth - INFO - zhen 63 cur_num_gds:0 
-3997 - berth - INFO - zhen 63 cur_num_gds:0 
-3997 - berth - INFO - zhen 63 cur_num_gds:0 
-3997 - berth - INFO - zhen 63 cur_num_gds:0 
-3997 - berth - INFO - zhen 63 cur_num_gds:0 
-3997 - berth - INFO - zhen 63 cur_num_gds:0 
-3999 - berth - INFO - zhen 64 cur_num_gds:0 
-4000 - berth - INFO - zhen 64 cur_num_gds:0 
-4000 - berth - INFO - zhen 64 cur_num_gds:0 
-4000 - berth - INFO - zhen 64 cur_num_gds:0 
-4000 - berth - INFO - zhen 64 cur_num_gds:0 
-4000 - berth - INFO - zhen 64 cur_num_gds:0 
-4001 - berth - INFO - zhen 65 cur_num_gds:0 
-4001 - berth - INFO - zhen 65 cur_num_gds:0 
-4001 - berth - INFO - zhen 65 cur_num_gds:0 
-4001 - berth - INFO - zhen 65 cur_num_gds:0 
-4001 - berth - INFO - zhen 65 cur_num_gds:0 
-4001 - berth - INFO - zhen 65 cur_num_gds:0 
-4003 - berth - INFO - zhen 66 cur_num_gds:0 
-4003 - berth - INFO - zhen 66 cur_num_gds:0 
-4003 - berth - INFO - zhen 66 cur_num_gds:0 
-4003 - berth - INFO - zhen 66 cur_num_gds:0 
-4003 - berth - INFO - zhen 66 cur_num_gds:0 
-4003 - berth - INFO - zhen 66 cur_num_gds:0 
-4006 - berth - INFO - zhen 67 cur_num_gds:0 
-4006 - berth - INFO - zhen 67 cur_num_gds:0 
-4006 - berth - INFO - zhen 67 cur_num_gds:0 
-4006 - berth - INFO - zhen 67 cur_num_gds:0 
-4006 - berth - INFO - zhen 67 cur_num_gds:0 
-4006 - berth - INFO - zhen 67 cur_num_gds:0 
-4008 - berth - INFO - zhen 68 cur_num_gds:0 
-4008 - berth - INFO - zhen 68 cur_num_gds:0 
-4009 - berth - INFO - zhen 68 cur_num_gds:0 
-4009 - berth - INFO - zhen 68 cur_num_gds:0 
-4009 - berth - INFO - zhen 68 cur_num_gds:0 
-4009 - berth - INFO - zhen 68 cur_num_gds:0 
-4012 - berth - INFO - zhen 69 cur_num_gds:0 
-4012 - berth - INFO - zhen 69 cur_num_gds:0 
-4012 - berth - INFO - zhen 69 cur_num_gds:0 
-4012 - berth - INFO - zhen 69 cur_num_gds:0 
-4012 - berth - INFO - zhen 69 cur_num_gds:0 
-4012 - berth - INFO - zhen 69 cur_num_gds:0 
-4021 - berth - INFO - zhen 71 cur_num_gds:0 
-4021 - berth - INFO - zhen 71 cur_num_gds:0 
-4021 - berth - INFO - zhen 71 cur_num_gds:0 
-4022 - berth - INFO - zhen 71 cur_num_gds:0 
-4022 - berth - INFO - zhen 71 cur_num_gds:0 
-4022 - berth - INFO - zhen 71 cur_num_gds:0 
-4027 - berth - INFO - zhen 72 cur_num_gds:0 
-4027 - berth - INFO - zhen 72 cur_num_gds:0 
-4027 - berth - INFO - zhen 72 cur_num_gds:0 
-4027 - berth - INFO - zhen 72 cur_num_gds:0 
-4027 - berth - INFO - zhen 72 cur_num_gds:0 
-4027 - berth - INFO - zhen 72 cur_num_gds:0 
-4031 - berth - INFO - zhen 73 cur_num_gds:0 
-4031 - berth - INFO - zhen 73 cur_num_gds:0 
-4031 - berth - INFO - zhen 73 cur_num_gds:0 
-4031 - berth - INFO - zhen 73 cur_num_gds:0 
-4031 - berth - INFO - zhen 73 cur_num_gds:0 
-4031 - berth - INFO - zhen 73 cur_num_gds:0 
-4034 - berth - INFO - zhen 74 cur_num_gds:0 
-4034 - berth - INFO - zhen 74 cur_num_gds:0 
-4035 - berth - INFO - zhen 74 cur_num_gds:0 
-4035 - berth - INFO - zhen 74 cur_num_gds:0 
-4035 - berth - INFO - zhen 74 cur_num_gds:0 
-4035 - berth - INFO - zhen 74 cur_num_gds:0 
-4039 - berth - INFO - zhen 75 cur_num_gds:0 
-4039 - berth - INFO - zhen 75 cur_num_gds:0 
-4039 - berth - INFO - zhen 75 cur_num_gds:0 
-4039 - berth - INFO - zhen 75 cur_num_gds:0 
-4039 - berth - INFO - zhen 75 cur_num_gds:0 
-4039 - berth - INFO - zhen 75 cur_num_gds:0 
-4042 - berth - INFO - zhen 76 cur_num_gds:0 
-4042 - berth - INFO - zhen 76 cur_num_gds:0 
-4042 - berth - INFO - zhen 76 cur_num_gds:0 
-4042 - berth - INFO - zhen 76 cur_num_gds:0 
-4042 - berth - INFO - zhen 76 cur_num_gds:0 
-4042 - berth - INFO - zhen 76 cur_num_gds:0 
-4044 - berth - INFO - zhen 77 cur_num_gds:0 
-4044 - berth - INFO - zhen 77 cur_num_gds:0 
-4044 - berth - INFO - zhen 77 cur_num_gds:0 
-4044 - berth - INFO - zhen 77 cur_num_gds:0 
-4044 - berth - INFO - zhen 77 cur_num_gds:0 
-4044 - berth - INFO - zhen 77 cur_num_gds:0 
-4049 - berth - INFO - zhen 78 cur_num_gds:0 
-4049 - berth - INFO - zhen 78 cur_num_gds:0 
-4049 - berth - INFO - zhen 78 cur_num_gds:0 
-4049 - berth - INFO - zhen 78 cur_num_gds:0 
-4049 - berth - INFO - zhen 78 cur_num_gds:0 
-4049 - berth - INFO - zhen 78 cur_num_gds:0 
-4052 - berth - INFO - zhen 79 cur_num_gds:0 
-4052 - berth - INFO - zhen 79 cur_num_gds:0 
-4052 - berth - INFO - zhen 79 cur_num_gds:0 
-4052 - berth - INFO - zhen 79 cur_num_gds:0 
-4052 - berth - INFO - zhen 79 cur_num_gds:0 
-4052 - berth - INFO - zhen 79 cur_num_gds:0 
-4060 - berth - INFO - zhen 81 cur_num_gds:0 
-4060 - berth - INFO - zhen 81 cur_num_gds:0 
-4060 - berth - INFO - zhen 81 cur_num_gds:0 
-4060 - berth - INFO - zhen 81 cur_num_gds:0 
-4060 - berth - INFO - zhen 81 cur_num_gds:0 
-4060 - berth - INFO - zhen 81 cur_num_gds:0 
-4066 - berth - INFO - zhen 82 cur_num_gds:0 
-4066 - berth - INFO - zhen 82 cur_num_gds:0 
-4066 - berth - INFO - zhen 82 cur_num_gds:0 
-4066 - berth - INFO - zhen 82 cur_num_gds:0 
-4066 - berth - INFO - zhen 82 cur_num_gds:0 
-4066 - berth - INFO - zhen 82 cur_num_gds:0 
-4069 - berth - INFO - zhen 83 cur_num_gds:0 
-4069 - berth - INFO - zhen 83 cur_num_gds:0 
-4069 - berth - INFO - zhen 83 cur_num_gds:0 
-4069 - berth - INFO - zhen 83 cur_num_gds:0 
-4069 - berth - INFO - zhen 83 cur_num_gds:0 
-4069 - berth - INFO - zhen 83 cur_num_gds:0 
-4073 - berth - INFO - zhen 84 cur_num_gds:0 
-4073 - berth - INFO - zhen 84 cur_num_gds:0 
-4073 - berth - INFO - zhen 84 cur_num_gds:0 
-4073 - berth - INFO - zhen 84 cur_num_gds:0 
-4073 - berth - INFO - zhen 84 cur_num_gds:0 
-4073 - berth - INFO - zhen 84 cur_num_gds:0 
-4076 - berth - INFO - zhen 85 cur_num_gds:0 
-4076 - berth - INFO - zhen 85 cur_num_gds:0 
-4076 - berth - INFO - zhen 85 cur_num_gds:0 
-4076 - berth - INFO - zhen 85 cur_num_gds:0 
-4076 - berth - INFO - zhen 85 cur_num_gds:0 
-4076 - berth - INFO - zhen 85 cur_num_gds:0 
-4078 - berth - INFO - zhen 86 cur_num_gds:0 
-4078 - berth - INFO - zhen 86 cur_num_gds:0 
-4078 - berth - INFO - zhen 86 cur_num_gds:0 
-4078 - berth - INFO - zhen 86 cur_num_gds:0 
-4078 - berth - INFO - zhen 86 cur_num_gds:0 
-4078 - berth - INFO - zhen 86 cur_num_gds:0 
-4082 - berth - INFO - zhen 87 cur_num_gds:0 
-4082 - berth - INFO - zhen 87 cur_num_gds:0 
-4082 - berth - INFO - zhen 87 cur_num_gds:0 
-4082 - berth - INFO - zhen 87 cur_num_gds:0 
-4082 - berth - INFO - zhen 87 cur_num_gds:0 
-4082 - berth - INFO - zhen 87 cur_num_gds:0 
-4085 - berth - INFO - zhen 88 cur_num_gds:0 
-4085 - berth - INFO - zhen 88 cur_num_gds:0 
-4085 - berth - INFO - zhen 88 cur_num_gds:0 
-4085 - berth - INFO - zhen 88 cur_num_gds:0 
-4085 - berth - INFO - zhen 88 cur_num_gds:0 
-4085 - berth - INFO - zhen 88 cur_num_gds:0 
-4089 - berth - INFO - zhen 89 cur_num_gds:0 
-4089 - berth - INFO - zhen 89 cur_num_gds:0 
-4089 - berth - INFO - zhen 89 cur_num_gds:0 
-4089 - berth - INFO - zhen 89 cur_num_gds:0 
-4089 - berth - INFO - zhen 89 cur_num_gds:0 
-4089 - berth - INFO - zhen 89 cur_num_gds:0 
-4096 - berth - INFO - zhen 91 cur_num_gds:0 
-4096 - berth - INFO - zhen 91 cur_num_gds:0 
-4096 - berth - INFO - zhen 91 cur_num_gds:0 
-4096 - berth - INFO - zhen 91 cur_num_gds:0 
-4096 - berth - INFO - zhen 91 cur_num_gds:0 
-4096 - berth - INFO - zhen 91 cur_num_gds:0 
-4101 - berth - INFO - zhen 92 cur_num_gds:0 
-4101 - berth - INFO - zhen 92 cur_num_gds:0 
-4101 - berth - INFO - zhen 92 cur_num_gds:0 
-4101 - berth - INFO - zhen 92 cur_num_gds:0 
-4101 - berth - INFO - zhen 92 cur_num_gds:0 
-4101 - berth - INFO - zhen 92 cur_num_gds:0 
-4105 - berth - INFO - zhen 93 cur_num_gds:0 
-4105 - berth - INFO - zhen 93 cur_num_gds:0 
-4105 - berth - INFO - zhen 93 cur_num_gds:0 
-4105 - berth - INFO - zhen 93 cur_num_gds:0 
-4105 - berth - INFO - zhen 93 cur_num_gds:0 
-4105 - berth - INFO - zhen 93 cur_num_gds:0 
-4109 - berth - INFO - zhen 94 cur_num_gds:0 
-4109 - berth - INFO - zhen 94 cur_num_gds:0 
-4109 - berth - INFO - zhen 94 cur_num_gds:0 
-4109 - berth - INFO - zhen 94 cur_num_gds:0 
-4109 - berth - INFO - zhen 94 cur_num_gds:0 
-4109 - berth - INFO - zhen 94 cur_num_gds:0 
-4111 - berth - INFO - zhen 95 cur_num_gds:0 
-4111 - berth - INFO - zhen 95 cur_num_gds:0 
-4111 - berth - INFO - zhen 95 cur_num_gds:0 
-4111 - berth - INFO - zhen 95 cur_num_gds:0 
-4111 - berth - INFO - zhen 95 cur_num_gds:0 
-4111 - berth - INFO - zhen 95 cur_num_gds:0 
-4115 - berth - INFO - zhen 96 cur_num_gds:0 
-4115 - berth - INFO - zhen 96 cur_num_gds:0 
-4115 - berth - INFO - zhen 96 cur_num_gds:0 
-4115 - berth - INFO - zhen 96 cur_num_gds:0 
-4115 - berth - INFO - zhen 96 cur_num_gds:0 
-4115 - berth - INFO - zhen 96 cur_num_gds:0 
-4119 - berth - INFO - zhen 97 cur_num_gds:0 
-4119 - berth - INFO - zhen 97 cur_num_gds:0 
-4119 - berth - INFO - zhen 97 cur_num_gds:0 
-4119 - berth - INFO - zhen 97 cur_num_gds:0 
-4119 - berth - INFO - zhen 97 cur_num_gds:0 
-4119 - berth - INFO - zhen 97 cur_num_gds:0 
-4123 - berth - INFO - zhen 98 cur_num_gds:0 
-4123 - berth - INFO - zhen 98 cur_num_gds:0 
-4123 - berth - INFO - zhen 98 cur_num_gds:0 
-4123 - berth - INFO - zhen 98 cur_num_gds:0 
-4123 - berth - INFO - zhen 98 cur_num_gds:0 
-4123 - berth - INFO - zhen 98 cur_num_gds:0 
-4126 - berth - INFO - zhen 99 cur_num_gds:0 
-4126 - berth - INFO - zhen 99 cur_num_gds:0 
-4126 - berth - INFO - zhen 99 cur_num_gds:0 
-4126 - berth - INFO - zhen 99 cur_num_gds:0 
-4126 - berth - INFO - zhen 99 cur_num_gds:0 
-4126 - berth - INFO - zhen 99 cur_num_gds:0 
-4133 - berth - INFO - zhen 101 cur_num_gds:0 
-4133 - berth - INFO - zhen 101 cur_num_gds:0 
-4133 - berth - INFO - zhen 101 cur_num_gds:0 
-4133 - berth - INFO - zhen 101 cur_num_gds:0 
-4133 - berth - INFO - zhen 101 cur_num_gds:0 
-4133 - berth - INFO - zhen 101 cur_num_gds:0 
-4137 - berth - INFO - zhen 102 cur_num_gds:0 
-4137 - berth - INFO - zhen 102 cur_num_gds:0 
-4137 - berth - INFO - zhen 102 cur_num_gds:0 
-4137 - berth - INFO - zhen 102 cur_num_gds:0 
-4137 - berth - INFO - zhen 102 cur_num_gds:0 
-4137 - berth - INFO - zhen 102 cur_num_gds:0 
-4141 - berth - INFO - zhen 103 cur_num_gds:0 
-4141 - berth - INFO - zhen 103 cur_num_gds:0 
-4141 - berth - INFO - zhen 103 cur_num_gds:0 
-4141 - berth - INFO - zhen 103 cur_num_gds:0 
-4141 - berth - INFO - zhen 103 cur_num_gds:0 
-4141 - berth - INFO - zhen 103 cur_num_gds:0 
-4143 - berth - INFO - zhen 104 cur_num_gds:0 
-4143 - berth - INFO - zhen 104 cur_num_gds:0 
-4143 - berth - INFO - zhen 104 cur_num_gds:0 
-4144 - berth - INFO - zhen 104 cur_num_gds:0 
-4144 - berth - INFO - zhen 104 cur_num_gds:0 
-4144 - berth - INFO - zhen 104 cur_num_gds:0 
-4146 - berth - INFO - zhen 105 cur_num_gds:0 
-4146 - berth - INFO - zhen 105 cur_num_gds:0 
-4146 - berth - INFO - zhen 105 cur_num_gds:0 
-4146 - berth - INFO - zhen 105 cur_num_gds:0 
-4146 - berth - INFO - zhen 105 cur_num_gds:0 
-4146 - berth - INFO - zhen 105 cur_num_gds:0 
-4150 - berth - INFO - zhen 106 cur_num_gds:0 
-4150 - berth - INFO - zhen 106 cur_num_gds:0 
-4150 - berth - INFO - zhen 106 cur_num_gds:0 
-4150 - berth - INFO - zhen 106 cur_num_gds:0 
-4150 - berth - INFO - zhen 106 cur_num_gds:0 
-4150 - berth - INFO - zhen 106 cur_num_gds:0 
-4152 - berth - INFO - zhen 107 cur_num_gds:0 
-4152 - berth - INFO - zhen 107 cur_num_gds:0 
-4153 - berth - INFO - zhen 107 cur_num_gds:0 
-4153 - berth - INFO - zhen 107 cur_num_gds:0 
-4153 - berth - INFO - zhen 107 cur_num_gds:0 
-4153 - berth - INFO - zhen 107 cur_num_gds:0 
-4156 - berth - INFO - zhen 108 cur_num_gds:0 
-4156 - berth - INFO - zhen 108 cur_num_gds:0 
-4156 - berth - INFO - zhen 108 cur_num_gds:0 
-4156 - berth - INFO - zhen 108 cur_num_gds:0 
-4156 - berth - INFO - zhen 108 cur_num_gds:0 
-4156 - berth - INFO - zhen 108 cur_num_gds:0 
-4159 - berth - INFO - zhen 109 cur_num_gds:0 
-4159 - berth - INFO - zhen 109 cur_num_gds:0 
-4159 - berth - INFO - zhen 109 cur_num_gds:0 
-4160 - berth - INFO - zhen 109 cur_num_gds:0 
-4160 - berth - INFO - zhen 109 cur_num_gds:0 
-4160 - berth - INFO - zhen 109 cur_num_gds:0 
-4166 - berth - INFO - zhen 111 cur_num_gds:0 
-4166 - berth - INFO - zhen 111 cur_num_gds:0 
-4167 - berth - INFO - zhen 111 cur_num_gds:0 
-4167 - berth - INFO - zhen 111 cur_num_gds:0 
-4167 - berth - INFO - zhen 111 cur_num_gds:0 
-4167 - berth - INFO - zhen 111 cur_num_gds:0 
-4170 - berth - INFO - zhen 112 cur_num_gds:0 
-4170 - berth - INFO - zhen 112 cur_num_gds:0 
-4170 - berth - INFO - zhen 112 cur_num_gds:0 
-4170 - berth - INFO - zhen 112 cur_num_gds:0 
-4170 - berth - INFO - zhen 112 cur_num_gds:0 
-4170 - berth - INFO - zhen 112 cur_num_gds:0 
-4174 - berth - INFO - zhen 113 cur_num_gds:0 
-4174 - berth - INFO - zhen 113 cur_num_gds:0 
-4174 - berth - INFO - zhen 113 cur_num_gds:0 
-4174 - berth - INFO - zhen 113 cur_num_gds:0 
-4174 - berth - INFO - zhen 113 cur_num_gds:0 
-4174 - berth - INFO - zhen 113 cur_num_gds:0 
-4178 - berth - INFO - zhen 114 cur_num_gds:0 
-4178 - berth - INFO - zhen 114 cur_num_gds:0 
-4178 - berth - INFO - zhen 114 cur_num_gds:0 
-4178 - berth - INFO - zhen 114 cur_num_gds:0 
-4178 - berth - INFO - zhen 114 cur_num_gds:0 
-4178 - berth - INFO - zhen 114 cur_num_gds:0 
-4183 - berth - INFO - zhen 115 cur_num_gds:0 
-4183 - berth - INFO - zhen 115 cur_num_gds:0 
-4183 - berth - INFO - zhen 115 cur_num_gds:0 
-4183 - berth - INFO - zhen 115 cur_num_gds:0 
-4183 - berth - INFO - zhen 115 cur_num_gds:0 
-4183 - berth - INFO - zhen 115 cur_num_gds:0 
-4186 - berth - INFO - zhen 116 cur_num_gds:0 
-4186 - berth - INFO - zhen 116 cur_num_gds:0 
-4186 - berth - INFO - zhen 116 cur_num_gds:0 
-4186 - berth - INFO - zhen 116 cur_num_gds:0 
-4186 - berth - INFO - zhen 116 cur_num_gds:0 
-4186 - berth - INFO - zhen 116 cur_num_gds:0 
-4189 - berth - INFO - zhen 117 cur_num_gds:0 
-4189 - berth - INFO - zhen 117 cur_num_gds:0 
-4189 - berth - INFO - zhen 117 cur_num_gds:0 
-4189 - berth - INFO - zhen 117 cur_num_gds:0 
-4189 - berth - INFO - zhen 117 cur_num_gds:0 
-4189 - berth - INFO - zhen 117 cur_num_gds:0 
-4193 - berth - INFO - zhen 118 cur_num_gds:0 
-4193 - berth - INFO - zhen 118 cur_num_gds:0 
-4193 - berth - INFO - zhen 118 cur_num_gds:0 
-4193 - berth - INFO - zhen 118 cur_num_gds:0 
-4193 - berth - INFO - zhen 118 cur_num_gds:0 
-4193 - berth - INFO - zhen 118 cur_num_gds:0 
-4198 - berth - INFO - zhen 119 cur_num_gds:0 
-4198 - berth - INFO - zhen 119 cur_num_gds:0 
-4198 - berth - INFO - zhen 119 cur_num_gds:0 
-4198 - berth - INFO - zhen 119 cur_num_gds:0 
-4198 - berth - INFO - zhen 119 cur_num_gds:0 
-4198 - berth - INFO - zhen 119 cur_num_gds:0 
-4203 - berth - INFO - zhen 121 cur_num_gds:0 
-4203 - berth - INFO - zhen 121 cur_num_gds:0 
-4203 - berth - INFO - zhen 121 cur_num_gds:0 
-4203 - berth - INFO - zhen 121 cur_num_gds:0 
-4203 - berth - INFO - zhen 121 cur_num_gds:0 
-4203 - berth - INFO - zhen 121 cur_num_gds:0 
-4207 - berth - INFO - zhen 122 cur_num_gds:0 
-4207 - berth - INFO - zhen 122 cur_num_gds:0 
-4208 - berth - INFO - zhen 122 cur_num_gds:0 
-4208 - berth - INFO - zhen 122 cur_num_gds:0 
-4208 - berth - INFO - zhen 122 cur_num_gds:0 
-4208 - berth - INFO - zhen 122 cur_num_gds:0 
-4211 - berth - INFO - zhen 123 cur_num_gds:0 
-4211 - berth - INFO - zhen 123 cur_num_gds:0 
-4212 - berth - INFO - zhen 123 cur_num_gds:0 
-4212 - berth - INFO - zhen 123 cur_num_gds:0 
-4212 - berth - INFO - zhen 123 cur_num_gds:0 
-4212 - berth - INFO - zhen 123 cur_num_gds:0 
-4216 - berth - INFO - zhen 124 cur_num_gds:0 
-4216 - berth - INFO - zhen 124 cur_num_gds:0 
-4216 - berth - INFO - zhen 124 cur_num_gds:0 
-4216 - berth - INFO - zhen 124 cur_num_gds:0 
-4216 - berth - INFO - zhen 124 cur_num_gds:0 
-4216 - berth - INFO - zhen 124 cur_num_gds:0 
-4220 - berth - INFO - zhen 125 cur_num_gds:0 
-4220 - berth - INFO - zhen 125 cur_num_gds:0 
-4220 - berth - INFO - zhen 125 cur_num_gds:0 
-4220 - berth - INFO - zhen 125 cur_num_gds:0 
-4221 - berth - INFO - zhen 125 cur_num_gds:0 
-4221 - berth - INFO - zhen 125 cur_num_gds:0 
-4224 - berth - INFO - zhen 126 cur_num_gds:0 
-4224 - berth - INFO - zhen 126 cur_num_gds:0 
-4224 - berth - INFO - zhen 126 cur_num_gds:0 
-4224 - berth - INFO - zhen 126 cur_num_gds:0 
-4224 - berth - INFO - zhen 126 cur_num_gds:0 
-4224 - berth - INFO - zhen 126 cur_num_gds:0 
-4227 - berth - INFO - zhen 127 cur_num_gds:0 
-4227 - berth - INFO - zhen 127 cur_num_gds:0 
-4227 - berth - INFO - zhen 127 cur_num_gds:0 
-4227 - berth - INFO - zhen 127 cur_num_gds:0 
-4227 - berth - INFO - zhen 127 cur_num_gds:0 
-4227 - berth - INFO - zhen 127 cur_num_gds:0 
-4231 - berth - INFO - zhen 128 cur_num_gds:0 
-4231 - berth - INFO - zhen 128 cur_num_gds:0 
-4231 - berth - INFO - zhen 128 cur_num_gds:0 
-4231 - berth - INFO - zhen 128 cur_num_gds:0 
-4231 - berth - INFO - zhen 128 cur_num_gds:0 
-4231 - berth - INFO - zhen 128 cur_num_gds:0 
-4235 - berth - INFO - zhen 129 cur_num_gds:0 
-4235 - berth - INFO - zhen 129 cur_num_gds:0 
-4235 - berth - INFO - zhen 129 cur_num_gds:0 
-4235 - berth - INFO - zhen 129 cur_num_gds:0 
-4235 - berth - INFO - zhen 129 cur_num_gds:0 
-4235 - berth - INFO - zhen 129 cur_num_gds:0 
-4243 - berth - INFO - zhen 131 cur_num_gds:0 
-4243 - berth - INFO - zhen 131 cur_num_gds:0 
-4243 - berth - INFO - zhen 131 cur_num_gds:0 
-4243 - berth - INFO - zhen 131 cur_num_gds:0 
-4243 - berth - INFO - zhen 131 cur_num_gds:0 
-4243 - berth - INFO - zhen 131 cur_num_gds:0 
-4246 - berth - INFO - zhen 132 cur_num_gds:0 
-4246 - berth - INFO - zhen 132 cur_num_gds:0 
-4246 - berth - INFO - zhen 132 cur_num_gds:0 
-4246 - berth - INFO - zhen 132 cur_num_gds:0 
-4246 - berth - INFO - zhen 132 cur_num_gds:0 
-4246 - berth - INFO - zhen 132 cur_num_gds:0 
-4250 - berth - INFO - zhen 133 cur_num_gds:0 
-4250 - berth - INFO - zhen 133 cur_num_gds:0 
-4250 - berth - INFO - zhen 133 cur_num_gds:0 
-4250 - berth - INFO - zhen 133 cur_num_gds:0 
-4250 - berth - INFO - zhen 133 cur_num_gds:0 
-4250 - berth - INFO - zhen 133 cur_num_gds:0 
+3531 - berth - INFO - 
+3531 - berth - INFO - zhen 1, id: 0 cur_num_gds:0 
+3531 - berth - INFO - 
+3531 - berth - INFO - zhen 1, id: 1 cur_num_gds:0 
+3531 - berth - INFO - 
+3531 - berth - INFO - zhen 1, id: 2 cur_num_gds:0 
+3533 - berth - INFO - 0
+3533 - berth - INFO - zhen 2, id: 0 cur_num_gds:0 
+3533 - berth - INFO - 0
+3533 - berth - INFO - zhen 2, id: 1 cur_num_gds:0 
+3533 - berth - INFO - 0
+3533 - berth - INFO - zhen 2, id: 2 cur_num_gds:0 
+3537 - berth - INFO - 0
+3537 - berth - INFO - zhen 3, id: 0 cur_num_gds:0 
+3537 - berth - INFO - 0
+3537 - berth - INFO - zhen 3, id: 1 cur_num_gds:0 
+3537 - berth - INFO - 0
+3537 - berth - INFO - zhen 3, id: 2 cur_num_gds:0 
+3541 - berth - INFO - 0
+3541 - berth - INFO - zhen 4, id: 0 cur_num_gds:0 
+3541 - berth - INFO - 0
+3541 - berth - INFO - zhen 4, id: 1 cur_num_gds:0 
+3541 - berth - INFO - 0
+3541 - berth - INFO - zhen 4, id: 2 cur_num_gds:0 
+3543 - berth - INFO - 0
+3543 - berth - INFO - zhen 5, id: 0 cur_num_gds:0 
+3543 - berth - INFO - 0
+3543 - berth - INFO - zhen 5, id: 1 cur_num_gds:0 
+3543 - berth - INFO - 0
+3543 - berth - INFO - zhen 5, id: 2 cur_num_gds:0 
+3544 - berth - INFO - 0
+3544 - berth - INFO - zhen 6, id: 0 cur_num_gds:0 
+3544 - berth - INFO - 0
+3544 - berth - INFO - zhen 6, id: 1 cur_num_gds:0 
+3544 - berth - INFO - 0
+3544 - berth - INFO - zhen 6, id: 2 cur_num_gds:0 
+3548 - berth - INFO - 0
+3548 - berth - INFO - zhen 7, id: 0 cur_num_gds:0 
+3548 - berth - INFO - 0
+3548 - berth - INFO - zhen 7, id: 1 cur_num_gds:0 
+3548 - berth - INFO - 0
+3548 - berth - INFO - zhen 7, id: 2 cur_num_gds:0 
+3553 - berth - INFO - 0
+3553 - berth - INFO - zhen 8, id: 0 cur_num_gds:0 
+3553 - berth - INFO - 0
+3553 - berth - INFO - zhen 8, id: 1 cur_num_gds:0 
+3553 - berth - INFO - 0
+3553 - berth - INFO - zhen 8, id: 2 cur_num_gds:0 
+3555 - berth - INFO - 0
+3555 - berth - INFO - zhen 9, id: 0 cur_num_gds:0 
+3555 - berth - INFO - 0
+3555 - berth - INFO - zhen 9, id: 1 cur_num_gds:0 
+3555 - berth - INFO - 0
+3555 - berth - INFO - zhen 9, id: 2 cur_num_gds:0 
+3559 - berth - INFO - 0
+3559 - berth - INFO - zhen 11, id: 0 cur_num_gds:0 
+3559 - berth - INFO - 0
+3559 - berth - INFO - zhen 11, id: 1 cur_num_gds:0 
+3559 - berth - INFO - 0
+3559 - berth - INFO - zhen 11, id: 2 cur_num_gds:0 
+3562 - berth - INFO - 0
+3562 - berth - INFO - zhen 12, id: 0 cur_num_gds:0 
+3562 - berth - INFO - 0
+3562 - berth - INFO - zhen 12, id: 1 cur_num_gds:0 
+3562 - berth - INFO - 0
+3562 - berth - INFO - zhen 12, id: 2 cur_num_gds:0 
+3564 - berth - INFO - 0
+3564 - berth - INFO - zhen 13, id: 0 cur_num_gds:0 
+3564 - berth - INFO - 0
+3564 - berth - INFO - zhen 13, id: 1 cur_num_gds:0 
+3564 - berth - INFO - 0
+3565 - berth - INFO - zhen 13, id: 2 cur_num_gds:0 
+3566 - berth - INFO - 0
+3566 - berth - INFO - zhen 14, id: 0 cur_num_gds:0 
+3566 - berth - INFO - 0
+3566 - berth - INFO - zhen 14, id: 1 cur_num_gds:0 
+3566 - berth - INFO - 0
+3566 - berth - INFO - zhen 14, id: 2 cur_num_gds:0 
+3568 - berth - INFO - 0
+3568 - berth - INFO - zhen 15, id: 0 cur_num_gds:0 
+3568 - berth - INFO - 0
+3568 - berth - INFO - zhen 15, id: 1 cur_num_gds:0 
+3568 - berth - INFO - 0
+3568 - berth - INFO - zhen 15, id: 2 cur_num_gds:0 
+3570 - berth - INFO - 0
+3570 - berth - INFO - zhen 16, id: 0 cur_num_gds:0 
+3570 - berth - INFO - 0
+3570 - berth - INFO - zhen 16, id: 1 cur_num_gds:0 
+3570 - berth - INFO - 0
+3570 - berth - INFO - zhen 16, id: 2 cur_num_gds:0 
+3572 - berth - INFO - 0
+3572 - berth - INFO - zhen 17, id: 0 cur_num_gds:0 
+3572 - berth - INFO - 0
+3572 - berth - INFO - zhen 17, id: 1 cur_num_gds:0 
+3572 - berth - INFO - 0
+3572 - berth - INFO - zhen 17, id: 2 cur_num_gds:0 
+3574 - berth - INFO - 0
+3574 - berth - INFO - zhen 18, id: 0 cur_num_gds:0 
+3574 - berth - INFO - 0
+3574 - berth - INFO - zhen 18, id: 1 cur_num_gds:0 
+3574 - berth - INFO - 0
+3574 - berth - INFO - zhen 18, id: 2 cur_num_gds:0 
+3575 - berth - INFO - 0
+3575 - berth - INFO - zhen 19, id: 0 cur_num_gds:0 
+3575 - berth - INFO - 0
+3576 - berth - INFO - zhen 19, id: 1 cur_num_gds:0 
+3576 - berth - INFO - 0
+3576 - berth - INFO - zhen 19, id: 2 cur_num_gds:0 
+3579 - berth - INFO - 0
+3579 - berth - INFO - zhen 21, id: 0 cur_num_gds:0 
+3579 - berth - INFO - 0
+3579 - berth - INFO - zhen 21, id: 1 cur_num_gds:0 
+3579 - berth - INFO - 0
+3579 - berth - INFO - zhen 21, id: 2 cur_num_gds:0 
+3581 - berth - INFO - 0
+3581 - berth - INFO - zhen 22, id: 0 cur_num_gds:0 
+3581 - berth - INFO - 0
+3581 - berth - INFO - zhen 22, id: 1 cur_num_gds:0 
+3581 - berth - INFO - 0
+3582 - berth - INFO - zhen 22, id: 2 cur_num_gds:0 
+3583 - berth - INFO - 0
+3583 - berth - INFO - zhen 23, id: 0 cur_num_gds:0 
+3583 - berth - INFO - 0
+3583 - berth - INFO - zhen 23, id: 1 cur_num_gds:0 
+3583 - berth - INFO - 0
+3583 - berth - INFO - zhen 23, id: 2 cur_num_gds:0 
+3585 - berth - INFO - 0
+3585 - berth - INFO - zhen 24, id: 0 cur_num_gds:0 
+3585 - berth - INFO - 0
+3585 - berth - INFO - zhen 24, id: 1 cur_num_gds:0 
+3585 - berth - INFO - 0
+3585 - berth - INFO - zhen 24, id: 2 cur_num_gds:0 
+3587 - berth - INFO - 0
+3587 - berth - INFO - zhen 25, id: 0 cur_num_gds:0 
+3587 - berth - INFO - 0
+3587 - berth - INFO - zhen 25, id: 1 cur_num_gds:0 
+3587 - berth - INFO - 0
+3587 - berth - INFO - zhen 25, id: 2 cur_num_gds:0 
+3590 - berth - INFO - 0
+3591 - berth - INFO - zhen 26, id: 0 cur_num_gds:0 
+3591 - berth - INFO - 0
+3591 - berth - INFO - zhen 26, id: 1 cur_num_gds:0 
+3591 - berth - INFO - 0
+3591 - berth - INFO - zhen 26, id: 2 cur_num_gds:0 
+3594 - berth - INFO - 0
+3594 - berth - INFO - zhen 27, id: 0 cur_num_gds:0 
+3594 - berth - INFO - 0
+3594 - berth - INFO - zhen 27, id: 1 cur_num_gds:0 
+3594 - berth - INFO - 0
+3594 - berth - INFO - zhen 27, id: 2 cur_num_gds:0 
+3597 - berth - INFO - 0
+3597 - berth - INFO - zhen 28, id: 0 cur_num_gds:0 
+3597 - berth - INFO - 0
+3597 - berth - INFO - zhen 28, id: 1 cur_num_gds:0 
+3597 - berth - INFO - 0
+3597 - berth - INFO - zhen 28, id: 2 cur_num_gds:0 
+3599 - berth - INFO - 0
+3599 - berth - INFO - zhen 29, id: 0 cur_num_gds:0 
+3599 - berth - INFO - 0
+3599 - berth - INFO - zhen 29, id: 1 cur_num_gds:0 
+3599 - berth - INFO - 0
+3599 - berth - INFO - zhen 29, id: 2 cur_num_gds:0 
+3602 - berth - INFO - 0
+3602 - berth - INFO - zhen 31, id: 0 cur_num_gds:0 
+3602 - berth - INFO - 0
+3602 - berth - INFO - zhen 31, id: 1 cur_num_gds:0 
+3602 - berth - INFO - 0
+3602 - berth - INFO - zhen 31, id: 2 cur_num_gds:0 
+3604 - berth - INFO - 0
+3604 - berth - INFO - zhen 32, id: 0 cur_num_gds:0 
+3604 - berth - INFO - 0
+3604 - berth - INFO - zhen 32, id: 1 cur_num_gds:0 
+3604 - berth - INFO - 0
+3604 - berth - INFO - zhen 32, id: 2 cur_num_gds:0 
+3606 - berth - INFO - 0
+3606 - berth - INFO - zhen 33, id: 0 cur_num_gds:0 
+3606 - berth - INFO - 0
+3606 - berth - INFO - zhen 33, id: 1 cur_num_gds:0 
+3606 - berth - INFO - 0
+3606 - berth - INFO - zhen 33, id: 2 cur_num_gds:0 
+3608 - berth - INFO - 0
+3608 - berth - INFO - zhen 34, id: 0 cur_num_gds:0 
+3608 - berth - INFO - 0
+3608 - berth - INFO - zhen 34, id: 1 cur_num_gds:0 
+3608 - berth - INFO - 0
+3608 - berth - INFO - zhen 34, id: 2 cur_num_gds:0 
+3612 - berth - INFO - 0
+3612 - berth - INFO - zhen 35, id: 0 cur_num_gds:0 
+3612 - berth - INFO - 0
+3612 - berth - INFO - zhen 35, id: 1 cur_num_gds:0 
+3612 - berth - INFO - 0
+3612 - berth - INFO - zhen 35, id: 2 cur_num_gds:0 
+3615 - berth - INFO - 0
+3615 - berth - INFO - zhen 36, id: 0 cur_num_gds:0 
+3615 - berth - INFO - 0
+3615 - berth - INFO - zhen 36, id: 1 cur_num_gds:0 
+3615 - berth - INFO - 0
+3615 - berth - INFO - zhen 36, id: 2 cur_num_gds:0 
+3617 - berth - INFO - 0
+3617 - berth - INFO - zhen 37, id: 0 cur_num_gds:0 
+3617 - berth - INFO - 0
+3617 - berth - INFO - zhen 37, id: 1 cur_num_gds:0 
+3617 - berth - INFO - 0
+3617 - berth - INFO - zhen 37, id: 2 cur_num_gds:0 
+3619 - berth - INFO - 0
+3619 - berth - INFO - zhen 38, id: 0 cur_num_gds:0 
+3619 - berth - INFO - 0
+3619 - berth - INFO - zhen 38, id: 1 cur_num_gds:0 
+3619 - berth - INFO - 0
+3619 - berth - INFO - zhen 38, id: 2 cur_num_gds:0 
+3621 - berth - INFO - 0
+3621 - berth - INFO - zhen 39, id: 0 cur_num_gds:0 
+3621 - berth - INFO - 0
+3621 - berth - INFO - zhen 39, id: 1 cur_num_gds:0 
+3621 - berth - INFO - 0
+3621 - berth - INFO - zhen 39, id: 2 cur_num_gds:0 
+3625 - berth - INFO - 0
+3625 - berth - INFO - zhen 41, id: 0 cur_num_gds:0 
+3625 - berth - INFO - 0
+3625 - berth - INFO - zhen 41, id: 1 cur_num_gds:0 
+3625 - berth - INFO - 0
+3625 - berth - INFO - zhen 41, id: 2 cur_num_gds:0 
+3627 - berth - INFO - 0
+3627 - berth - INFO - zhen 42, id: 0 cur_num_gds:0 
+3627 - berth - INFO - 0
+3627 - berth - INFO - zhen 42, id: 1 cur_num_gds:0 
+3627 - berth - INFO - 0
+3627 - berth - INFO - zhen 42, id: 2 cur_num_gds:0 
+3629 - berth - INFO - 0
+3629 - berth - INFO - zhen 43, id: 0 cur_num_gds:0 
+3629 - berth - INFO - 0
+3629 - berth - INFO - zhen 43, id: 1 cur_num_gds:0 
+3629 - berth - INFO - 0
+3629 - berth - INFO - zhen 43, id: 2 cur_num_gds:0 
+3631 - berth - INFO - 0
+3631 - berth - INFO - zhen 44, id: 0 cur_num_gds:0 
+3631 - berth - INFO - 0
+3631 - berth - INFO - zhen 44, id: 1 cur_num_gds:0 
+3631 - berth - INFO - 0
+3631 - berth - INFO - zhen 44, id: 2 cur_num_gds:0 
+3633 - berth - INFO - 0
+3633 - berth - INFO - zhen 45, id: 0 cur_num_gds:0 
+3633 - berth - INFO - 0
+3633 - berth - INFO - zhen 45, id: 1 cur_num_gds:0 
+3633 - berth - INFO - 0
+3633 - berth - INFO - zhen 45, id: 2 cur_num_gds:0 
+3635 - berth - INFO - 0
+3635 - berth - INFO - zhen 46, id: 0 cur_num_gds:0 
+3635 - berth - INFO - 0
+3635 - berth - INFO - zhen 46, id: 1 cur_num_gds:0 
+3635 - berth - INFO - 0
+3635 - berth - INFO - zhen 46, id: 2 cur_num_gds:0 
+3639 - berth - INFO - 0
+3639 - berth - INFO - zhen 47, id: 0 cur_num_gds:0 
+3639 - berth - INFO - 0
+3639 - berth - INFO - zhen 47, id: 1 cur_num_gds:0 
+3639 - berth - INFO - 0
+3639 - berth - INFO - zhen 47, id: 2 cur_num_gds:0 
+3642 - berth - INFO - 0
+3642 - berth - INFO - zhen 48, id: 0 cur_num_gds:0 
+3642 - berth - INFO - 0
+3642 - berth - INFO - zhen 48, id: 1 cur_num_gds:0 
+3642 - berth - INFO - 0
+3642 - berth - INFO - zhen 48, id: 2 cur_num_gds:0 
+3646 - berth - INFO - 0
+3646 - berth - INFO - zhen 49, id: 0 cur_num_gds:0 
+3646 - berth - INFO - 0
+3646 - berth - INFO - zhen 49, id: 1 cur_num_gds:0 
+3646 - berth - INFO - 0
+3646 - berth - INFO - zhen 49, id: 2 cur_num_gds:0 
+3651 - berth - INFO - 0
+3651 - berth - INFO - zhen 51, id: 0 cur_num_gds:0 
+3651 - berth - INFO - 0
+3651 - berth - INFO - zhen 51, id: 1 cur_num_gds:0 
+3651 - berth - INFO - 0
+3651 - berth - INFO - zhen 51, id: 2 cur_num_gds:0 
+3653 - berth - INFO - 0
+3653 - berth - INFO - zhen 52, id: 0 cur_num_gds:0 
+3653 - berth - INFO - 0
+3653 - berth - INFO - zhen 52, id: 1 cur_num_gds:0 
+3653 - berth - INFO - 0
+3653 - berth - INFO - zhen 52, id: 2 cur_num_gds:0 
+3655 - berth - INFO - 0
+3655 - berth - INFO - zhen 53, id: 0 cur_num_gds:0 
+3655 - berth - INFO - 0
+3655 - berth - INFO - zhen 53, id: 1 cur_num_gds:0 
+3655 - berth - INFO - 0
+3655 - berth - INFO - zhen 53, id: 2 cur_num_gds:0 
+3656 - berth - INFO - 0
+3656 - berth - INFO - zhen 54, id: 0 cur_num_gds:0 
+3656 - berth - INFO - 0
+3656 - berth - INFO - zhen 54, id: 1 cur_num_gds:0 
+3656 - berth - INFO - 0
+3656 - berth - INFO - zhen 54, id: 2 cur_num_gds:0 
+3657 - berth - INFO - 0
+3658 - berth - INFO - zhen 55, id: 0 cur_num_gds:0 
+3658 - berth - INFO - 0
+3658 - berth - INFO - zhen 55, id: 1 cur_num_gds:0 
+3658 - berth - INFO - 0
+3658 - berth - INFO - zhen 55, id: 2 cur_num_gds:0 
+3659 - berth - INFO - 0
+3659 - berth - INFO - zhen 56, id: 0 cur_num_gds:0 
+3659 - berth - INFO - 0
+3659 - berth - INFO - zhen 56, id: 1 cur_num_gds:0 
+3659 - berth - INFO - 0
+3659 - berth - INFO - zhen 56, id: 2 cur_num_gds:0 
+3661 - berth - INFO - 0
+3661 - berth - INFO - zhen 57, id: 0 cur_num_gds:0 
+3661 - berth - INFO - 0
+3661 - berth - INFO - zhen 57, id: 1 cur_num_gds:0 
+3661 - berth - INFO - 0
+3661 - berth - INFO - zhen 57, id: 2 cur_num_gds:0 
+3663 - berth - INFO - 0
+3663 - berth - INFO - zhen 58, id: 0 cur_num_gds:0 
+3663 - berth - INFO - 0
+3663 - berth - INFO - zhen 58, id: 1 cur_num_gds:0 
+3663 - berth - INFO - 0
+3663 - berth - INFO - zhen 58, id: 2 cur_num_gds:0 
+3664 - berth - INFO - 0
+3664 - berth - INFO - zhen 59, id: 0 cur_num_gds:0 
+3664 - berth - INFO - 0
+3664 - berth - INFO - zhen 59, id: 1 cur_num_gds:0 
+3664 - berth - INFO - 0
+3664 - berth - INFO - zhen 59, id: 2 cur_num_gds:0 
+3667 - berth - INFO - 0
+3667 - berth - INFO - zhen 61, id: 0 cur_num_gds:0 
+3667 - berth - INFO - 0
+3667 - berth - INFO - zhen 61, id: 1 cur_num_gds:0 
+3667 - berth - INFO - 0
+3667 - berth - INFO - zhen 61, id: 2 cur_num_gds:0 
+3671 - berth - INFO - 0
+3671 - berth - INFO - zhen 62, id: 0 cur_num_gds:0 
+3671 - berth - INFO - 0
+3671 - berth - INFO - zhen 62, id: 1 cur_num_gds:0 
+3671 - berth - INFO - 0
+3671 - berth - INFO - zhen 62, id: 2 cur_num_gds:0 
+3673 - berth - INFO - 0
+3673 - berth - INFO - zhen 63, id: 0 cur_num_gds:0 
+3673 - berth - INFO - 0
+3673 - berth - INFO - zhen 63, id: 1 cur_num_gds:0 
+3673 - berth - INFO - 0
+3673 - berth - INFO - zhen 63, id: 2 cur_num_gds:0 
+3674 - berth - INFO - 0
+3674 - berth - INFO - zhen 64, id: 0 cur_num_gds:0 
+3674 - berth - INFO - 0
+3675 - berth - INFO - zhen 64, id: 1 cur_num_gds:0 
+3675 - berth - INFO - 0
+3675 - berth - INFO - zhen 64, id: 2 cur_num_gds:0 
+3676 - berth - INFO - 0
+3676 - berth - INFO - zhen 65, id: 0 cur_num_gds:0 
+3676 - berth - INFO - 0
+3676 - berth - INFO - zhen 65, id: 1 cur_num_gds:0 
+3676 - berth - INFO - 0
+3676 - berth - INFO - zhen 65, id: 2 cur_num_gds:0 
+3679 - berth - INFO - 0
+3679 - berth - INFO - zhen 66, id: 0 cur_num_gds:0 
+3679 - berth - INFO - 0
+3679 - berth - INFO - zhen 66, id: 1 cur_num_gds:0 
+3679 - berth - INFO - 0
+3679 - berth - INFO - zhen 66, id: 2 cur_num_gds:0 
+3680 - berth - INFO - 0
+3680 - berth - INFO - zhen 67, id: 0 cur_num_gds:0 
+3680 - berth - INFO - 0
+3680 - berth - INFO - zhen 67, id: 1 cur_num_gds:0 
+3680 - berth - INFO - 0
+3680 - berth - INFO - zhen 67, id: 2 cur_num_gds:0 
+3682 - berth - INFO - 0
+3682 - berth - INFO - zhen 68, id: 0 cur_num_gds:0 
+3682 - berth - INFO - 0
+3682 - berth - INFO - zhen 68, id: 1 cur_num_gds:0 
+3682 - berth - INFO - 0
+3682 - berth - INFO - zhen 68, id: 2 cur_num_gds:0 
+3683 - berth - INFO - 0
+3683 - berth - INFO - zhen 69, id: 0 cur_num_gds:0 
+3683 - berth - INFO - 0
+3683 - berth - INFO - zhen 69, id: 1 cur_num_gds:0 
+3683 - berth - INFO - 0
+3683 - berth - INFO - zhen 69, id: 2 cur_num_gds:0 
+3687 - berth - INFO - 0
+3687 - berth - INFO - zhen 71, id: 0 cur_num_gds:0 
+3687 - berth - INFO - 0
+3687 - berth - INFO - zhen 71, id: 1 cur_num_gds:0 
+3687 - berth - INFO - 0
+3687 - berth - INFO - zhen 71, id: 2 cur_num_gds:0 
+3689 - berth - INFO - 0
+3689 - berth - INFO - zhen 72, id: 0 cur_num_gds:0 
+3689 - berth - INFO - 0
+3689 - berth - INFO - zhen 72, id: 1 cur_num_gds:0 
+3689 - berth - INFO - 0
+3689 - berth - INFO - zhen 72, id: 2 cur_num_gds:0 
+3691 - berth - INFO - 0
+3691 - berth - INFO - zhen 73, id: 0 cur_num_gds:0 
+3691 - berth - INFO - 0
+3691 - berth - INFO - zhen 73, id: 1 cur_num_gds:0 
+3691 - berth - INFO - 0
+3691 - berth - INFO - zhen 73, id: 2 cur_num_gds:0 
+3692 - berth - INFO - 0
+3692 - berth - INFO - zhen 74, id: 0 cur_num_gds:0 
+3692 - berth - INFO - 0
+3692 - berth - INFO - zhen 74, id: 1 cur_num_gds:0 
+3692 - berth - INFO - 0
+3692 - berth - INFO - zhen 74, id: 2 cur_num_gds:0 
+3695 - berth - INFO - 0
+3695 - berth - INFO - zhen 75, id: 0 cur_num_gds:0 
+3695 - berth - INFO - 0
+3695 - berth - INFO - zhen 75, id: 1 cur_num_gds:0 
+3695 - berth - INFO - 0
+3695 - berth - INFO - zhen 75, id: 2 cur_num_gds:0 
+3696 - berth - INFO - 0
+3696 - berth - INFO - zhen 76, id: 0 cur_num_gds:0 
+3697 - berth - INFO - 0
+3697 - berth - INFO - zhen 76, id: 1 cur_num_gds:0 
+3697 - berth - INFO - 0
+3697 - berth - INFO - zhen 76, id: 2 cur_num_gds:0 
+3698 - berth - INFO - 0
+3698 - berth - INFO - zhen 77, id: 0 cur_num_gds:0 
+3698 - berth - INFO - 0
+3698 - berth - INFO - zhen 77, id: 1 cur_num_gds:0 
+3698 - berth - INFO - 0
+3698 - berth - INFO - zhen 77, id: 2 cur_num_gds:0 
+3699 - berth - INFO - 0
+3700 - berth - INFO - zhen 78, id: 0 cur_num_gds:0 
+3700 - berth - INFO - 0
+3700 - berth - INFO - zhen 78, id: 1 cur_num_gds:0 
+3700 - berth - INFO - 0
+3700 - berth - INFO - zhen 78, id: 2 cur_num_gds:0 
+3701 - berth - INFO - 0
+3701 - berth - INFO - zhen 79, id: 0 cur_num_gds:0 
+3701 - berth - INFO - 0
+3701 - berth - INFO - zhen 79, id: 1 cur_num_gds:0 
+3701 - berth - INFO - 0
+3701 - berth - INFO - zhen 79, id: 2 cur_num_gds:0 
+3705 - berth - INFO - 0
+3705 - berth - INFO - zhen 81, id: 0 cur_num_gds:0 
+3705 - berth - INFO - 0
+3705 - berth - INFO - zhen 81, id: 1 cur_num_gds:0 
+3705 - berth - INFO - 0
+3705 - berth - INFO - zhen 81, id: 2 cur_num_gds:0 
+3706 - berth - INFO - 0
+3706 - berth - INFO - zhen 82, id: 0 cur_num_gds:0 
+3706 - berth - INFO - 0
+3706 - berth - INFO - zhen 82, id: 1 cur_num_gds:0 
+3706 - berth - INFO - 0
+3706 - berth - INFO - zhen 82, id: 2 cur_num_gds:0 
+3707 - berth - INFO - 0
+3707 - berth - INFO - zhen 83, id: 0 cur_num_gds:0 
+3707 - berth - INFO - 0
+3707 - berth - INFO - zhen 83, id: 1 cur_num_gds:0 
+3707 - berth - INFO - 0
+3707 - berth - INFO - zhen 83, id: 2 cur_num_gds:0 
+3709 - berth - INFO - 0
+3709 - berth - INFO - zhen 84, id: 0 cur_num_gds:0 
+3709 - berth - INFO - 0
+3709 - berth - INFO - zhen 84, id: 1 cur_num_gds:0 
+3709 - berth - INFO - 0
+3709 - berth - INFO - zhen 84, id: 2 cur_num_gds:0 
+3711 - berth - INFO - 0
+3711 - berth - INFO - zhen 85, id: 0 cur_num_gds:0 
+3711 - berth - INFO - 0
+3711 - berth - INFO - zhen 85, id: 1 cur_num_gds:0 
+3711 - berth - INFO - 0
+3711 - berth - INFO - zhen 85, id: 2 cur_num_gds:0 
+3713 - berth - INFO - 0
+3713 - berth - INFO - zhen 86, id: 0 cur_num_gds:0 
+3713 - berth - INFO - 0
+3713 - berth - INFO - zhen 86, id: 1 cur_num_gds:0 
+3713 - berth - INFO - 0
+3713 - berth - INFO - zhen 86, id: 2 cur_num_gds:0 
+3714 - berth - INFO - 0
+3714 - berth - INFO - zhen 87, id: 0 cur_num_gds:0 
+3714 - berth - INFO - 0
+3714 - berth - INFO - zhen 87, id: 1 cur_num_gds:0 
+3714 - berth - INFO - 0
+3714 - berth - INFO - zhen 87, id: 2 cur_num_gds:0 
+3716 - berth - INFO - 0
+3716 - berth - INFO - zhen 88, id: 0 cur_num_gds:0 
+3716 - berth - INFO - 0
+3716 - berth - INFO - zhen 88, id: 1 cur_num_gds:0 
+3716 - berth - INFO - 0
+3716 - berth - INFO - zhen 88, id: 2 cur_num_gds:0 
+3717 - berth - INFO - 0
+3717 - berth - INFO - zhen 89, id: 0 cur_num_gds:0 
+3717 - berth - INFO - 0
+3717 - berth - INFO - zhen 89, id: 1 cur_num_gds:0 
+3717 - berth - INFO - 0
+3717 - berth - INFO - zhen 89, id: 2 cur_num_gds:0 
+3721 - berth - INFO - 0
+3721 - berth - INFO - zhen 91, id: 0 cur_num_gds:0 
+3721 - berth - INFO - 0
+3721 - berth - INFO - zhen 91, id: 1 cur_num_gds:0 
+3721 - berth - INFO - 0
+3721 - berth - INFO - zhen 91, id: 2 cur_num_gds:0 
+3722 - berth - INFO - 0
+3722 - berth - INFO - zhen 92, id: 0 cur_num_gds:0 
+3722 - berth - INFO - 0
+3722 - berth - INFO - zhen 92, id: 1 cur_num_gds:0 
+3722 - berth - INFO - 0
+3722 - berth - INFO - zhen 92, id: 2 cur_num_gds:0 
+3724 - berth - INFO - 0
+3724 - berth - INFO - zhen 93, id: 0 cur_num_gds:0 
+3724 - berth - INFO - 0
+3724 - berth - INFO - zhen 93, id: 1 cur_num_gds:0 
+3724 - berth - INFO - 0
+3724 - berth - INFO - zhen 93, id: 2 cur_num_gds:0 
+3726 - berth - INFO - 0
+3726 - berth - INFO - zhen 94, id: 0 cur_num_gds:0 
+3726 - berth - INFO - 0
+3726 - berth - INFO - zhen 94, id: 1 cur_num_gds:0 
+3726 - berth - INFO - 0
+3726 - berth - INFO - zhen 94, id: 2 cur_num_gds:0 
+3729 - berth - INFO - 0
+3729 - berth - INFO - zhen 95, id: 0 cur_num_gds:0 
+3729 - berth - INFO - 0
+3729 - berth - INFO - zhen 95, id: 1 cur_num_gds:0 
+3729 - berth - INFO - 0
+3729 - berth - INFO - zhen 95, id: 2 cur_num_gds:0 
+3730 - berth - INFO - 0
+3730 - berth - INFO - zhen 96, id: 0 cur_num_gds:0 
+3730 - berth - INFO - 0
+3730 - berth - INFO - zhen 96, id: 1 cur_num_gds:0 
+3730 - berth - INFO - 0
+3730 - berth - INFO - zhen 96, id: 2 cur_num_gds:0 
+3732 - berth - INFO - 0
+3732 - berth - INFO - zhen 97, id: 0 cur_num_gds:0 
+3732 - berth - INFO - 0
+3732 - berth - INFO - zhen 97, id: 1 cur_num_gds:0 
+3732 - berth - INFO - 0
+3732 - berth - INFO - zhen 97, id: 2 cur_num_gds:0 
+3734 - berth - INFO - 0
+3734 - berth - INFO - zhen 98, id: 0 cur_num_gds:0 
+3734 - berth - INFO - 0
+3734 - berth - INFO - zhen 98, id: 1 cur_num_gds:0 
+3734 - berth - INFO - 0
+3734 - berth - INFO - zhen 98, id: 2 cur_num_gds:0 
+3735 - berth - INFO - 0
+3735 - berth - INFO - zhen 99, id: 0 cur_num_gds:0 
+3735 - berth - INFO - 0
+3735 - berth - INFO - zhen 99, id: 1 cur_num_gds:0 
+3735 - berth - INFO - 0
+3735 - berth - INFO - zhen 99, id: 2 cur_num_gds:0 
+3739 - berth - INFO - 0
+3739 - berth - INFO - zhen 101, id: 0 cur_num_gds:0 
+3740 - berth - INFO - 0
+3740 - berth - INFO - zhen 101, id: 1 cur_num_gds:0 
+3740 - berth - INFO - 0
+3740 - berth - INFO - zhen 101, id: 2 cur_num_gds:0 
+3742 - berth - INFO - 0
+3742 - berth - INFO - zhen 102, id: 0 cur_num_gds:0 
+3742 - berth - INFO - 0
+3742 - berth - INFO - zhen 102, id: 1 cur_num_gds:0 
+3742 - berth - INFO - 0
+3742 - berth - INFO - zhen 102, id: 2 cur_num_gds:0 
+3744 - berth - INFO - 0
+3744 - berth - INFO - zhen 103, id: 0 cur_num_gds:0 
+3744 - berth - INFO - 0
+3744 - berth - INFO - zhen 103, id: 1 cur_num_gds:0 
+3744 - berth - INFO - 0
+3744 - berth - INFO - zhen 103, id: 2 cur_num_gds:0 
+3746 - berth - INFO - 0
+3746 - berth - INFO - zhen 104, id: 0 cur_num_gds:0 
+3746 - berth - INFO - 0
+3746 - berth - INFO - zhen 104, id: 1 cur_num_gds:0 
+3746 - berth - INFO - 0
+3746 - berth - INFO - zhen 104, id: 2 cur_num_gds:0 
+3748 - berth - INFO - 0
+3748 - berth - INFO - zhen 105, id: 0 cur_num_gds:0 
+3748 - berth - INFO - 0
+3748 - berth - INFO - zhen 105, id: 1 cur_num_gds:0 
+3748 - berth - INFO - 0
+3748 - berth - INFO - zhen 105, id: 2 cur_num_gds:0 
+3749 - berth - INFO - 0
+3749 - berth - INFO - zhen 106, id: 0 cur_num_gds:0 
+3749 - berth - INFO - 0
+3749 - berth - INFO - zhen 106, id: 1 cur_num_gds:0 
+3749 - berth - INFO - 0
+3749 - berth - INFO - zhen 106, id: 2 cur_num_gds:0 
+3750 - berth - INFO - boatid 0 berth 0
+3750 - berth - INFO - boatid 0 boat sVec (3, 98), Boat_Direction.RIGHT
+3750 - berth - INFO - boat_id:0 next_index:1
+3751 - berth - INFO - 0
+3751 - berth - INFO - zhen 107, id: 0 cur_num_gds:0 
+3751 - berth - INFO - 0
+3751 - berth - INFO - zhen 107, id: 1 cur_num_gds:0 
+3751 - berth - INFO - 0
+3751 - berth - INFO - zhen 107, id: 2 cur_num_gds:0 
+3753 - berth - INFO - 0
+3753 - berth - INFO - zhen 108, id: 0 cur_num_gds:0 
+3753 - berth - INFO - 0
+3753 - berth - INFO - zhen 108, id: 1 cur_num_gds:0 
+3753 - berth - INFO - 0
+3753 - berth - INFO - zhen 108, id: 2 cur_num_gds:0 
+3754 - berth - INFO - 0
+3754 - berth - INFO - zhen 109, id: 0 cur_num_gds:0 
+3754 - berth - INFO - 0
+3754 - berth - INFO - zhen 109, id: 1 cur_num_gds:0 
+3754 - berth - INFO - 0
+3754 - berth - INFO - zhen 109, id: 2 cur_num_gds:0 
+3757 - berth - INFO - 0
+3757 - berth - INFO - zhen 111, id: 0 cur_num_gds:0 
+3757 - berth - INFO - 0
+3757 - berth - INFO - zhen 111, id: 1 cur_num_gds:0 
+3757 - berth - INFO - 0
+3757 - berth - INFO - zhen 111, id: 2 cur_num_gds:0 
+3759 - berth - INFO - 0
+3759 - berth - INFO - zhen 112, id: 0 cur_num_gds:0 
+3759 - berth - INFO - 0
+3759 - berth - INFO - zhen 112, id: 1 cur_num_gds:0 
+3759 - berth - INFO - 0
+3759 - berth - INFO - zhen 112, id: 2 cur_num_gds:0 
+3761 - berth - INFO - 0
+3762 - berth - INFO - zhen 113, id: 0 cur_num_gds:0 
+3762 - berth - INFO - 0
+3762 - berth - INFO - zhen 113, id: 1 cur_num_gds:0 
+3762 - berth - INFO - 0
+3762 - berth - INFO - zhen 113, id: 2 cur_num_gds:0 
+3763 - berth - INFO - 0
+3763 - berth - INFO - zhen 114, id: 0 cur_num_gds:0 
+3763 - berth - INFO - 0
+3763 - berth - INFO - zhen 114, id: 1 cur_num_gds:0 
+3763 - berth - INFO - 0
+3763 - berth - INFO - zhen 114, id: 2 cur_num_gds:0 
+3765 - berth - INFO - 0
+3765 - berth - INFO - zhen 115, id: 0 cur_num_gds:0 
+3765 - berth - INFO - 0
+3765 - berth - INFO - zhen 115, id: 1 cur_num_gds:0 
+3765 - berth - INFO - 0
+3765 - berth - INFO - zhen 115, id: 2 cur_num_gds:0 
+3766 - berth - INFO - 0
+3766 - berth - INFO - zhen 116, id: 0 cur_num_gds:0 
+3766 - berth - INFO - 0
+3766 - berth - INFO - zhen 116, id: 1 cur_num_gds:0 
+3766 - berth - INFO - 0
+3766 - berth - INFO - zhen 116, id: 2 cur_num_gds:0 
+3767 - berth - INFO - 0
+3767 - berth - INFO - zhen 117, id: 0 cur_num_gds:0 
+3767 - berth - INFO - 0
+3767 - berth - INFO - zhen 117, id: 1 cur_num_gds:0 
+3767 - berth - INFO - 0
+3767 - berth - INFO - zhen 117, id: 2 cur_num_gds:0 
+3769 - berth - INFO - 0
+3769 - berth - INFO - zhen 118, id: 0 cur_num_gds:0 
+3769 - berth - INFO - 0
+3769 - berth - INFO - zhen 118, id: 1 cur_num_gds:0 
+3769 - berth - INFO - 0
+3769 - berth - INFO - zhen 118, id: 2 cur_num_gds:0 
+3771 - berth - INFO - 0
+3771 - berth - INFO - zhen 119, id: 0 cur_num_gds:0 
+3771 - berth - INFO - 0
+3771 - berth - INFO - zhen 119, id: 1 cur_num_gds:0 
+3771 - berth - INFO - 0
+3771 - berth - INFO - zhen 119, id: 2 cur_num_gds:0 
+3774 - berth - INFO - 0
+3774 - berth - INFO - zhen 121, id: 0 cur_num_gds:0 
+3774 - berth - INFO - 0
+3774 - berth - INFO - zhen 121, id: 1 cur_num_gds:0 
+3774 - berth - INFO - 0
+3774 - berth - INFO - zhen 121, id: 2 cur_num_gds:0 
+3776 - berth - INFO - 0
+3776 - berth - INFO - zhen 122, id: 0 cur_num_gds:0 
+3776 - berth - INFO - 0
+3776 - berth - INFO - zhen 122, id: 1 cur_num_gds:0 
+3776 - berth - INFO - 0
+3776 - berth - INFO - zhen 122, id: 2 cur_num_gds:0 
+3777 - berth - INFO - 0
+3777 - berth - INFO - zhen 123, id: 0 cur_num_gds:0 
+3777 - berth - INFO - 0
+3777 - berth - INFO - zhen 123, id: 1 cur_num_gds:0 
+3777 - berth - INFO - 0
+3777 - berth - INFO - zhen 123, id: 2 cur_num_gds:0 
+3779 - berth - INFO - 0
+3779 - berth - INFO - zhen 124, id: 0 cur_num_gds:0 
+3779 - berth - INFO - 0
+3779 - berth - INFO - zhen 124, id: 1 cur_num_gds:0 
+3779 - berth - INFO - 0
+3779 - berth - INFO - zhen 124, id: 2 cur_num_gds:0 
+3781 - berth - INFO - 0
+3781 - berth - INFO - zhen 125, id: 0 cur_num_gds:0 
+3781 - berth - INFO - 0
+3781 - berth - INFO - zhen 125, id: 1 cur_num_gds:0 
+3781 - berth - INFO - 0
+3781 - berth - INFO - zhen 125, id: 2 cur_num_gds:0 
+3782 - berth - INFO - 0
+3782 - berth - INFO - zhen 126, id: 0 cur_num_gds:0 
+3782 - berth - INFO - 0
+3782 - berth - INFO - zhen 126, id: 1 cur_num_gds:0 
+3782 - berth - INFO - 0
+3782 - berth - INFO - zhen 126, id: 2 cur_num_gds:0 
+3785 - berth - INFO - 0
+3785 - berth - INFO - zhen 127, id: 0 cur_num_gds:0 
+3785 - berth - INFO - 0
+3785 - berth - INFO - zhen 127, id: 1 cur_num_gds:0 
+3785 - berth - INFO - 0
+3785 - berth - INFO - zhen 127, id: 2 cur_num_gds:0 
+3789 - berth - INFO - 0
+3789 - berth - INFO - zhen 128, id: 0 cur_num_gds:0 
+3789 - berth - INFO - 0
+3789 - berth - INFO - zhen 128, id: 1 cur_num_gds:0 
+3789 - berth - INFO - 0
+3789 - berth - INFO - zhen 128, id: 2 cur_num_gds:0 
+3792 - berth - INFO - 0
+3792 - berth - INFO - zhen 129, id: 0 cur_num_gds:0 
+3792 - berth - INFO - 0
+3792 - berth - INFO - zhen 129, id: 1 cur_num_gds:0 
+3792 - berth - INFO - 0
+3792 - berth - INFO - zhen 129, id: 2 cur_num_gds:0 
+3795 - berth - INFO - 0
+3795 - berth - INFO - zhen 131, id: 0 cur_num_gds:0 
+3795 - berth - INFO - 0
+3795 - berth - INFO - zhen 131, id: 1 cur_num_gds:0 
+3795 - berth - INFO - 0
+3795 - berth - INFO - zhen 131, id: 2 cur_num_gds:0 
+3797 - berth - INFO - 0
+3797 - berth - INFO - zhen 132, id: 0 cur_num_gds:0 
+3797 - berth - INFO - 0
+3797 - berth - INFO - zhen 132, id: 1 cur_num_gds:0 
+3797 - berth - INFO - 0
+3797 - berth - INFO - zhen 132, id: 2 cur_num_gds:0 
+3799 - berth - INFO - 0
+3799 - berth - INFO - zhen 133, id: 0 cur_num_gds:0 
+3799 - berth - INFO - 0
+3799 - berth - INFO - zhen 133, id: 1 cur_num_gds:0 
+3799 - berth - INFO - 0
+3799 - berth - INFO - zhen 133, id: 2 cur_num_gds:0 
+3800 - berth - INFO - 0
+3800 - berth - INFO - zhen 134, id: 0 cur_num_gds:0 
+3800 - berth - INFO - 0
+3800 - berth - INFO - zhen 134, id: 1 cur_num_gds:0 
+3800 - berth - INFO - 0
+3800 - berth - INFO - zhen 134, id: 2 cur_num_gds:0 
+3803 - berth - INFO - 0
+3803 - berth - INFO - zhen 135, id: 0 cur_num_gds:0 
+3803 - berth - INFO - 0
+3803 - berth - INFO - zhen 135, id: 1 cur_num_gds:0 
+3803 - berth - INFO - 0
+3803 - berth - INFO - zhen 135, id: 2 cur_num_gds:0 
+3805 - berth - INFO - 0
+3805 - berth - INFO - zhen 136, id: 0 cur_num_gds:0 
+3805 - berth - INFO - 0
+3805 - berth - INFO - zhen 136, id: 1 cur_num_gds:0 
+3805 - berth - INFO - 0
+3805 - berth - INFO - zhen 136, id: 2 cur_num_gds:0 
+3807 - berth - INFO - 0
+3807 - berth - INFO - zhen 137, id: 0 cur_num_gds:0 
+3807 - berth - INFO - 0
+3807 - berth - INFO - zhen 137, id: 1 cur_num_gds:0 
+3807 - berth - INFO - 0
+3807 - berth - INFO - zhen 137, id: 2 cur_num_gds:0 
+3808 - berth - INFO - 0
+3808 - berth - INFO - zhen 138, id: 0 cur_num_gds:0 
+3808 - berth - INFO - 0
+3808 - berth - INFO - zhen 138, id: 1 cur_num_gds:0 
+3808 - berth - INFO - 0
+3808 - berth - INFO - zhen 138, id: 2 cur_num_gds:0 
+3810 - berth - INFO - 0
+3810 - berth - INFO - zhen 139, id: 0 cur_num_gds:0 
+3810 - berth - INFO - 0
+3810 - berth - INFO - zhen 139, id: 1 cur_num_gds:0 
+3810 - berth - INFO - 0
+3810 - berth - INFO - zhen 139, id: 2 cur_num_gds:0 
+3813 - berth - INFO - 0
+3813 - berth - INFO - zhen 141, id: 0 cur_num_gds:0 
+3813 - berth - INFO - 0
+3813 - berth - INFO - zhen 141, id: 1 cur_num_gds:0 
+3813 - berth - INFO - 0
+3813 - berth - INFO - zhen 141, id: 2 cur_num_gds:0 
+3815 - berth - INFO - 0
+3815 - berth - INFO - zhen 142, id: 0 cur_num_gds:0 
+3815 - berth - INFO - 0
+3815 - berth - INFO - zhen 142, id: 1 cur_num_gds:0 
+3815 - berth - INFO - 0
+3815 - berth - INFO - zhen 142, id: 2 cur_num_gds:0 
+3817 - berth - INFO - 0
+3817 - berth - INFO - zhen 143, id: 0 cur_num_gds:0 
+3817 - berth - INFO - 0
+3817 - berth - INFO - zhen 143, id: 1 cur_num_gds:0 
+3817 - berth - INFO - 0
+3817 - berth - INFO - zhen 143, id: 2 cur_num_gds:0 
+3819 - berth - INFO - 0
+3819 - berth - INFO - zhen 144, id: 0 cur_num_gds:0 
+3819 - berth - INFO - 0
+3819 - berth - INFO - zhen 144, id: 1 cur_num_gds:0 
+3819 - berth - INFO - 0
+3819 - berth - INFO - zhen 144, id: 2 cur_num_gds:0 
+3822 - berth - INFO - 0
+3822 - berth - INFO - zhen 145, id: 0 cur_num_gds:0 
+3822 - berth - INFO - 0
+3822 - berth - INFO - zhen 145, id: 1 cur_num_gds:0 
+3822 - berth - INFO - 0
+3822 - berth - INFO - zhen 145, id: 2 cur_num_gds:0 
+3823 - berth - INFO - 0
+3823 - berth - INFO - zhen 146, id: 0 cur_num_gds:0 
+3823 - berth - INFO - 0
+3823 - berth - INFO - zhen 146, id: 1 cur_num_gds:0 
+3823 - berth - INFO - 0
+3823 - berth - INFO - zhen 146, id: 2 cur_num_gds:0 
+3825 - berth - INFO - 0
+3825 - berth - INFO - zhen 147, id: 0 cur_num_gds:0 
+3825 - berth - INFO - 0
+3825 - berth - INFO - zhen 147, id: 1 cur_num_gds:0 
+3825 - berth - INFO - 0
+3825 - berth - INFO - zhen 147, id: 2 cur_num_gds:0 
+3827 - berth - INFO - 0
+3827 - berth - INFO - zhen 148, id: 0 cur_num_gds:0 
+3827 - berth - INFO - 0
+3827 - berth - INFO - zhen 148, id: 1 cur_num_gds:0 
+3827 - berth - INFO - 0
+3827 - berth - INFO - zhen 148, id: 2 cur_num_gds:0 
+3829 - berth - INFO - 0
+3829 - berth - INFO - zhen 149, id: 0 cur_num_gds:0 
+3829 - berth - INFO - 0
+3829 - berth - INFO - zhen 149, id: 1 cur_num_gds:0 
+3829 - berth - INFO - 0
+3829 - berth - INFO - zhen 149, id: 2 cur_num_gds:0 
+3831 - berth - INFO - 0
+3831 - berth - INFO - zhen 151, id: 0 cur_num_gds:0 
+3831 - berth - INFO - 0
+3831 - berth - INFO - zhen 151, id: 1 cur_num_gds:0 
+3831 - berth - INFO - 0
+3831 - berth - INFO - zhen 151, id: 2 cur_num_gds:0 
+3833 - berth - INFO - 0
+3833 - berth - INFO - zhen 152, id: 0 cur_num_gds:0 
+3833 - berth - INFO - 0
+3833 - berth - INFO - zhen 152, id: 1 cur_num_gds:0 
+3833 - berth - INFO - 0
+3833 - berth - INFO - zhen 152, id: 2 cur_num_gds:0 
+3834 - berth - INFO - 0
+3834 - berth - INFO - zhen 153, id: 0 cur_num_gds:0 
+3835 - berth - INFO - 0
+3835 - berth - INFO - zhen 153, id: 1 cur_num_gds:0 
+3835 - berth - INFO - 0
+3835 - berth - INFO - zhen 153, id: 2 cur_num_gds:1 
+3838 - berth - INFO - 0
+3838 - berth - INFO - zhen 154, id: 0 cur_num_gds:0 
+3838 - berth - INFO - 0
+3838 - berth - INFO - zhen 154, id: 1 cur_num_gds:0 
+3838 - berth - INFO - 0
+3838 - berth - INFO - zhen 154, id: 2 cur_num_gds:1 
+3840 - berth - INFO - 0
+3840 - berth - INFO - zhen 155, id: 0 cur_num_gds:0 
+3840 - berth - INFO - 0
+3840 - berth - INFO - zhen 155, id: 1 cur_num_gds:0 
+3840 - berth - INFO - 0
+3840 - berth - INFO - zhen 155, id: 2 cur_num_gds:1 
+3842 - berth - INFO - 0
+3842 - berth - INFO - zhen 156, id: 0 cur_num_gds:0 
+3842 - berth - INFO - 0
+3842 - berth - INFO - zhen 156, id: 1 cur_num_gds:0 
+3842 - berth - INFO - 0
+3842 - berth - INFO - zhen 156, id: 2 cur_num_gds:1 
+3844 - berth - INFO - 0
+3844 - berth - INFO - zhen 157, id: 0 cur_num_gds:0 
+3844 - berth - INFO - 0
+3844 - berth - INFO - zhen 157, id: 1 cur_num_gds:0 
+3844 - berth - INFO - 0
+3844 - berth - INFO - zhen 157, id: 2 cur_num_gds:1 
+3846 - berth - INFO - 0
+3846 - berth - INFO - zhen 158, id: 0 cur_num_gds:0 
+3846 - berth - INFO - 0
+3846 - berth - INFO - zhen 158, id: 1 cur_num_gds:0 
+3846 - berth - INFO - 0
+3846 - berth - INFO - zhen 158, id: 2 cur_num_gds:1 
+3847 - berth - INFO - 0
+3847 - berth - INFO - zhen 159, id: 0 cur_num_gds:0 
+3847 - berth - INFO - 0
+3847 - berth - INFO - zhen 159, id: 1 cur_num_gds:0 
+3847 - berth - INFO - 0
+3847 - berth - INFO - zhen 159, id: 2 cur_num_gds:1 
+3850 - berth - INFO - 0
+3850 - berth - INFO - zhen 161, id: 0 cur_num_gds:0 
+3850 - berth - INFO - 0
+3850 - berth - INFO - zhen 161, id: 1 cur_num_gds:0 
+3850 - berth - INFO - 0
+3850 - berth - INFO - zhen 161, id: 2 cur_num_gds:1 
+3852 - berth - INFO - 0
+3852 - berth - INFO - zhen 162, id: 0 cur_num_gds:0 
+3852 - berth - INFO - 0
+3852 - berth - INFO - zhen 162, id: 1 cur_num_gds:0 
+3852 - berth - INFO - 0
+3852 - berth - INFO - zhen 162, id: 2 cur_num_gds:1 
+3854 - berth - INFO - 0
+3854 - berth - INFO - zhen 163, id: 0 cur_num_gds:0 
+3854 - berth - INFO - 0
+3854 - berth - INFO - zhen 163, id: 1 cur_num_gds:0 
+3854 - berth - INFO - 0
+3854 - berth - INFO - zhen 163, id: 2 cur_num_gds:1 
+3855 - berth - INFO - 0
+3856 - berth - INFO - zhen 164, id: 0 cur_num_gds:0 
+3856 - berth - INFO - 0
+3856 - berth - INFO - zhen 164, id: 1 cur_num_gds:0 
+3856 - berth - INFO - 0
+3856 - berth - INFO - zhen 164, id: 2 cur_num_gds:1 
+3857 - berth - INFO - 0
+3857 - berth - INFO - zhen 165, id: 0 cur_num_gds:0 
+3857 - berth - INFO - 0
+3857 - berth - INFO - zhen 165, id: 1 cur_num_gds:0 
+3857 - berth - INFO - 0
+3857 - berth - INFO - zhen 165, id: 2 cur_num_gds:1 
+3859 - berth - INFO - 0
+3859 - berth - INFO - zhen 166, id: 0 cur_num_gds:0 
+3859 - berth - INFO - 0
+3859 - berth - INFO - zhen 166, id: 1 cur_num_gds:0 
+3859 - berth - INFO - 0
+3859 - berth - INFO - zhen 166, id: 2 cur_num_gds:1 
+3863 - berth - INFO - 0
+3863 - berth - INFO - zhen 167, id: 0 cur_num_gds:0 
+3863 - berth - INFO - 0
+3863 - berth - INFO - zhen 167, id: 1 cur_num_gds:0 
+3863 - berth - INFO - 0
+3863 - berth - INFO - zhen 167, id: 2 cur_num_gds:1 
+3865 - berth - INFO - 0
+3865 - berth - INFO - zhen 168, id: 0 cur_num_gds:0 
+3865 - berth - INFO - 0
+3865 - berth - INFO - zhen 168, id: 1 cur_num_gds:0 
+3865 - berth - INFO - 0
+3865 - berth - INFO - zhen 168, id: 2 cur_num_gds:1 
+3867 - berth - INFO - 0
+3867 - berth - INFO - zhen 169, id: 0 cur_num_gds:0 
+3867 - berth - INFO - 0
+3867 - berth - INFO - zhen 169, id: 1 cur_num_gds:0 
+3867 - berth - INFO - 0
+3867 - berth - INFO - zhen 169, id: 2 cur_num_gds:1 
+3871 - berth - INFO - 0
+3871 - berth - INFO - zhen 171, id: 0 cur_num_gds:0 
+3871 - berth - INFO - 0
+3871 - berth - INFO - zhen 171, id: 1 cur_num_gds:0 
+3871 - berth - INFO - 0
+3871 - berth - INFO - zhen 171, id: 2 cur_num_gds:1 
+3872 - berth - INFO - 0
+3872 - berth - INFO - zhen 172, id: 0 cur_num_gds:0 
+3872 - berth - INFO - 0
+3872 - berth - INFO - zhen 172, id: 1 cur_num_gds:0 
+3872 - berth - INFO - 0
+3872 - berth - INFO - zhen 172, id: 2 cur_num_gds:1 
+3874 - berth - INFO - 0
+3874 - berth - INFO - zhen 173, id: 0 cur_num_gds:0 
+3874 - berth - INFO - 0
+3874 - berth - INFO - zhen 173, id: 1 cur_num_gds:0 
+3874 - berth - INFO - 0
+3874 - berth - INFO - zhen 173, id: 2 cur_num_gds:1 
+3876 - berth - INFO - 0
+3876 - berth - INFO - zhen 174, id: 0 cur_num_gds:0 
+3876 - berth - INFO - 0
+3876 - berth - INFO - zhen 174, id: 1 cur_num_gds:0 
+3876 - berth - INFO - 0
+3876 - berth - INFO - zhen 174, id: 2 cur_num_gds:1 
+3878 - berth - INFO - 0
+3878 - berth - INFO - zhen 175, id: 0 cur_num_gds:0 
+3878 - berth - INFO - 0
+3878 - berth - INFO - zhen 175, id: 1 cur_num_gds:0 
+3878 - berth - INFO - 0
+3878 - berth - INFO - zhen 175, id: 2 cur_num_gds:1 
+3880 - berth - INFO - 0
+3880 - berth - INFO - zhen 176, id: 0 cur_num_gds:0 
+3880 - berth - INFO - 0
+3880 - berth - INFO - zhen 176, id: 1 cur_num_gds:0 
+3880 - berth - INFO - 0
+3880 - berth - INFO - zhen 176, id: 2 cur_num_gds:1 
+3882 - berth - INFO - 0
+3882 - berth - INFO - zhen 177, id: 0 cur_num_gds:0 
+3882 - berth - INFO - 0
+3882 - berth - INFO - zhen 177, id: 1 cur_num_gds:0 
+3882 - berth - INFO - 0
+3882 - berth - INFO - zhen 177, id: 2 cur_num_gds:1 
+3883 - berth - INFO - 0
+3884 - berth - INFO - zhen 178, id: 0 cur_num_gds:0 
+3884 - berth - INFO - 0
+3884 - berth - INFO - zhen 178, id: 1 cur_num_gds:0 
+3884 - berth - INFO - 0
+3884 - berth - INFO - zhen 178, id: 2 cur_num_gds:1 
+3886 - berth - INFO - 0
+3886 - berth - INFO - zhen 179, id: 0 cur_num_gds:0 
+3886 - berth - INFO - 0
+3886 - berth - INFO - zhen 179, id: 1 cur_num_gds:0 
+3886 - berth - INFO - 0
+3886 - berth - INFO - zhen 179, id: 2 cur_num_gds:1 
+3890 - berth - INFO - 0
+3890 - berth - INFO - zhen 181, id: 0 cur_num_gds:0 
+3890 - berth - INFO - 0
+3890 - berth - INFO - zhen 181, id: 1 cur_num_gds:0 
+3890 - berth - INFO - 0
+3890 - berth - INFO - zhen 181, id: 2 cur_num_gds:1 
+3891 - berth - INFO - 0
+3891 - berth - INFO - zhen 182, id: 0 cur_num_gds:0 
+3891 - berth - INFO - 0
+3891 - berth - INFO - zhen 182, id: 1 cur_num_gds:0 
+3891 - berth - INFO - 0
+3891 - berth - INFO - zhen 182, id: 2 cur_num_gds:1 
+3893 - berth - INFO - 0
+3894 - berth - INFO - zhen 183, id: 0 cur_num_gds:0 
+3894 - berth - INFO - 0
+3894 - berth - INFO - zhen 183, id: 1 cur_num_gds:0 
+3894 - berth - INFO - 0
+3894 - berth - INFO - zhen 183, id: 2 cur_num_gds:1 
+3897 - berth - INFO - 0
+3897 - berth - INFO - zhen 184, id: 0 cur_num_gds:0 
+3897 - berth - INFO - 0
+3897 - berth - INFO - zhen 184, id: 1 cur_num_gds:0 
+3897 - berth - INFO - 0
+3897 - berth - INFO - zhen 184, id: 2 cur_num_gds:1 
+3898 - berth - INFO - 0
+3898 - berth - INFO - zhen 185, id: 0 cur_num_gds:0 
+3898 - berth - INFO - 0
+3898 - berth - INFO - zhen 185, id: 1 cur_num_gds:0 
+3899 - berth - INFO - 0
+3899 - berth - INFO - zhen 185, id: 2 cur_num_gds:1 
+3900 - berth - INFO - 0
+3900 - berth - INFO - zhen 186, id: 0 cur_num_gds:0 
+3900 - berth - INFO - 0
+3900 - berth - INFO - zhen 186, id: 1 cur_num_gds:0 
+3900 - berth - INFO - 0
+3900 - berth - INFO - zhen 186, id: 2 cur_num_gds:1 
+3902 - berth - INFO - 0
+3902 - berth - INFO - zhen 187, id: 0 cur_num_gds:0 
+3902 - berth - INFO - 0
+3902 - berth - INFO - zhen 187, id: 1 cur_num_gds:0 
+3902 - berth - INFO - 0
+3902 - berth - INFO - zhen 187, id: 2 cur_num_gds:1 
+3905 - berth - INFO - 0
+3905 - berth - INFO - zhen 188, id: 0 cur_num_gds:0 
+3905 - berth - INFO - 0
+3905 - berth - INFO - zhen 188, id: 1 cur_num_gds:0 
+3905 - berth - INFO - 0
+3905 - berth - INFO - zhen 188, id: 2 cur_num_gds:2 
+3908 - berth - INFO - 0
+3908 - berth - INFO - zhen 189, id: 0 cur_num_gds:0 
+3908 - berth - INFO - 0
+3908 - berth - INFO - zhen 189, id: 1 cur_num_gds:0 
+3908 - berth - INFO - 0
+3908 - berth - INFO - zhen 189, id: 2 cur_num_gds:2 
+3912 - berth - INFO - 0
+3912 - berth - INFO - zhen 191, id: 0 cur_num_gds:0 
+3912 - berth - INFO - 0
+3912 - berth - INFO - zhen 191, id: 1 cur_num_gds:0 
+3912 - berth - INFO - 0
+3912 - berth - INFO - zhen 191, id: 2 cur_num_gds:2 
+3914 - berth - INFO - 0
+3914 - berth - INFO - zhen 192, id: 0 cur_num_gds:0 
+3914 - berth - INFO - 0
+3914 - berth - INFO - zhen 192, id: 1 cur_num_gds:0 
+3914 - berth - INFO - 0
+3914 - berth - INFO - zhen 192, id: 2 cur_num_gds:2 
+3916 - berth - INFO - 0
+3916 - berth - INFO - zhen 193, id: 0 cur_num_gds:0 
+3916 - berth - INFO - 0
+3916 - berth - INFO - zhen 193, id: 1 cur_num_gds:0 
+3916 - berth - INFO - 0
+3916 - berth - INFO - zhen 193, id: 2 cur_num_gds:2 
+3920 - berth - INFO - 0
+3920 - berth - INFO - zhen 194, id: 0 cur_num_gds:0 
+3920 - berth - INFO - 0
+3920 - berth - INFO - zhen 194, id: 1 cur_num_gds:0 
+3920 - berth - INFO - 0
+3920 - berth - INFO - zhen 194, id: 2 cur_num_gds:2 
+3923 - berth - INFO - 0
+3923 - berth - INFO - zhen 195, id: 0 cur_num_gds:0 
+3923 - berth - INFO - 0
+3923 - berth - INFO - zhen 195, id: 1 cur_num_gds:0 
+3923 - berth - INFO - 0
+3923 - berth - INFO - zhen 195, id: 2 cur_num_gds:2 
+3925 - berth - INFO - 0
+3925 - berth - INFO - zhen 196, id: 0 cur_num_gds:0 
+3925 - berth - INFO - 0
+3925 - berth - INFO - zhen 196, id: 1 cur_num_gds:0 
+3925 - berth - INFO - 0
+3925 - berth - INFO - zhen 196, id: 2 cur_num_gds:2 
+3926 - berth - INFO - 0
+3926 - berth - INFO - zhen 197, id: 0 cur_num_gds:0 
+3926 - berth - INFO - 0
+3926 - berth - INFO - zhen 197, id: 1 cur_num_gds:0 
+3926 - berth - INFO - 0
+3926 - berth - INFO - zhen 197, id: 2 cur_num_gds:2 
+3928 - berth - INFO - 0
+3928 - berth - INFO - zhen 198, id: 0 cur_num_gds:0 
+3928 - berth - INFO - 0
+3928 - berth - INFO - zhen 198, id: 1 cur_num_gds:0 
+3928 - berth - INFO - 0
+3928 - berth - INFO - zhen 198, id: 2 cur_num_gds:2 
+3930 - berth - INFO - 0
+3930 - berth - INFO - zhen 199, id: 0 cur_num_gds:0 
+3930 - berth - INFO - 0
+3931 - berth - INFO - zhen 199, id: 1 cur_num_gds:0 
+3931 - berth - INFO - 0
+3931 - berth - INFO - zhen 199, id: 2 cur_num_gds:2 
+3935 - berth - INFO - 0
+3935 - berth - INFO - zhen 201, id: 0 cur_num_gds:0 
+3935 - berth - INFO - 0
+3935 - berth - INFO - zhen 201, id: 1 cur_num_gds:0 
+3935 - berth - INFO - 0
+3935 - berth - INFO - zhen 201, id: 2 cur_num_gds:2 
+3937 - berth - INFO - 0
+3937 - berth - INFO - zhen 202, id: 0 cur_num_gds:0 
+3937 - berth - INFO - 0
+3937 - berth - INFO - zhen 202, id: 1 cur_num_gds:0 
+3937 - berth - INFO - 0
+3937 - berth - INFO - zhen 202, id: 2 cur_num_gds:2 
+3939 - berth - INFO - 0
+3939 - berth - INFO - zhen 203, id: 0 cur_num_gds:0 
+3939 - berth - INFO - 0
+3939 - berth - INFO - zhen 203, id: 1 cur_num_gds:0 
+3939 - berth - INFO - 0
+3939 - berth - INFO - zhen 203, id: 2 cur_num_gds:2 
+3941 - berth - INFO - 0
+3941 - berth - INFO - zhen 204, id: 0 cur_num_gds:0 
+3941 - berth - INFO - 0
+3941 - berth - INFO - zhen 204, id: 1 cur_num_gds:0 
+3941 - berth - INFO - 0
+3941 - berth - INFO - zhen 204, id: 2 cur_num_gds:2 
+3943 - berth - INFO - 0
+3943 - berth - INFO - zhen 205, id: 0 cur_num_gds:0 
+3943 - berth - INFO - 0
+3943 - berth - INFO - zhen 205, id: 1 cur_num_gds:0 
+3943 - berth - INFO - 0
+3943 - berth - INFO - zhen 205, id: 2 cur_num_gds:2 
+3947 - berth - INFO - 0
+3947 - berth - INFO - zhen 206, id: 0 cur_num_gds:0 
+3947 - berth - INFO - 0
+3947 - berth - INFO - zhen 206, id: 1 cur_num_gds:0 
+3947 - berth - INFO - 0
+3947 - berth - INFO - zhen 206, id: 2 cur_num_gds:2 
+3950 - berth - INFO - 0
+3950 - berth - INFO - zhen 207, id: 0 cur_num_gds:0 
+3950 - berth - INFO - 0
+3950 - berth - INFO - zhen 207, id: 1 cur_num_gds:0 
+3950 - berth - INFO - 0
+3950 - berth - INFO - zhen 207, id: 2 cur_num_gds:2 
+3954 - berth - INFO - 0
+3954 - berth - INFO - zhen 208, id: 0 cur_num_gds:0 
+3954 - berth - INFO - 0
+3954 - berth - INFO - zhen 208, id: 1 cur_num_gds:0 
+3954 - berth - INFO - 0
+3954 - berth - INFO - zhen 208, id: 2 cur_num_gds:2 
+3956 - berth - INFO - 0
+3956 - berth - INFO - zhen 209, id: 0 cur_num_gds:0 
+3956 - berth - INFO - 0
+3956 - berth - INFO - zhen 209, id: 1 cur_num_gds:1 
+3956 - berth - INFO - 0
+3956 - berth - INFO - zhen 209, id: 2 cur_num_gds:2 
+3959 - berth - INFO - 0
+3959 - berth - INFO - zhen 211, id: 0 cur_num_gds:0 
+3959 - berth - INFO - 0
+3959 - berth - INFO - zhen 211, id: 1 cur_num_gds:1 
+3959 - berth - INFO - 0
+3959 - berth - INFO - zhen 211, id: 2 cur_num_gds:2 
+3961 - berth - INFO - 0
+3961 - berth - INFO - zhen 212, id: 0 cur_num_gds:0 
+3961 - berth - INFO - 0
+3961 - berth - INFO - zhen 212, id: 1 cur_num_gds:1 
+3961 - berth - INFO - 0
+3961 - berth - INFO - zhen 212, id: 2 cur_num_gds:2 
+3963 - berth - INFO - 0
+3963 - berth - INFO - zhen 213, id: 0 cur_num_gds:0 
+3963 - berth - INFO - 0
+3963 - berth - INFO - zhen 213, id: 1 cur_num_gds:1 
+3963 - berth - INFO - 0
+3963 - berth - INFO - zhen 213, id: 2 cur_num_gds:2 
+3964 - berth - INFO - 0
+3964 - berth - INFO - zhen 214, id: 0 cur_num_gds:0 
+3964 - berth - INFO - 0
+3964 - berth - INFO - zhen 214, id: 1 cur_num_gds:1 
+3964 - berth - INFO - 0
+3965 - berth - INFO - zhen 214, id: 2 cur_num_gds:2 
+3966 - berth - INFO - 0
+3966 - berth - INFO - zhen 215, id: 0 cur_num_gds:0 
+3966 - berth - INFO - 0
+3966 - berth - INFO - zhen 215, id: 1 cur_num_gds:1 
+3966 - berth - INFO - 0
+3966 - berth - INFO - zhen 215, id: 2 cur_num_gds:2 
+3970 - berth - INFO - 0
+3970 - berth - INFO - zhen 216, id: 0 cur_num_gds:0 
+3970 - berth - INFO - 0
+3970 - berth - INFO - zhen 216, id: 1 cur_num_gds:1 
+3970 - berth - INFO - 0
+3971 - berth - INFO - zhen 216, id: 2 cur_num_gds:2 
+3972 - berth - INFO - 0
+3972 - berth - INFO - zhen 217, id: 0 cur_num_gds:0 
+3972 - berth - INFO - 0
+3972 - berth - INFO - zhen 217, id: 1 cur_num_gds:1 
+3972 - berth - INFO - 0
+3972 - berth - INFO - zhen 217, id: 2 cur_num_gds:2 
+3974 - berth - INFO - 0
+3974 - berth - INFO - zhen 218, id: 0 cur_num_gds:0 
+3974 - berth - INFO - 0
+3974 - berth - INFO - zhen 218, id: 1 cur_num_gds:1 
+3974 - berth - INFO - 0
+3974 - berth - INFO - zhen 218, id: 2 cur_num_gds:2 
+3975 - berth - INFO - 0
+3975 - berth - INFO - zhen 219, id: 0 cur_num_gds:0 
+3975 - berth - INFO - 0
+3975 - berth - INFO - zhen 219, id: 1 cur_num_gds:1 
+3975 - berth - INFO - 0
+3975 - berth - INFO - zhen 219, id: 2 cur_num_gds:2 
+3979 - berth - INFO - 0
+3979 - berth - INFO - zhen 221, id: 0 cur_num_gds:0 
+3979 - berth - INFO - 0
+3979 - berth - INFO - zhen 221, id: 1 cur_num_gds:1 
+3979 - berth - INFO - 0
+3979 - berth - INFO - zhen 221, id: 2 cur_num_gds:2 
+3981 - berth - INFO - 0
+3981 - berth - INFO - zhen 222, id: 0 cur_num_gds:0 
+3981 - berth - INFO - 0
+3981 - berth - INFO - zhen 222, id: 1 cur_num_gds:1 
+3981 - berth - INFO - 0
+3981 - berth - INFO - zhen 222, id: 2 cur_num_gds:2 
+3984 - berth - INFO - 0
+3984 - berth - INFO - zhen 223, id: 0 cur_num_gds:0 
+3984 - berth - INFO - 0
+3984 - berth - INFO - zhen 223, id: 1 cur_num_gds:1 
+3984 - berth - INFO - 0
+3984 - berth - INFO - zhen 223, id: 2 cur_num_gds:2 
+3986 - berth - INFO - 0
+3986 - berth - INFO - zhen 224, id: 0 cur_num_gds:0 
+3986 - berth - INFO - 0
+3986 - berth - INFO - zhen 224, id: 1 cur_num_gds:1 
+3986 - berth - INFO - 0
+3986 - berth - INFO - zhen 224, id: 2 cur_num_gds:2 
+3988 - berth - INFO - 0
+3988 - berth - INFO - zhen 225, id: 0 cur_num_gds:0 
+3988 - berth - INFO - 0
+3988 - berth - INFO - zhen 225, id: 1 cur_num_gds:1 
+3988 - berth - INFO - 0
+3988 - berth - INFO - zhen 225, id: 2 cur_num_gds:2 
+3991 - berth - INFO - 0
+3991 - berth - INFO - zhen 226, id: 0 cur_num_gds:0 
+3991 - berth - INFO - 0
+3991 - berth - INFO - zhen 226, id: 1 cur_num_gds:1 
+3991 - berth - INFO - 0
+3991 - berth - INFO - zhen 226, id: 2 cur_num_gds:2 
+3994 - berth - INFO - 0
+3995 - berth - INFO - zhen 227, id: 0 cur_num_gds:0 
+3995 - berth - INFO - 0
+3995 - berth - INFO - zhen 227, id: 1 cur_num_gds:1 
+3995 - berth - INFO - 0
+3995 - berth - INFO - zhen 227, id: 2 cur_num_gds:2 
+3998 - berth - INFO - 0
+3998 - berth - INFO - zhen 228, id: 0 cur_num_gds:0 
+3998 - berth - INFO - 0
+3998 - berth - INFO - zhen 228, id: 1 cur_num_gds:1 
+3998 - berth - INFO - 0
+3998 - berth - INFO - zhen 228, id: 2 cur_num_gds:2 
+4000 - berth - INFO - 0
+4000 - berth - INFO - zhen 229, id: 0 cur_num_gds:0 
+4000 - berth - INFO - 0
+4000 - berth - INFO - zhen 229, id: 1 cur_num_gds:1 
+4000 - berth - INFO - 0
+4000 - berth - INFO - zhen 229, id: 2 cur_num_gds:2 
+4003 - berth - INFO - 0
+4003 - berth - INFO - zhen 231, id: 0 cur_num_gds:0 
+4003 - berth - INFO - 0
+4003 - berth - INFO - zhen 231, id: 1 cur_num_gds:1 
+4004 - berth - INFO - 0
+4004 - berth - INFO - zhen 231, id: 2 cur_num_gds:2 
+4006 - berth - INFO - 0
+4006 - berth - INFO - zhen 232, id: 0 cur_num_gds:0 
+4006 - berth - INFO - 0
+4006 - berth - INFO - zhen 232, id: 1 cur_num_gds:1 
+4006 - berth - INFO - 0
+4006 - berth - INFO - zhen 232, id: 2 cur_num_gds:2 
+4007 - berth - INFO - 0
+4007 - berth - INFO - zhen 233, id: 0 cur_num_gds:0 
+4007 - berth - INFO - 0
+4007 - berth - INFO - zhen 233, id: 1 cur_num_gds:1 
+4007 - berth - INFO - 0
+4007 - berth - INFO - zhen 233, id: 2 cur_num_gds:2 
+4009 - berth - INFO - 0
+4009 - berth - INFO - zhen 234, id: 0 cur_num_gds:0 
+4009 - berth - INFO - 0
+4009 - berth - INFO - zhen 234, id: 1 cur_num_gds:1 
+4009 - berth - INFO - 0
+4009 - berth - INFO - zhen 234, id: 2 cur_num_gds:2 
+4011 - berth - INFO - 0
+4011 - berth - INFO - zhen 235, id: 0 cur_num_gds:0 
+4011 - berth - INFO - 0
+4011 - berth - INFO - zhen 235, id: 1 cur_num_gds:1 
+4011 - berth - INFO - 0
+4011 - berth - INFO - zhen 235, id: 2 cur_num_gds:2 
+4013 - berth - INFO - 0
+4013 - berth - INFO - zhen 236, id: 0 cur_num_gds:0 
+4013 - berth - INFO - 0
+4013 - berth - INFO - zhen 236, id: 1 cur_num_gds:1 
+4013 - berth - INFO - 0
+4013 - berth - INFO - zhen 236, id: 2 cur_num_gds:2 
+4015 - berth - INFO - 0
+4015 - berth - INFO - zhen 237, id: 0 cur_num_gds:0 
+4015 - berth - INFO - 0
+4015 - berth - INFO - zhen 237, id: 1 cur_num_gds:1 
+4015 - berth - INFO - 0
+4015 - berth - INFO - zhen 237, id: 2 cur_num_gds:2 
+4017 - berth - INFO - 0
+4017 - berth - INFO - zhen 238, id: 0 cur_num_gds:0 
+4017 - berth - INFO - 0
+4017 - berth - INFO - zhen 238, id: 1 cur_num_gds:2 
+4017 - berth - INFO - 0
+4017 - berth - INFO - zhen 238, id: 2 cur_num_gds:2 
+4019 - berth - INFO - 0
+4019 - berth - INFO - zhen 239, id: 0 cur_num_gds:0 
+4019 - berth - INFO - 0
+4019 - berth - INFO - zhen 239, id: 1 cur_num_gds:2 
+4019 - berth - INFO - 0
+4019 - berth - INFO - zhen 239, id: 2 cur_num_gds:2 
+4022 - berth - INFO - 0
+4022 - berth - INFO - zhen 241, id: 0 cur_num_gds:0 
+4022 - berth - INFO - 0
+4022 - berth - INFO - zhen 241, id: 1 cur_num_gds:2 
+4022 - berth - INFO - 0
+4022 - berth - INFO - zhen 241, id: 2 cur_num_gds:2 
+4024 - berth - INFO - 0
+4024 - berth - INFO - zhen 242, id: 0 cur_num_gds:0 
+4024 - berth - INFO - 0
+4024 - berth - INFO - zhen 242, id: 1 cur_num_gds:2 
+4024 - berth - INFO - 0
+4024 - berth - INFO - zhen 242, id: 2 cur_num_gds:2 
+4026 - berth - INFO - 0
+4026 - berth - INFO - zhen 243, id: 0 cur_num_gds:0 
+4026 - berth - INFO - 0
+4026 - berth - INFO - zhen 243, id: 1 cur_num_gds:2 
+4026 - berth - INFO - 0
+4026 - berth - INFO - zhen 243, id: 2 cur_num_gds:2 
+4027 - berth - INFO - 0
+4027 - berth - INFO - zhen 244, id: 0 cur_num_gds:0 
+4027 - berth - INFO - 0
+4027 - berth - INFO - zhen 244, id: 1 cur_num_gds:2 
+4027 - berth - INFO - 0
+4027 - berth - INFO - zhen 244, id: 2 cur_num_gds:2 
+4029 - berth - INFO - 0
+4030 - berth - INFO - zhen 245, id: 0 cur_num_gds:0 
+4030 - berth - INFO - 0
+4030 - berth - INFO - zhen 245, id: 1 cur_num_gds:2 
+4030 - berth - INFO - 0
+4030 - berth - INFO - zhen 245, id: 2 cur_num_gds:2 
+4031 - berth - INFO - 0
+4031 - berth - INFO - zhen 246, id: 0 cur_num_gds:0 
+4031 - berth - INFO - 0
+4031 - berth - INFO - zhen 246, id: 1 cur_num_gds:2 
+4031 - berth - INFO - 0
+4031 - berth - INFO - zhen 246, id: 2 cur_num_gds:2 
+4033 - berth - INFO - 0
+4033 - berth - INFO - zhen 247, id: 0 cur_num_gds:0 
+4033 - berth - INFO - 0
+4033 - berth - INFO - zhen 247, id: 1 cur_num_gds:2 
+4033 - berth - INFO - 0
+4033 - berth - INFO - zhen 247, id: 2 cur_num_gds:2 
+4035 - berth - INFO - 0
+4035 - berth - INFO - zhen 248, id: 0 cur_num_gds:0 
+4035 - berth - INFO - 0
+4035 - berth - INFO - zhen 248, id: 1 cur_num_gds:2 
+4035 - berth - INFO - 0
+4035 - berth - INFO - zhen 248, id: 2 cur_num_gds:2 
+4037 - berth - INFO - 0
+4037 - berth - INFO - zhen 249, id: 0 cur_num_gds:0 
+4037 - berth - INFO - 0
+4037 - berth - INFO - zhen 249, id: 1 cur_num_gds:2 
+4037 - berth - INFO - 0
+4037 - berth - INFO - zhen 249, id: 2 cur_num_gds:2 
+4040 - berth - INFO - 0
+4040 - berth - INFO - zhen 251, id: 0 cur_num_gds:0 
+4040 - berth - INFO - 0
+4040 - berth - INFO - zhen 251, id: 1 cur_num_gds:2 
+4040 - berth - INFO - 0
+4040 - berth - INFO - zhen 251, id: 2 cur_num_gds:2 
+4042 - berth - INFO - 0
+4042 - berth - INFO - zhen 252, id: 0 cur_num_gds:0 
+4042 - berth - INFO - 0
+4042 - berth - INFO - zhen 252, id: 1 cur_num_gds:2 
+4042 - berth - INFO - 0
+4042 - berth - INFO - zhen 252, id: 2 cur_num_gds:2 
+4044 - berth - INFO - 0
+4044 - berth - INFO - zhen 253, id: 0 cur_num_gds:0 
+4044 - berth - INFO - 0
+4044 - berth - INFO - zhen 253, id: 1 cur_num_gds:2 
+4044 - berth - INFO - 0
+4044 - berth - INFO - zhen 253, id: 2 cur_num_gds:2 
+4046 - berth - INFO - 0
+4046 - berth - INFO - zhen 254, id: 0 cur_num_gds:0 
+4046 - berth - INFO - 0
+4046 - berth - INFO - zhen 254, id: 1 cur_num_gds:2 
+4046 - berth - INFO - 0
+4046 - berth - INFO - zhen 254, id: 2 cur_num_gds:2 
+4048 - berth - INFO - 0
+4048 - berth - INFO - zhen 255, id: 0 cur_num_gds:0 
+4048 - berth - INFO - 0
+4048 - berth - INFO - zhen 255, id: 1 cur_num_gds:2 
+4048 - berth - INFO - 0
+4048 - berth - INFO - zhen 255, id: 2 cur_num_gds:2 
+4050 - berth - INFO - 0
+4050 - berth - INFO - zhen 256, id: 0 cur_num_gds:0 
+4050 - berth - INFO - 0
+4050 - berth - INFO - zhen 256, id: 1 cur_num_gds:2 
+4050 - berth - INFO - 0
+4050 - berth - INFO - zhen 256, id: 2 cur_num_gds:2 
+4052 - berth - INFO - 0
+4052 - berth - INFO - zhen 257, id: 0 cur_num_gds:0 
+4052 - berth - INFO - 0
+4052 - berth - INFO - zhen 257, id: 1 cur_num_gds:2 
+4052 - berth - INFO - 0
+4052 - berth - INFO - zhen 257, id: 2 cur_num_gds:2 
+4056 - berth - INFO - 0
+4056 - berth - INFO - zhen 258, id: 0 cur_num_gds:0 
+4056 - berth - INFO - 0
+4056 - berth - INFO - zhen 258, id: 1 cur_num_gds:2 
+4056 - berth - INFO - 0
+4056 - berth - INFO - zhen 258, id: 2 cur_num_gds:2 
+4057 - berth - INFO - 0
+4057 - berth - INFO - zhen 259, id: 0 cur_num_gds:0 
+4057 - berth - INFO - 0
+4057 - berth - INFO - zhen 259, id: 1 cur_num_gds:2 
+4057 - berth - INFO - 0
+4057 - berth - INFO - zhen 259, id: 2 cur_num_gds:2 
+4060 - berth - INFO - 0
+4060 - berth - INFO - zhen 261, id: 0 cur_num_gds:0 
+4060 - berth - INFO - 0
+4060 - berth - INFO - zhen 261, id: 1 cur_num_gds:2 
+4061 - berth - INFO - 0
+4061 - berth - INFO - zhen 261, id: 2 cur_num_gds:2 
+4062 - berth - INFO - 0
+4062 - berth - INFO - zhen 262, id: 0 cur_num_gds:0 
+4062 - berth - INFO - 0
+4062 - berth - INFO - zhen 262, id: 1 cur_num_gds:2 
+4062 - berth - INFO - 0
+4062 - berth - INFO - zhen 262, id: 2 cur_num_gds:2 
+4065 - berth - INFO - 0
+4065 - berth - INFO - zhen 263, id: 0 cur_num_gds:0 
+4065 - berth - INFO - 0
+4065 - berth - INFO - zhen 263, id: 1 cur_num_gds:2 
+4065 - berth - INFO - 0
+4065 - berth - INFO - zhen 263, id: 2 cur_num_gds:2 
+4066 - berth - INFO - 0
+4066 - berth - INFO - zhen 264, id: 0 cur_num_gds:0 
+4066 - berth - INFO - 0
+4066 - berth - INFO - zhen 264, id: 1 cur_num_gds:2 
+4066 - berth - INFO - 0
+4066 - berth - INFO - zhen 264, id: 2 cur_num_gds:2 
+4068 - berth - INFO - 0
+4068 - berth - INFO - zhen 265, id: 0 cur_num_gds:0 
+4068 - berth - INFO - 0
+4068 - berth - INFO - zhen 265, id: 1 cur_num_gds:2 
+4068 - berth - INFO - 0
+4068 - berth - INFO - zhen 265, id: 2 cur_num_gds:2 
+4070 - berth - INFO - 0
+4070 - berth - INFO - zhen 266, id: 0 cur_num_gds:0 
+4070 - berth - INFO - 0
+4070 - berth - INFO - zhen 266, id: 1 cur_num_gds:2 
+4070 - berth - INFO - 0
+4070 - berth - INFO - zhen 266, id: 2 cur_num_gds:2 
+4072 - berth - INFO - 0
+4072 - berth - INFO - zhen 267, id: 0 cur_num_gds:0 
+4072 - berth - INFO - 0
+4072 - berth - INFO - zhen 267, id: 1 cur_num_gds:2 
+4072 - berth - INFO - 0
+4072 - berth - INFO - zhen 267, id: 2 cur_num_gds:2 
+4074 - berth - INFO - 0
+4074 - berth - INFO - zhen 268, id: 0 cur_num_gds:0 
+4074 - berth - INFO - 0
+4074 - berth - INFO - zhen 268, id: 1 cur_num_gds:2 
+4074 - berth - INFO - 0
+4074 - berth - INFO - zhen 268, id: 2 cur_num_gds:2 
+4075 - berth - INFO - 0
+4075 - berth - INFO - zhen 269, id: 0 cur_num_gds:0 
+4075 - berth - INFO - 0
+4075 - berth - INFO - zhen 269, id: 1 cur_num_gds:2 
+4075 - berth - INFO - 0
+4075 - berth - INFO - zhen 269, id: 2 cur_num_gds:2 
+4080 - berth - INFO - 0
+4080 - berth - INFO - zhen 271, id: 0 cur_num_gds:0 
+4080 - berth - INFO - 0
+4081 - berth - INFO - zhen 271, id: 1 cur_num_gds:2 
+4081 - berth - INFO - 0
+4081 - berth - INFO - zhen 271, id: 2 cur_num_gds:2 
+4082 - berth - INFO - 0
+4082 - berth - INFO - zhen 272, id: 0 cur_num_gds:0 
+4082 - berth - INFO - 0
+4082 - berth - INFO - zhen 272, id: 1 cur_num_gds:2 
+4082 - berth - INFO - 0
+4082 - berth - INFO - zhen 272, id: 2 cur_num_gds:2 
+4084 - berth - INFO - 0
+4084 - berth - INFO - zhen 273, id: 0 cur_num_gds:0 
+4084 - berth - INFO - 0
+4084 - berth - INFO - zhen 273, id: 1 cur_num_gds:2 
+4084 - berth - INFO - 0
+4084 - berth - INFO - zhen 273, id: 2 cur_num_gds:2 
+4085 - berth - INFO - 0
+4085 - berth - INFO - zhen 274, id: 0 cur_num_gds:0 
+4085 - berth - INFO - 0
+4085 - berth - INFO - zhen 274, id: 1 cur_num_gds:2 
+4085 - berth - INFO - 0
+4085 - berth - INFO - zhen 274, id: 2 cur_num_gds:2 
+4087 - berth - INFO - 0
+4087 - berth - INFO - zhen 275, id: 0 cur_num_gds:0 
+4087 - berth - INFO - 0
+4087 - berth - INFO - zhen 275, id: 1 cur_num_gds:2 
+4087 - berth - INFO - 0
+4087 - berth - INFO - zhen 275, id: 2 cur_num_gds:2 
+4089 - berth - INFO - 0
+4089 - berth - INFO - zhen 276, id: 0 cur_num_gds:0 
+4089 - berth - INFO - 0
+4089 - berth - INFO - zhen 276, id: 1 cur_num_gds:3 
+4089 - berth - INFO - 0
+4089 - berth - INFO - zhen 276, id: 2 cur_num_gds:2 
+4091 - berth - INFO - 0
+4091 - berth - INFO - zhen 277, id: 0 cur_num_gds:0 
+4091 - berth - INFO - 0
+4091 - berth - INFO - zhen 277, id: 1 cur_num_gds:3 
+4091 - berth - INFO - 0
+4091 - berth - INFO - zhen 277, id: 2 cur_num_gds:2 
+4093 - berth - INFO - 0
+4093 - berth - INFO - zhen 278, id: 0 cur_num_gds:0 
+4094 - berth - INFO - 0
+4094 - berth - INFO - zhen 278, id: 1 cur_num_gds:3 
+4094 - berth - INFO - 0
+4094 - berth - INFO - zhen 278, id: 2 cur_num_gds:2 
+4097 - berth - INFO - 0
+4097 - berth - INFO - zhen 279, id: 0 cur_num_gds:0 
+4097 - berth - INFO - 0
+4097 - berth - INFO - zhen 279, id: 1 cur_num_gds:3 
+4097 - berth - INFO - 0
+4097 - berth - INFO - zhen 279, id: 2 cur_num_gds:2 
+4100 - berth - INFO - 0
+4100 - berth - INFO - zhen 281, id: 0 cur_num_gds:0 
+4100 - berth - INFO - 0
+4100 - berth - INFO - zhen 281, id: 1 cur_num_gds:3 
+4100 - berth - INFO - 0
+4100 - berth - INFO - zhen 281, id: 2 cur_num_gds:2 
+4101 - berth - INFO - 0
+4101 - berth - INFO - zhen 282, id: 0 cur_num_gds:0 
+4101 - berth - INFO - 0
+4101 - berth - INFO - zhen 282, id: 1 cur_num_gds:3 
+4101 - berth - INFO - 0
+4102 - berth - INFO - zhen 282, id: 2 cur_num_gds:2 
+4103 - berth - INFO - 0
+4103 - berth - INFO - zhen 283, id: 0 cur_num_gds:0 
+4103 - berth - INFO - 0
+4103 - berth - INFO - zhen 283, id: 1 cur_num_gds:3 
+4103 - berth - INFO - 0
+4103 - berth - INFO - zhen 283, id: 2 cur_num_gds:2 
+4105 - berth - INFO - 0
+4105 - berth - INFO - zhen 284, id: 0 cur_num_gds:0 
+4105 - berth - INFO - 0
+4105 - berth - INFO - zhen 284, id: 1 cur_num_gds:3 
+4105 - berth - INFO - 0
+4105 - berth - INFO - zhen 284, id: 2 cur_num_gds:2 
+4106 - berth - INFO - 0
+4106 - berth - INFO - zhen 285, id: 0 cur_num_gds:0 
+4106 - berth - INFO - 0
+4106 - berth - INFO - zhen 285, id: 1 cur_num_gds:3 
+4106 - berth - INFO - 0
+4106 - berth - INFO - zhen 285, id: 2 cur_num_gds:2 
+4107 - berth - INFO - 0
+4107 - berth - INFO - zhen 286, id: 0 cur_num_gds:0 
+4108 - berth - INFO - 0
+4108 - berth - INFO - zhen 286, id: 1 cur_num_gds:3 
+4108 - berth - INFO - 0
+4108 - berth - INFO - zhen 286, id: 2 cur_num_gds:2 
+4109 - berth - INFO - 0
+4109 - berth - INFO - zhen 287, id: 0 cur_num_gds:0 
+4109 - berth - INFO - 0
+4109 - berth - INFO - zhen 287, id: 1 cur_num_gds:3 
+4109 - berth - INFO - 0
+4109 - berth - INFO - zhen 287, id: 2 cur_num_gds:2 
+4112 - berth - INFO - 0
+4112 - berth - INFO - zhen 288, id: 0 cur_num_gds:0 
+4112 - berth - INFO - 0
+4112 - berth - INFO - zhen 288, id: 1 cur_num_gds:3 
+4112 - berth - INFO - 0
+4112 - berth - INFO - zhen 288, id: 2 cur_num_gds:2 
+4114 - berth - INFO - 0
+4114 - berth - INFO - zhen 289, id: 0 cur_num_gds:0 
+4114 - berth - INFO - 0
+4114 - berth - INFO - zhen 289, id: 1 cur_num_gds:3 
+4114 - berth - INFO - 0
+4114 - berth - INFO - zhen 289, id: 2 cur_num_gds:2 
+4116 - berth - INFO - 0
+4116 - berth - INFO - zhen 291, id: 0 cur_num_gds:0 
+4116 - berth - INFO - 0
+4116 - berth - INFO - zhen 291, id: 1 cur_num_gds:3 
+4116 - berth - INFO - 0
+4116 - berth - INFO - zhen 291, id: 2 cur_num_gds:2 
+4118 - berth - INFO - 0
+4118 - berth - INFO - zhen 292, id: 0 cur_num_gds:0 
+4118 - berth - INFO - 0
+4118 - berth - INFO - zhen 292, id: 1 cur_num_gds:3 
+4118 - berth - INFO - 0
+4118 - berth - INFO - zhen 292, id: 2 cur_num_gds:2 
+4120 - berth - INFO - 0
+4120 - berth - INFO - zhen 293, id: 0 cur_num_gds:0 
+4120 - berth - INFO - 0
+4120 - berth - INFO - zhen 293, id: 1 cur_num_gds:3 
+4120 - berth - INFO - 0
+4120 - berth - INFO - zhen 293, id: 2 cur_num_gds:2 
+4121 - berth - INFO - 0
+4121 - berth - INFO - zhen 294, id: 0 cur_num_gds:0 
+4121 - berth - INFO - 0
+4122 - berth - INFO - zhen 294, id: 1 cur_num_gds:3 
+4122 - berth - INFO - 0
+4122 - berth - INFO - zhen 294, id: 2 cur_num_gds:2 
+4123 - berth - INFO - 0
+4123 - berth - INFO - zhen 295, id: 0 cur_num_gds:0 
+4123 - berth - INFO - 0
+4123 - berth - INFO - zhen 295, id: 1 cur_num_gds:3 
+4123 - berth - INFO - 0
+4123 - berth - INFO - zhen 295, id: 2 cur_num_gds:2 
+4124 - berth - INFO - 0
+4124 - berth - INFO - zhen 296, id: 0 cur_num_gds:0 
+4124 - berth - INFO - 0
+4124 - berth - INFO - zhen 296, id: 1 cur_num_gds:3 
+4124 - berth - INFO - 0
+4124 - berth - INFO - zhen 296, id: 2 cur_num_gds:2 
+4127 - berth - INFO - 0
+4127 - berth - INFO - zhen 297, id: 0 cur_num_gds:0 
+4127 - berth - INFO - 0
+4127 - berth - INFO - zhen 297, id: 1 cur_num_gds:3 
+4127 - berth - INFO - 0
+4127 - berth - INFO - zhen 297, id: 2 cur_num_gds:2 
+4130 - berth - INFO - 0
+4130 - berth - INFO - zhen 298, id: 0 cur_num_gds:0 
+4130 - berth - INFO - 0
+4130 - berth - INFO - zhen 298, id: 1 cur_num_gds:3 
+4130 - berth - INFO - 0
+4130 - berth - INFO - zhen 298, id: 2 cur_num_gds:2 
+4131 - berth - INFO - 0
+4131 - berth - INFO - zhen 299, id: 0 cur_num_gds:0 
+4131 - berth - INFO - 0
+4131 - berth - INFO - zhen 299, id: 1 cur_num_gds:3 
+4131 - berth - INFO - 0
+4131 - berth - INFO - zhen 299, id: 2 cur_num_gds:3 
+4136 - berth - INFO - 0
+4136 - berth - INFO - zhen 301, id: 0 cur_num_gds:0 
+4136 - berth - INFO - 0
+4136 - berth - INFO - zhen 301, id: 1 cur_num_gds:3 
+4136 - berth - INFO - 0
+4136 - berth - INFO - zhen 301, id: 2 cur_num_gds:3 
+4137 - berth - INFO - 0
+4137 - berth - INFO - zhen 302, id: 0 cur_num_gds:0 
+4137 - berth - INFO - 0
+4137 - berth - INFO - zhen 302, id: 1 cur_num_gds:3 
+4137 - berth - INFO - 0
+4137 - berth - INFO - zhen 302, id: 2 cur_num_gds:3 
+4139 - berth - INFO - 0
+4139 - berth - INFO - zhen 303, id: 0 cur_num_gds:0 
+4139 - berth - INFO - 0
+4139 - berth - INFO - zhen 303, id: 1 cur_num_gds:3 
+4139 - berth - INFO - 0
+4139 - berth - INFO - zhen 303, id: 2 cur_num_gds:3 
+4140 - berth - INFO - 0
+4140 - berth - INFO - zhen 304, id: 0 cur_num_gds:0 
+4140 - berth - INFO - 0
+4140 - berth - INFO - zhen 304, id: 1 cur_num_gds:3 
+4140 - berth - INFO - 0
+4140 - berth - INFO - zhen 304, id: 2 cur_num_gds:3 
+4142 - berth - INFO - 0
+4142 - berth - INFO - zhen 305, id: 0 cur_num_gds:0 
+4142 - berth - INFO - 0
+4142 - berth - INFO - zhen 305, id: 1 cur_num_gds:3 
+4142 - berth - INFO - 0
+4142 - berth - INFO - zhen 305, id: 2 cur_num_gds:3 
+4144 - berth - INFO - 0
+4144 - berth - INFO - zhen 306, id: 0 cur_num_gds:0 
+4144 - berth - INFO - 0
+4144 - berth - INFO - zhen 306, id: 1 cur_num_gds:3 
+4144 - berth - INFO - 0
+4144 - berth - INFO - zhen 306, id: 2 cur_num_gds:3 
+4146 - berth - INFO - 0
+4146 - berth - INFO - zhen 307, id: 0 cur_num_gds:0 
+4146 - berth - INFO - 0
+4146 - berth - INFO - zhen 307, id: 1 cur_num_gds:3 
+4146 - berth - INFO - 0
+4146 - berth - INFO - zhen 307, id: 2 cur_num_gds:3 
+4147 - berth - INFO - 0
+4147 - berth - INFO - zhen 308, id: 0 cur_num_gds:0 
+4147 - berth - INFO - 0
+4147 - berth - INFO - zhen 308, id: 1 cur_num_gds:3 
+4147 - berth - INFO - 0
+4147 - berth - INFO - zhen 308, id: 2 cur_num_gds:3 
+4149 - berth - INFO - 0
+4149 - berth - INFO - zhen 309, id: 0 cur_num_gds:0 
+4149 - berth - INFO - 0
+4149 - berth - INFO - zhen 309, id: 1 cur_num_gds:3 
+4149 - berth - INFO - 0
+4149 - berth - INFO - zhen 309, id: 2 cur_num_gds:3 
+4152 - berth - INFO - 0
+4152 - berth - INFO - zhen 311, id: 0 cur_num_gds:0 
+4152 - berth - INFO - 0
+4153 - berth - INFO - zhen 311, id: 1 cur_num_gds:3 
+4153 - berth - INFO - 0
+4153 - berth - INFO - zhen 311, id: 2 cur_num_gds:3 
+4154 - berth - INFO - 0
+4155 - berth - INFO - zhen 312, id: 0 cur_num_gds:0 
+4155 - berth - INFO - 0
+4155 - berth - INFO - zhen 312, id: 1 cur_num_gds:3 
+4155 - berth - INFO - 0
+4155 - berth - INFO - zhen 312, id: 2 cur_num_gds:3 
+4156 - berth - INFO - 0
+4156 - berth - INFO - zhen 313, id: 0 cur_num_gds:0 
+4156 - berth - INFO - 0
+4156 - berth - INFO - zhen 313, id: 1 cur_num_gds:3 
+4156 - berth - INFO - 0
+4156 - berth - INFO - zhen 313, id: 2 cur_num_gds:3 
+4158 - berth - INFO - 0
+4158 - berth - INFO - zhen 314, id: 0 cur_num_gds:0 
+4158 - berth - INFO - 0
+4158 - berth - INFO - zhen 314, id: 1 cur_num_gds:3 
+4158 - berth - INFO - 0
+4158 - berth - INFO - zhen 314, id: 2 cur_num_gds:3 
+4159 - berth - INFO - 0
+4159 - berth - INFO - zhen 315, id: 0 cur_num_gds:0 
+4159 - berth - INFO - 0
+4159 - berth - INFO - zhen 315, id: 1 cur_num_gds:3 
+4159 - berth - INFO - 0
+4159 - berth - INFO - zhen 315, id: 2 cur_num_gds:3 
+4161 - berth - INFO - 0
+4161 - berth - INFO - zhen 316, id: 0 cur_num_gds:0 
+4161 - berth - INFO - 0
+4161 - berth - INFO - zhen 316, id: 1 cur_num_gds:3 
+4161 - berth - INFO - 0
+4161 - berth - INFO - zhen 316, id: 2 cur_num_gds:3 
+4162 - berth - INFO - 0
+4162 - berth - INFO - zhen 317, id: 0 cur_num_gds:0 
+4162 - berth - INFO - 0
+4162 - berth - INFO - zhen 317, id: 1 cur_num_gds:3 
+4162 - berth - INFO - 0
+4162 - berth - INFO - zhen 317, id: 2 cur_num_gds:3 
+4164 - berth - INFO - 0
+4164 - berth - INFO - zhen 318, id: 0 cur_num_gds:0 
+4164 - berth - INFO - 0
+4164 - berth - INFO - zhen 318, id: 1 cur_num_gds:3 
+4164 - berth - INFO - 0
+4164 - berth - INFO - zhen 318, id: 2 cur_num_gds:3 
+4165 - berth - INFO - 0
+4165 - berth - INFO - zhen 319, id: 0 cur_num_gds:0 
+4165 - berth - INFO - 0
+4165 - berth - INFO - zhen 319, id: 1 cur_num_gds:3 
+4165 - berth - INFO - 0
+4165 - berth - INFO - zhen 319, id: 2 cur_num_gds:3 
+4168 - berth - INFO - 0
+4168 - berth - INFO - zhen 321, id: 0 cur_num_gds:0 
+4168 - berth - INFO - 0
+4168 - berth - INFO - zhen 321, id: 1 cur_num_gds:3 
+4168 - berth - INFO - 0
+4168 - berth - INFO - zhen 321, id: 2 cur_num_gds:3 
+4170 - berth - INFO - 0
+4170 - berth - INFO - zhen 322, id: 0 cur_num_gds:0 
+4170 - berth - INFO - 0
+4170 - berth - INFO - zhen 322, id: 1 cur_num_gds:3 
+4170 - berth - INFO - 0
+4170 - berth - INFO - zhen 322, id: 2 cur_num_gds:3 
+4172 - berth - INFO - 0
+4172 - berth - INFO - zhen 323, id: 0 cur_num_gds:0 
+4172 - berth - INFO - 0
+4172 - berth - INFO - zhen 323, id: 1 cur_num_gds:3 
+4172 - berth - INFO - 0
+4172 - berth - INFO - zhen 323, id: 2 cur_num_gds:3 
+4173 - berth - INFO - 0
+4173 - berth - INFO - zhen 324, id: 0 cur_num_gds:0 
+4173 - berth - INFO - 0
+4173 - berth - INFO - zhen 324, id: 1 cur_num_gds:3 
+4173 - berth - INFO - 0
+4173 - berth - INFO - zhen 324, id: 2 cur_num_gds:3 
+4174 - berth - INFO - 0
+4174 - berth - INFO - zhen 325, id: 0 cur_num_gds:0 
+4174 - berth - INFO - 0
+4174 - berth - INFO - zhen 325, id: 1 cur_num_gds:3 
+4174 - berth - INFO - 0
+4174 - berth - INFO - zhen 325, id: 2 cur_num_gds:3 
+4176 - berth - INFO - 0
+4176 - berth - INFO - zhen 326, id: 0 cur_num_gds:0 
+4176 - berth - INFO - 0
+4176 - berth - INFO - zhen 326, id: 1 cur_num_gds:3 
+4176 - berth - INFO - 0
+4176 - berth - INFO - zhen 326, id: 2 cur_num_gds:3 
+4177 - berth - INFO - 0
+4177 - berth - INFO - zhen 327, id: 0 cur_num_gds:0 
+4177 - berth - INFO - 0
+4177 - berth - INFO - zhen 327, id: 1 cur_num_gds:3 
+4177 - berth - INFO - 0
+4177 - berth - INFO - zhen 327, id: 2 cur_num_gds:3 
+4179 - berth - INFO - 0
+4179 - berth - INFO - zhen 328, id: 0 cur_num_gds:0 
+4179 - berth - INFO - 0
+4179 - berth - INFO - zhen 328, id: 1 cur_num_gds:3 
+4179 - berth - INFO - 0
+4179 - berth - INFO - zhen 328, id: 2 cur_num_gds:3 
+4180 - berth - INFO - 0
+4180 - berth - INFO - zhen 329, id: 0 cur_num_gds:0 
+4180 - berth - INFO - 0
+4180 - berth - INFO - zhen 329, id: 1 cur_num_gds:3 
+4180 - berth - INFO - 0
+4180 - berth - INFO - zhen 329, id: 2 cur_num_gds:3 
+4184 - berth - INFO - 0
+4184 - berth - INFO - zhen 331, id: 0 cur_num_gds:1 
+4184 - berth - INFO - 0
+4184 - berth - INFO - zhen 331, id: 1 cur_num_gds:3 
+4184 - berth - INFO - 0
+4184 - berth - INFO - zhen 331, id: 2 cur_num_gds:3 
+4186 - berth - INFO - 0
+4186 - berth - INFO - zhen 332, id: 0 cur_num_gds:1 
+4186 - berth - INFO - 0
+4186 - berth - INFO - zhen 332, id: 1 cur_num_gds:3 
+4186 - berth - INFO - 0
+4186 - berth - INFO - zhen 332, id: 2 cur_num_gds:3 
+4187 - berth - INFO - 0
+4187 - berth - INFO - zhen 333, id: 0 cur_num_gds:1 
+4187 - berth - INFO - 0
+4187 - berth - INFO - zhen 333, id: 1 cur_num_gds:3 
+4187 - berth - INFO - 0
+4187 - berth - INFO - zhen 333, id: 2 cur_num_gds:3 
+4189 - berth - INFO - 0
+4189 - berth - INFO - zhen 334, id: 0 cur_num_gds:1 
+4189 - berth - INFO - 0
+4189 - berth - INFO - zhen 334, id: 1 cur_num_gds:3 
+4189 - berth - INFO - 0
+4189 - berth - INFO - zhen 334, id: 2 cur_num_gds:3 
+4190 - berth - INFO - 0
+4190 - berth - INFO - zhen 335, id: 0 cur_num_gds:1 
+4190 - berth - INFO - 0
+4190 - berth - INFO - zhen 335, id: 1 cur_num_gds:3 
+4190 - berth - INFO - 0
+4190 - berth - INFO - zhen 335, id: 2 cur_num_gds:3 
+4192 - berth - INFO - 0
+4192 - berth - INFO - zhen 336, id: 0 cur_num_gds:1 
+4192 - berth - INFO - 0
+4192 - berth - INFO - zhen 336, id: 1 cur_num_gds:3 
+4192 - berth - INFO - 0
+4192 - berth - INFO - zhen 336, id: 2 cur_num_gds:3 
+4193 - berth - INFO - boatid 0 berth 1
+4193 - berth - INFO - boatid 0 boat sVec (92, 3), Boat_Direction.RIGHT
+4193 - berth - INFO - boat_id 0 berth 0
+4193 - berth - INFO - 0
+4193 - berth - INFO - zhen 337, id: 0 cur_num_gds:1 
+4193 - berth - INFO - 0
+4193 - berth - INFO - zhen 337, id: 1 cur_num_gds:3 
+4193 - berth - INFO - 0
+4193 - berth - INFO - zhen 337, id: 2 cur_num_gds:3 
+4197 - berth - INFO - boatid 0 berth 1
+4197 - berth - INFO - boatid 0 boat sVec (92, 3), Boat_Direction.RIGHT
+4197 - berth - INFO - boat_id 0 berth 0
+4198 - berth - INFO - 0
+4198 - berth - INFO - zhen 338, id: 0 cur_num_gds:1 
+4198 - berth - INFO - 0
+4198 - berth - INFO - zhen 338, id: 1 cur_num_gds:3 
+4198 - berth - INFO - 0
+4198 - berth - INFO - zhen 338, id: 2 cur_num_gds:3 
+4199 - berth - INFO - boatid 0 berth 1
+4199 - berth - INFO - boatid 0 boat sVec (92, 3), Boat_Direction.RIGHT
+4199 - berth - INFO - boat_id 0 self.env.berths[1].cur_num_gds2
+4199 - berth - INFO - 1
+4199 - berth - INFO - zhen 339, id: 0 cur_num_gds:1 
+4200 - berth - INFO - 1
+4200 - berth - INFO - zhen 339, id: 1 cur_num_gds:2 
+4200 - berth - INFO - 1
+4200 - berth - INFO - zhen 339, id: 2 cur_num_gds:3 
+4201 - berth - INFO - boatid 0 berth 1
+4201 - berth - INFO - boatid 0 boat sVec (92, 3), Boat_Direction.RIGHT
+4201 - berth - INFO - boat_id 0 self.env.berths[1].cur_num_gds1
+4203 - berth - INFO - boatid 0 berth 1
+4203 - berth - INFO - boatid 0 boat sVec (92, 3), Boat_Direction.RIGHT
+4203 - berth - INFO - boat_id 0 self.env.berths[1].cur_num_gds0
+4204 - berth - INFO - 3
+4204 - berth - INFO - zhen 341, id: 0 cur_num_gds:1 
+4204 - berth - INFO - 3
+4204 - berth - INFO - zhen 341, id: 1 cur_num_gds:0 
+4204 - berth - INFO - 3
+4204 - berth - INFO - zhen 341, id: 2 cur_num_gds:3 
+4205 - berth - INFO - boatid 0 berth 1
+4205 - berth - INFO - boatid 0 boat sVec (92, 3), Boat_Direction.RIGHT
+4206 - berth - INFO - boat_id:0 next_index:2
+4208 - berth - INFO - 3
+4208 - berth - INFO - zhen 342, id: 0 cur_num_gds:1 
+4208 - berth - INFO - 3
+4208 - berth - INFO - zhen 342, id: 1 cur_num_gds:0 
+4208 - berth - INFO - 3
+4208 - berth - INFO - zhen 342, id: 2 cur_num_gds:3 
+4209 - berth - INFO - 3
+4209 - berth - INFO - zhen 343, id: 0 cur_num_gds:1 
+4209 - berth - INFO - 3
+4209 - berth - INFO - zhen 343, id: 1 cur_num_gds:0 
+4209 - berth - INFO - 3
+4209 - berth - INFO - zhen 343, id: 2 cur_num_gds:4 
+4211 - berth - INFO - 3
+4211 - berth - INFO - zhen 344, id: 0 cur_num_gds:1 
+4211 - berth - INFO - 3
+4211 - berth - INFO - zhen 344, id: 1 cur_num_gds:0 
+4211 - berth - INFO - 3
+4211 - berth - INFO - zhen 344, id: 2 cur_num_gds:4 
+4213 - berth - INFO - 3
+4213 - berth - INFO - zhen 345, id: 0 cur_num_gds:1 
+4213 - berth - INFO - 3
+4213 - berth - INFO - zhen 345, id: 1 cur_num_gds:0 
+4213 - berth - INFO - 3
+4213 - berth - INFO - zhen 345, id: 2 cur_num_gds:4 
+4215 - berth - INFO - 3
+4215 - berth - INFO - zhen 346, id: 0 cur_num_gds:1 
+4215 - berth - INFO - 3
+4215 - berth - INFO - zhen 346, id: 1 cur_num_gds:0 
+4215 - berth - INFO - 3
+4215 - berth - INFO - zhen 346, id: 2 cur_num_gds:5 
+4217 - berth - INFO - 3
+4217 - berth - INFO - zhen 347, id: 0 cur_num_gds:2 
+4217 - berth - INFO - 3
+4217 - berth - INFO - zhen 347, id: 1 cur_num_gds:1 
+4217 - berth - INFO - 3
+4217 - berth - INFO - zhen 347, id: 2 cur_num_gds:5 
+4220 - berth - INFO - 3
+4220 - berth - INFO - zhen 348, id: 0 cur_num_gds:2 
+4220 - berth - INFO - 3
+4220 - berth - INFO - zhen 348, id: 1 cur_num_gds:1 
+4220 - berth - INFO - 3
+4220 - berth - INFO - zhen 348, id: 2 cur_num_gds:5 
+4222 - berth - INFO - 3
+4222 - berth - INFO - zhen 349, id: 0 cur_num_gds:2 
+4222 - berth - INFO - 3
+4222 - berth - INFO - zhen 349, id: 1 cur_num_gds:1 
+4222 - berth - INFO - 3
+4222 - berth - INFO - zhen 349, id: 2 cur_num_gds:5 
+4225 - berth - INFO - 3
+4225 - berth - INFO - zhen 351, id: 0 cur_num_gds:2 
+4225 - berth - INFO - 3
+4225 - berth - INFO - zhen 351, id: 1 cur_num_gds:1 
+4225 - berth - INFO - 3
+4225 - berth - INFO - zhen 351, id: 2 cur_num_gds:5 
+4227 - berth - INFO - 3
+4227 - berth - INFO - zhen 352, id: 0 cur_num_gds:2 
+4227 - berth - INFO - 3
+4227 - berth - INFO - zhen 352, id: 1 cur_num_gds:1 
+4227 - berth - INFO - 3
+4227 - berth - INFO - zhen 352, id: 2 cur_num_gds:5 
+4228 - berth - INFO - 3
+4228 - berth - INFO - zhen 353, id: 0 cur_num_gds:2 
+4228 - berth - INFO - 3
+4228 - berth - INFO - zhen 353, id: 1 cur_num_gds:1 
+4228 - berth - INFO - 3
+4228 - berth - INFO - zhen 353, id: 2 cur_num_gds:5 
+4230 - berth - INFO - 3
+4230 - berth - INFO - zhen 354, id: 0 cur_num_gds:2 
+4230 - berth - INFO - 3
+4230 - berth - INFO - zhen 354, id: 1 cur_num_gds:1 
+4230 - berth - INFO - 3
+4230 - berth - INFO - zhen 354, id: 2 cur_num_gds:5 
+4231 - berth - INFO - 3
+4231 - berth - INFO - zhen 355, id: 0 cur_num_gds:2 
+4231 - berth - INFO - 3
+4231 - berth - INFO - zhen 355, id: 1 cur_num_gds:1 
+4231 - berth - INFO - 3
+4231 - berth - INFO - zhen 355, id: 2 cur_num_gds:5 
+4233 - berth - INFO - 3
+4233 - berth - INFO - zhen 356, id: 0 cur_num_gds:2 
+4233 - berth - INFO - 3
+4233 - berth - INFO - zhen 356, id: 1 cur_num_gds:1 
+4233 - berth - INFO - 3
+4233 - berth - INFO - zhen 356, id: 2 cur_num_gds:5 
+4234 - berth - INFO - 3
+4234 - berth - INFO - zhen 357, id: 0 cur_num_gds:2 
+4235 - berth - INFO - 3
+4235 - berth - INFO - zhen 357, id: 1 cur_num_gds:1 
+4235 - berth - INFO - 3
+4235 - berth - INFO - zhen 357, id: 2 cur_num_gds:5 
+4236 - berth - INFO - 3
+4236 - berth - INFO - zhen 358, id: 0 cur_num_gds:2 
+4236 - berth - INFO - 3
+4236 - berth - INFO - zhen 358, id: 1 cur_num_gds:1 
+4236 - berth - INFO - 3
+4236 - berth - INFO - zhen 358, id: 2 cur_num_gds:5 
+4240 - berth - INFO - 3
+4240 - berth - INFO - zhen 359, id: 0 cur_num_gds:2 
+4240 - berth - INFO - 3
+4240 - berth - INFO - zhen 359, id: 1 cur_num_gds:1 
+4240 - berth - INFO - 3
+4240 - berth - INFO - zhen 359, id: 2 cur_num_gds:5 
+4243 - berth - INFO - 3
+4243 - berth - INFO - zhen 361, id: 0 cur_num_gds:2 
+4243 - berth - INFO - 3
+4243 - berth - INFO - zhen 361, id: 1 cur_num_gds:1 
+4243 - berth - INFO - 3
+4243 - berth - INFO - zhen 361, id: 2 cur_num_gds:5 
+4245 - berth - INFO - 3
+4245 - berth - INFO - zhen 362, id: 0 cur_num_gds:2 
+4245 - berth - INFO - 3
+4245 - berth - INFO - zhen 362, id: 1 cur_num_gds:1 
+4245 - berth - INFO - 3
+4245 - berth - INFO - zhen 362, id: 2 cur_num_gds:5 
+4247 - berth - INFO - 3
+4247 - berth - INFO - zhen 363, id: 0 cur_num_gds:2 
+4247 - berth - INFO - 3
+4247 - berth - INFO - zhen 363, id: 1 cur_num_gds:1 
+4247 - berth - INFO - 3
+4247 - berth - INFO - zhen 363, id: 2 cur_num_gds:5 
+4248 - berth - INFO - 3
+4248 - berth - INFO - zhen 364, id: 0 cur_num_gds:2 
+4249 - berth - INFO - 3
+4249 - berth - INFO - zhen 364, id: 1 cur_num_gds:1 
+4249 - berth - INFO - 3
+4249 - berth - INFO - zhen 364, id: 2 cur_num_gds:5 
+4250 - berth - INFO - 3
+4250 - berth - INFO - zhen 365, id: 0 cur_num_gds:2 
+4250 - berth - INFO - 3
+4250 - berth - INFO - zhen 365, id: 1 cur_num_gds:1 
+4250 - berth - INFO - 3
+4250 - berth - INFO - zhen 365, id: 2 cur_num_gds:5 
+4251 - berth - INFO - 3
+4251 - berth - INFO - zhen 366, id: 0 cur_num_gds:2 
+4251 - berth - INFO - 3
+4251 - berth - INFO - zhen 366, id: 1 cur_num_gds:1 
+4251 - berth - INFO - 3
+4251 - berth - INFO - zhen 366, id: 2 cur_num_gds:5 
+4253 - berth - INFO - 3
+4253 - berth - INFO - zhen 367, id: 0 cur_num_gds:2 
+4253 - berth - INFO - 3
+4253 - berth - INFO - zhen 367, id: 1 cur_num_gds:1 
+4253 - berth - INFO - 3
+4253 - berth - INFO - zhen 367, id: 2 cur_num_gds:5 
+4255 - berth - INFO - 3
+4255 - berth - INFO - zhen 368, id: 0 cur_num_gds:2 
+4255 - berth - INFO - 3
+4255 - berth - INFO - zhen 368, id: 1 cur_num_gds:1 
+4255 - berth - INFO - 3
+4255 - berth - INFO - zhen 368, id: 2 cur_num_gds:5 
+4256 - berth - INFO - 3
+4256 - berth - INFO - zhen 369, id: 0 cur_num_gds:2 
+4256 - berth - INFO - 3
+4256 - berth - INFO - zhen 369, id: 1 cur_num_gds:1 
+4256 - berth - INFO - 3
+4256 - berth - INFO - zhen 369, id: 2 cur_num_gds:5 
+4259 - berth - INFO - 3
+4259 - berth - INFO - zhen 371, id: 0 cur_num_gds:2 
+4259 - berth - INFO - 3
+4259 - berth - INFO - zhen 371, id: 1 cur_num_gds:1 
+4259 - berth - INFO - 3
+4259 - berth - INFO - zhen 371, id: 2 cur_num_gds:5 
+4261 - berth - INFO - 3
+4261 - berth - INFO - zhen 372, id: 0 cur_num_gds:2 
+4261 - berth - INFO - 3
+4261 - berth - INFO - zhen 372, id: 1 cur_num_gds:1 
+4261 - berth - INFO - 3
+4261 - berth - INFO - zhen 372, id: 2 cur_num_gds:5 
+4262 - berth - INFO - 3
+4262 - berth - INFO - zhen 373, id: 0 cur_num_gds:2 
+4262 - berth - INFO - 3
+4262 - berth - INFO - zhen 373, id: 1 cur_num_gds:1 
+4262 - berth - INFO - 3
+4262 - berth - INFO - zhen 373, id: 2 cur_num_gds:5 
+4264 - berth - INFO - 3
+4264 - berth - INFO - zhen 374, id: 0 cur_num_gds:2 
+4264 - berth - INFO - 3
+4264 - berth - INFO - zhen 374, id: 1 cur_num_gds:1 
+4264 - berth - INFO - 3
+4264 - berth - INFO - zhen 374, id: 2 cur_num_gds:5 
+4265 - berth - INFO - 3
+4265 - berth - INFO - zhen 375, id: 0 cur_num_gds:2 
+4265 - berth - INFO - 3
+4265 - berth - INFO - zhen 375, id: 1 cur_num_gds:1 
+4265 - berth - INFO - 3
+4265 - berth - INFO - zhen 375, id: 2 cur_num_gds:5 
+4267 - berth - INFO - 3
+4267 - berth - INFO - zhen 376, id: 0 cur_num_gds:2 
+4267 - berth - INFO - 3
+4267 - berth - INFO - zhen 376, id: 1 cur_num_gds:1 
+4267 - berth - INFO - 3
+4267 - berth - INFO - zhen 376, id: 2 cur_num_gds:5 
+4268 - berth - INFO - 3
+4268 - berth - INFO - zhen 377, id: 0 cur_num_gds:2 
+4268 - berth - INFO - 3
+4268 - berth - INFO - zhen 377, id: 1 cur_num_gds:1 
+4268 - berth - INFO - 3
+4268 - berth - INFO - zhen 377, id: 2 cur_num_gds:5 
+4270 - berth - INFO - 3
+4270 - berth - INFO - zhen 378, id: 0 cur_num_gds:2 
+4270 - berth - INFO - 3
+4270 - berth - INFO - zhen 378, id: 1 cur_num_gds:1 
+4270 - berth - INFO - 3
+4270 - berth - INFO - zhen 378, id: 2 cur_num_gds:5 
+4271 - berth - INFO - 3
+4271 - berth - INFO - zhen 379, id: 0 cur_num_gds:2 
+4271 - berth - INFO - 3
+4271 - berth - INFO - zhen 379, id: 1 cur_num_gds:1 
+4271 - berth - INFO - 3
+4271 - berth - INFO - zhen 379, id: 2 cur_num_gds:5 
+4274 - berth - INFO - 3
+4274 - berth - INFO - zhen 381, id: 0 cur_num_gds:2 
+4274 - berth - INFO - 3
+4274 - berth - INFO - zhen 381, id: 1 cur_num_gds:1 
+4274 - berth - INFO - 3
+4274 - berth - INFO - zhen 381, id: 2 cur_num_gds:5 
+4276 - berth - INFO - 3
+4276 - berth - INFO - zhen 382, id: 0 cur_num_gds:2 
+4276 - berth - INFO - 3
+4276 - berth - INFO - zhen 382, id: 1 cur_num_gds:1 
+4276 - berth - INFO - 3
+4276 - berth - INFO - zhen 382, id: 2 cur_num_gds:5 
+4278 - berth - INFO - 3
+4278 - berth - INFO - zhen 383, id: 0 cur_num_gds:2 
+4278 - berth - INFO - 3
+4278 - berth - INFO - zhen 383, id: 1 cur_num_gds:1 
+4278 - berth - INFO - 3
+4278 - berth - INFO - zhen 383, id: 2 cur_num_gds:5 
+4279 - berth - INFO - 3
+4279 - berth - INFO - zhen 384, id: 0 cur_num_gds:2 
+4279 - berth - INFO - 3
+4279 - berth - INFO - zhen 384, id: 1 cur_num_gds:1 
+4279 - berth - INFO - 3
+4279 - berth - INFO - zhen 384, id: 2 cur_num_gds:5 
+4280 - berth - INFO - 3
+4280 - berth - INFO - zhen 385, id: 0 cur_num_gds:2 
+4281 - berth - INFO - 3
+4281 - berth - INFO - zhen 385, id: 1 cur_num_gds:1 
+4281 - berth - INFO - 3
+4281 - berth - INFO - zhen 385, id: 2 cur_num_gds:5 
+4282 - berth - INFO - 3
+4282 - berth - INFO - zhen 386, id: 0 cur_num_gds:2 
+4282 - berth - INFO - 3
+4282 - berth - INFO - zhen 386, id: 1 cur_num_gds:1 
+4282 - berth - INFO - 3
+4282 - berth - INFO - zhen 386, id: 2 cur_num_gds:5 
+4283 - berth - INFO - 3
+4283 - berth - INFO - zhen 387, id: 0 cur_num_gds:2 
+4283 - berth - INFO - 3
+4283 - berth - INFO - zhen 387, id: 1 cur_num_gds:1 
+4283 - berth - INFO - 3
+4283 - berth - INFO - zhen 387, id: 2 cur_num_gds:5 
+4285 - berth - INFO - 3
+4285 - berth - INFO - zhen 388, id: 0 cur_num_gds:2 
+4285 - berth - INFO - 3
+4285 - berth - INFO - zhen 388, id: 1 cur_num_gds:1 
+4285 - berth - INFO - 3
+4285 - berth - INFO - zhen 388, id: 2 cur_num_gds:5 
+4286 - berth - INFO - 3
+4286 - berth - INFO - zhen 389, id: 0 cur_num_gds:2 
+4286 - berth - INFO - 3
+4287 - berth - INFO - zhen 389, id: 1 cur_num_gds:1 
+4287 - berth - INFO - 3
+4287 - berth - INFO - zhen 389, id: 2 cur_num_gds:5 
+4290 - berth - INFO - 3
+4290 - berth - INFO - zhen 391, id: 0 cur_num_gds:2 
+4290 - berth - INFO - 3
+4290 - berth - INFO - zhen 391, id: 1 cur_num_gds:1 
+4290 - berth - INFO - 3
+4290 - berth - INFO - zhen 391, id: 2 cur_num_gds:5 
+4291 - berth - INFO - 3
+4291 - berth - INFO - zhen 392, id: 0 cur_num_gds:2 
+4291 - berth - INFO - 3
+4291 - berth - INFO - zhen 392, id: 1 cur_num_gds:1 
+4291 - berth - INFO - 3
+4291 - berth - INFO - zhen 392, id: 2 cur_num_gds:5 
+4293 - berth - INFO - 3
+4293 - berth - INFO - zhen 393, id: 0 cur_num_gds:2 
+4293 - berth - INFO - 3
+4293 - berth - INFO - zhen 393, id: 1 cur_num_gds:1 
+4293 - berth - INFO - 3
+4293 - berth - INFO - zhen 393, id: 2 cur_num_gds:5 
+4295 - berth - INFO - 3
+4295 - berth - INFO - zhen 394, id: 0 cur_num_gds:2 
+4295 - berth - INFO - 3
+4295 - berth - INFO - zhen 394, id: 1 cur_num_gds:1 
+4295 - berth - INFO - 3
+4295 - berth - INFO - zhen 394, id: 2 cur_num_gds:5 
+4297 - berth - INFO - 3
+4297 - berth - INFO - zhen 395, id: 0 cur_num_gds:2 
+4297 - berth - INFO - 3
+4297 - berth - INFO - zhen 395, id: 1 cur_num_gds:1 
+4297 - berth - INFO - 3
+4297 - berth - INFO - zhen 395, id: 2 cur_num_gds:5 
+4298 - berth - INFO - 3
+4298 - berth - INFO - zhen 396, id: 0 cur_num_gds:2 
+4299 - berth - INFO - 3
+4299 - berth - INFO - zhen 396, id: 1 cur_num_gds:1 
+4299 - berth - INFO - 3
+4299 - berth - INFO - zhen 396, id: 2 cur_num_gds:5 
+4300 - berth - INFO - 3
+4300 - berth - INFO - zhen 397, id: 0 cur_num_gds:2 
+4300 - berth - INFO - 3
+4300 - berth - INFO - zhen 397, id: 1 cur_num_gds:1 
+4300 - berth - INFO - 3
+4300 - berth - INFO - zhen 397, id: 2 cur_num_gds:5 
+4301 - berth - INFO - 3
+4301 - berth - INFO - zhen 398, id: 0 cur_num_gds:2 
+4301 - berth - INFO - 3
+4301 - berth - INFO - zhen 398, id: 1 cur_num_gds:1 
+4301 - berth - INFO - 3
+4301 - berth - INFO - zhen 398, id: 2 cur_num_gds:5 
+4303 - berth - INFO - 3
+4303 - berth - INFO - zhen 399, id: 0 cur_num_gds:2 
+4303 - berth - INFO - 3
+4303 - berth - INFO - zhen 399, id: 1 cur_num_gds:1 
+4303 - berth - INFO - 3
+4303 - berth - INFO - zhen 399, id: 2 cur_num_gds:5 
+4306 - berth - INFO - 3
+4306 - berth - INFO - zhen 401, id: 0 cur_num_gds:2 
+4306 - berth - INFO - 3
+4306 - berth - INFO - zhen 401, id: 1 cur_num_gds:1 
+4306 - berth - INFO - 3
+4306 - berth - INFO - zhen 401, id: 2 cur_num_gds:5 
+4308 - berth - INFO - 3
+4308 - berth - INFO - zhen 402, id: 0 cur_num_gds:2 
+4308 - berth - INFO - 3
+4308 - berth - INFO - zhen 402, id: 1 cur_num_gds:1 
+4308 - berth - INFO - 3
+4308 - berth - INFO - zhen 402, id: 2 cur_num_gds:5 
+4309 - berth - INFO - 3
+4309 - berth - INFO - zhen 403, id: 0 cur_num_gds:2 
+4309 - berth - INFO - 3
+4309 - berth - INFO - zhen 403, id: 1 cur_num_gds:1 
+4309 - berth - INFO - 3
+4309 - berth - INFO - zhen 403, id: 2 cur_num_gds:5 
+4311 - berth - INFO - 3
+4311 - berth - INFO - zhen 404, id: 0 cur_num_gds:2 
+4311 - berth - INFO - 3
+4311 - berth - INFO - zhen 404, id: 1 cur_num_gds:1 
+4311 - berth - INFO - 3
+4311 - berth - INFO - zhen 404, id: 2 cur_num_gds:5 
+4312 - berth - INFO - 3
+4312 - berth - INFO - zhen 405, id: 0 cur_num_gds:2 
+4312 - berth - INFO - 3
+4312 - berth - INFO - zhen 405, id: 1 cur_num_gds:1 
+4312 - berth - INFO - 3
+4313 - berth - INFO - zhen 405, id: 2 cur_num_gds:5 
+4314 - berth - INFO - 3
+4314 - berth - INFO - zhen 406, id: 0 cur_num_gds:2 
+4314 - berth - INFO - 3
+4314 - berth - INFO - zhen 406, id: 1 cur_num_gds:2 
+4314 - berth - INFO - 3
+4314 - berth - INFO - zhen 406, id: 2 cur_num_gds:5 
+4315 - berth - INFO - 3
+4315 - berth - INFO - zhen 407, id: 0 cur_num_gds:2 
+4315 - berth - INFO - 3
+4315 - berth - INFO - zhen 407, id: 1 cur_num_gds:2 
+4315 - berth - INFO - 3
+4315 - berth - INFO - zhen 407, id: 2 cur_num_gds:5 
+4317 - berth - INFO - 3
+4317 - berth - INFO - zhen 408, id: 0 cur_num_gds:2 
+4317 - berth - INFO - 3
+4317 - berth - INFO - zhen 408, id: 1 cur_num_gds:2 
+4317 - berth - INFO - 3
+4317 - berth - INFO - zhen 408, id: 2 cur_num_gds:5 
+4319 - berth - INFO - 3
+4319 - berth - INFO - zhen 409, id: 0 cur_num_gds:2 
+4319 - berth - INFO - 3
+4319 - berth - INFO - zhen 409, id: 1 cur_num_gds:2 
+4319 - berth - INFO - 3
+4319 - berth - INFO - zhen 409, id: 2 cur_num_gds:5 
+4323 - berth - INFO - 3
+4323 - berth - INFO - zhen 411, id: 0 cur_num_gds:3 
+4323 - berth - INFO - 3
+4323 - berth - INFO - zhen 411, id: 1 cur_num_gds:2 
+4323 - berth - INFO - 3
+4323 - berth - INFO - zhen 411, id: 2 cur_num_gds:5 
+4324 - berth - INFO - 3
+4324 - berth - INFO - zhen 412, id: 0 cur_num_gds:3 
+4324 - berth - INFO - 3
+4324 - berth - INFO - zhen 412, id: 1 cur_num_gds:2 
+4324 - berth - INFO - 3
+4325 - berth - INFO - zhen 412, id: 2 cur_num_gds:5 
+4328 - berth - INFO - 3
+4328 - berth - INFO - zhen 413, id: 0 cur_num_gds:3 
+4328 - berth - INFO - 3
+4328 - berth - INFO - zhen 413, id: 1 cur_num_gds:2 
+4328 - berth - INFO - 3
+4328 - berth - INFO - zhen 413, id: 2 cur_num_gds:5 
+4329 - berth - INFO - 3
+4329 - berth - INFO - zhen 414, id: 0 cur_num_gds:3 
+4329 - berth - INFO - 3
+4329 - berth - INFO - zhen 414, id: 1 cur_num_gds:2 
+4329 - berth - INFO - 3
+4329 - berth - INFO - zhen 414, id: 2 cur_num_gds:5 
+4331 - berth - INFO - 3
+4331 - berth - INFO - zhen 415, id: 0 cur_num_gds:3 
+4331 - berth - INFO - 3
+4331 - berth - INFO - zhen 415, id: 1 cur_num_gds:2 
+4331 - berth - INFO - 3
+4331 - berth - INFO - zhen 415, id: 2 cur_num_gds:5 
+4333 - berth - INFO - 3
+4333 - berth - INFO - zhen 416, id: 0 cur_num_gds:3 
+4333 - berth - INFO - 3
+4333 - berth - INFO - zhen 416, id: 1 cur_num_gds:2 
+4333 - berth - INFO - 3
+4333 - berth - INFO - zhen 416, id: 2 cur_num_gds:5 
+4334 - berth - INFO - 3
+4334 - berth - INFO - zhen 417, id: 0 cur_num_gds:3 
+4334 - berth - INFO - 3
+4334 - berth - INFO - zhen 417, id: 1 cur_num_gds:2 
+4334 - berth - INFO - 3
+4334 - berth - INFO - zhen 417, id: 2 cur_num_gds:5 
+4336 - berth - INFO - 3
+4336 - berth - INFO - zhen 418, id: 0 cur_num_gds:3 
+4336 - berth - INFO - 3
+4336 - berth - INFO - zhen 418, id: 1 cur_num_gds:2 
+4336 - berth - INFO - 3
+4336 - berth - INFO - zhen 418, id: 2 cur_num_gds:5 
+4338 - berth - INFO - 3
+4338 - berth - INFO - zhen 419, id: 0 cur_num_gds:3 
+4338 - berth - INFO - 3
+4338 - berth - INFO - zhen 419, id: 1 cur_num_gds:2 
+4338 - berth - INFO - 3
+4338 - berth - INFO - zhen 419, id: 2 cur_num_gds:5 
+4342 - berth - INFO - 3
+4342 - berth - INFO - zhen 421, id: 0 cur_num_gds:3 
+4342 - berth - INFO - 3
+4342 - berth - INFO - zhen 421, id: 1 cur_num_gds:2 
+4342 - berth - INFO - 3
+4342 - berth - INFO - zhen 421, id: 2 cur_num_gds:5 
+4346 - berth - INFO - 3
+4346 - berth - INFO - zhen 422, id: 0 cur_num_gds:3 
+4346 - berth - INFO - 3
+4346 - berth - INFO - zhen 422, id: 1 cur_num_gds:2 
+4346 - berth - INFO - 3
+4346 - berth - INFO - zhen 422, id: 2 cur_num_gds:5 
+4347 - berth - INFO - 3
+4347 - berth - INFO - zhen 423, id: 0 cur_num_gds:3 
+4347 - berth - INFO - 3
+4347 - berth - INFO - zhen 423, id: 1 cur_num_gds:2 
+4347 - berth - INFO - 3
+4347 - berth - INFO - zhen 423, id: 2 cur_num_gds:5 
+4349 - berth - INFO - 3
+4349 - berth - INFO - zhen 424, id: 0 cur_num_gds:3 
+4349 - berth - INFO - 3
+4349 - berth - INFO - zhen 424, id: 1 cur_num_gds:2 
+4349 - berth - INFO - 3
+4349 - berth - INFO - zhen 424, id: 2 cur_num_gds:5 
+4350 - berth - INFO - 3
+4351 - berth - INFO - zhen 425, id: 0 cur_num_gds:3 
+4351 - berth - INFO - 3
+4351 - berth - INFO - zhen 425, id: 1 cur_num_gds:2 
+4351 - berth - INFO - 3
+4351 - berth - INFO - zhen 425, id: 2 cur_num_gds:5 
+4352 - berth - INFO - 3
+4352 - berth - INFO - zhen 426, id: 0 cur_num_gds:3 
+4352 - berth - INFO - 3
+4352 - berth - INFO - zhen 426, id: 1 cur_num_gds:2 
+4352 - berth - INFO - 3
+4352 - berth - INFO - zhen 426, id: 2 cur_num_gds:5 
+4354 - berth - INFO - 3
+4354 - berth - INFO - zhen 427, id: 0 cur_num_gds:3 
+4354 - berth - INFO - 3
+4354 - berth - INFO - zhen 427, id: 1 cur_num_gds:2 
+4354 - berth - INFO - 3
+4354 - berth - INFO - zhen 427, id: 2 cur_num_gds:5 
+4355 - berth - INFO - 3
+4355 - berth - INFO - zhen 428, id: 0 cur_num_gds:3 
+4355 - berth - INFO - 3
+4355 - berth - INFO - zhen 428, id: 1 cur_num_gds:2 
+4355 - berth - INFO - 3
+4355 - berth - INFO - zhen 428, id: 2 cur_num_gds:5 
+4357 - berth - INFO - 3
+4357 - berth - INFO - zhen 429, id: 0 cur_num_gds:3 
+4357 - berth - INFO - 3
+4357 - berth - INFO - zhen 429, id: 1 cur_num_gds:2 
+4357 - berth - INFO - 3
+4357 - berth - INFO - zhen 429, id: 2 cur_num_gds:5 
+4360 - berth - INFO - 3
+4360 - berth - INFO - zhen 431, id: 0 cur_num_gds:3 
+4360 - berth - INFO - 3
+4360 - berth - INFO - zhen 431, id: 1 cur_num_gds:2 
+4360 - berth - INFO - 3
+4360 - berth - INFO - zhen 431, id: 2 cur_num_gds:5 
+4362 - berth - INFO - 3
+4362 - berth - INFO - zhen 432, id: 0 cur_num_gds:3 
+4362 - berth - INFO - 3
+4362 - berth - INFO - zhen 432, id: 1 cur_num_gds:2 
+4362 - berth - INFO - 3
+4362 - berth - INFO - zhen 432, id: 2 cur_num_gds:6 
+4364 - berth - INFO - 3
+4364 - berth - INFO - zhen 433, id: 0 cur_num_gds:3 
+4364 - berth - INFO - 3
+4364 - berth - INFO - zhen 433, id: 1 cur_num_gds:2 
+4364 - berth - INFO - 3
+4364 - berth - INFO - zhen 433, id: 2 cur_num_gds:6 
+4365 - berth - INFO - 3
+4366 - berth - INFO - zhen 434, id: 0 cur_num_gds:3 
+4366 - berth - INFO - 3
+4366 - berth - INFO - zhen 434, id: 1 cur_num_gds:2 
+4366 - berth - INFO - 3
+4366 - berth - INFO - zhen 434, id: 2 cur_num_gds:6 
+4367 - berth - INFO - 3
+4367 - berth - INFO - zhen 435, id: 0 cur_num_gds:3 
+4367 - berth - INFO - 3
+4367 - berth - INFO - zhen 435, id: 1 cur_num_gds:2 
+4367 - berth - INFO - 3
+4367 - berth - INFO - zhen 435, id: 2 cur_num_gds:6 
+4368 - berth - INFO - 3
+4368 - berth - INFO - zhen 436, id: 0 cur_num_gds:3 
+4368 - berth - INFO - 3
+4368 - berth - INFO - zhen 436, id: 1 cur_num_gds:3 
+4369 - berth - INFO - 3
+4369 - berth - INFO - zhen 436, id: 2 cur_num_gds:6 
+4371 - berth - INFO - 3
+4371 - berth - INFO - zhen 437, id: 0 cur_num_gds:4 
+4371 - berth - INFO - 3
+4371 - berth - INFO - zhen 437, id: 1 cur_num_gds:3 
+4371 - berth - INFO - 3
+4371 - berth - INFO - zhen 437, id: 2 cur_num_gds:6 
+4373 - berth - INFO - 3
+4373 - berth - INFO - zhen 438, id: 0 cur_num_gds:4 
+4373 - berth - INFO - 3
+4373 - berth - INFO - zhen 438, id: 1 cur_num_gds:3 
+4373 - berth - INFO - 3
+4373 - berth - INFO - zhen 438, id: 2 cur_num_gds:6 
+4375 - berth - INFO - 3
+4375 - berth - INFO - zhen 439, id: 0 cur_num_gds:4 
+4375 - berth - INFO - 3
+4375 - berth - INFO - zhen 439, id: 1 cur_num_gds:3 
+4376 - berth - INFO - 3
+4376 - berth - INFO - zhen 439, id: 2 cur_num_gds:6 
+4380 - berth - INFO - 3
+4380 - berth - INFO - zhen 441, id: 0 cur_num_gds:4 
+4380 - berth - INFO - 3
+4380 - berth - INFO - zhen 441, id: 1 cur_num_gds:4 
+4380 - berth - INFO - 3
+4380 - berth - INFO - zhen 441, id: 2 cur_num_gds:6 
+4382 - berth - INFO - 3
+4382 - berth - INFO - zhen 442, id: 0 cur_num_gds:4 
+4382 - berth - INFO - 3
+4382 - berth - INFO - zhen 442, id: 1 cur_num_gds:4 
+4382 - berth - INFO - 3
+4382 - berth - INFO - zhen 442, id: 2 cur_num_gds:6 
+4384 - berth - INFO - 3
+4384 - berth - INFO - zhen 443, id: 0 cur_num_gds:4 
+4384 - berth - INFO - 3
+4384 - berth - INFO - zhen 443, id: 1 cur_num_gds:4 
+4384 - berth - INFO - 3
+4384 - berth - INFO - zhen 443, id: 2 cur_num_gds:6 
+4386 - berth - INFO - 3
+4386 - berth - INFO - zhen 444, id: 0 cur_num_gds:4 
+4386 - berth - INFO - 3
+4386 - berth - INFO - zhen 444, id: 1 cur_num_gds:4 
+4386 - berth - INFO - 3
+4386 - berth - INFO - zhen 444, id: 2 cur_num_gds:6 
+4387 - berth - INFO - 3
+4387 - berth - INFO - zhen 445, id: 0 cur_num_gds:4 
+4387 - berth - INFO - 3
+4387 - berth - INFO - zhen 445, id: 1 cur_num_gds:4 
+4387 - berth - INFO - 3
+4387 - berth - INFO - zhen 445, id: 2 cur_num_gds:6 
+4389 - berth - INFO - 3
+4389 - berth - INFO - zhen 446, id: 0 cur_num_gds:4 
+4389 - berth - INFO - 3
+4389 - berth - INFO - zhen 446, id: 1 cur_num_gds:4 
+4389 - berth - INFO - 3
+4389 - berth - INFO - zhen 446, id: 2 cur_num_gds:6 
+4390 - berth - INFO - 3
+4390 - berth - INFO - zhen 447, id: 0 cur_num_gds:4 
+4390 - berth - INFO - 3
+4390 - berth - INFO - zhen 447, id: 1 cur_num_gds:4 
+4390 - berth - INFO - 3
+4390 - berth - INFO - zhen 447, id: 2 cur_num_gds:6 
+4392 - berth - INFO - 3
+4392 - berth - INFO - zhen 448, id: 0 cur_num_gds:4 
+4392 - berth - INFO - 3
+4392 - berth - INFO - zhen 448, id: 1 cur_num_gds:4 
+4392 - berth - INFO - 3
+4392 - berth - INFO - zhen 448, id: 2 cur_num_gds:6 
+4396 - berth - INFO - 3
+4396 - berth - INFO - zhen 449, id: 0 cur_num_gds:4 
+4396 - berth - INFO - 3
+4396 - berth - INFO - zhen 449, id: 1 cur_num_gds:4 
+4396 - berth - INFO - 3
+4396 - berth - INFO - zhen 449, id: 2 cur_num_gds:6 
+4401 - berth - INFO - 3
+4401 - berth - INFO - zhen 451, id: 0 cur_num_gds:4 
+4401 - berth - INFO - 3
+4401 - berth - INFO - zhen 451, id: 1 cur_num_gds:4 
+4401 - berth - INFO - 3
+4401 - berth - INFO - zhen 451, id: 2 cur_num_gds:6 
+4404 - berth - INFO - 3
+4404 - berth - INFO - zhen 452, id: 0 cur_num_gds:4 
+4404 - berth - INFO - 3
+4404 - berth - INFO - zhen 452, id: 1 cur_num_gds:4 
+4404 - berth - INFO - 3
+4404 - berth - INFO - zhen 452, id: 2 cur_num_gds:6 
+4407 - berth - INFO - 3
+4407 - berth - INFO - zhen 453, id: 0 cur_num_gds:4 
+4407 - berth - INFO - 3
+4407 - berth - INFO - zhen 453, id: 1 cur_num_gds:4 
+4407 - berth - INFO - 3
+4407 - berth - INFO - zhen 453, id: 2 cur_num_gds:6 
+4408 - berth - INFO - 3
+4408 - berth - INFO - zhen 454, id: 0 cur_num_gds:4 
+4408 - berth - INFO - 3
+4408 - berth - INFO - zhen 454, id: 1 cur_num_gds:4 
+4408 - berth - INFO - 3
+4409 - berth - INFO - zhen 454, id: 2 cur_num_gds:6 
+4410 - berth - INFO - 3
+4410 - berth - INFO - zhen 455, id: 0 cur_num_gds:4 
+4410 - berth - INFO - 3
+4410 - berth - INFO - zhen 455, id: 1 cur_num_gds:4 
+4410 - berth - INFO - 3
+4410 - berth - INFO - zhen 455, id: 2 cur_num_gds:6 
+4412 - berth - INFO - 3
+4412 - berth - INFO - zhen 456, id: 0 cur_num_gds:4 
+4412 - berth - INFO - 3
+4412 - berth - INFO - zhen 456, id: 1 cur_num_gds:4 
+4412 - berth - INFO - 3
+4412 - berth - INFO - zhen 456, id: 2 cur_num_gds:6 
+4413 - berth - INFO - 3
+4413 - berth - INFO - zhen 457, id: 0 cur_num_gds:4 
+4413 - berth - INFO - 3
+4413 - berth - INFO - zhen 457, id: 1 cur_num_gds:4 
+4413 - berth - INFO - 3
+4414 - berth - INFO - zhen 457, id: 2 cur_num_gds:6 
+4417 - berth - INFO - 3
+4417 - berth - INFO - zhen 458, id: 0 cur_num_gds:4 
+4417 - berth - INFO - 3
+4417 - berth - INFO - zhen 458, id: 1 cur_num_gds:4 
+4417 - berth - INFO - 3
+4417 - berth - INFO - zhen 458, id: 2 cur_num_gds:6 
+4422 - berth - INFO - 3
+4422 - berth - INFO - zhen 459, id: 0 cur_num_gds:4 
+4422 - berth - INFO - 3
+4422 - berth - INFO - zhen 459, id: 1 cur_num_gds:4 
+4422 - berth - INFO - 3
+4422 - berth - INFO - zhen 459, id: 2 cur_num_gds:6 
+4426 - berth - INFO - 3
+4426 - berth - INFO - zhen 461, id: 0 cur_num_gds:4 
+4426 - berth - INFO - 3
+4426 - berth - INFO - zhen 461, id: 1 cur_num_gds:4 
+4426 - berth - INFO - 3
+4426 - berth - INFO - zhen 461, id: 2 cur_num_gds:6 
+4428 - berth - INFO - 3
+4428 - berth - INFO - zhen 462, id: 0 cur_num_gds:4 
+4428 - berth - INFO - 3
+4428 - berth - INFO - zhen 462, id: 1 cur_num_gds:4 
+4428 - berth - INFO - 3
+4428 - berth - INFO - zhen 462, id: 2 cur_num_gds:6 
+4429 - berth - INFO - 3
+4429 - berth - INFO - zhen 463, id: 0 cur_num_gds:4 
+4429 - berth - INFO - 3
+4429 - berth - INFO - zhen 463, id: 1 cur_num_gds:4 
+4429 - berth - INFO - 3
+4429 - berth - INFO - zhen 463, id: 2 cur_num_gds:6 
+4432 - berth - INFO - 3
+4432 - berth - INFO - zhen 464, id: 0 cur_num_gds:4 
+4432 - berth - INFO - 3
+4432 - berth - INFO - zhen 464, id: 1 cur_num_gds:4 
+4432 - berth - INFO - 3
+4432 - berth - INFO - zhen 464, id: 2 cur_num_gds:6 
+4433 - berth - INFO - 3
+4433 - berth - INFO - zhen 465, id: 0 cur_num_gds:4 
+4433 - berth - INFO - 3
+4433 - berth - INFO - zhen 465, id: 1 cur_num_gds:4 
+4433 - berth - INFO - 3
+4433 - berth - INFO - zhen 465, id: 2 cur_num_gds:6 
+4435 - berth - INFO - 3
+4435 - berth - INFO - zhen 466, id: 0 cur_num_gds:4 
+4435 - berth - INFO - 3
+4435 - berth - INFO - zhen 466, id: 1 cur_num_gds:4 
+4435 - berth - INFO - 3
+4435 - berth - INFO - zhen 466, id: 2 cur_num_gds:6 
+4437 - berth - INFO - 3
+4437 - berth - INFO - zhen 467, id: 0 cur_num_gds:4 
+4437 - berth - INFO - 3
+4437 - berth - INFO - zhen 467, id: 1 cur_num_gds:4 
+4437 - berth - INFO - 3
+4437 - berth - INFO - zhen 467, id: 2 cur_num_gds:6 
+4439 - berth - INFO - 3
+4439 - berth - INFO - zhen 468, id: 0 cur_num_gds:4 
+4439 - berth - INFO - 3
+4439 - berth - INFO - zhen 468, id: 1 cur_num_gds:4 
+4439 - berth - INFO - 3
+4439 - berth - INFO - zhen 468, id: 2 cur_num_gds:6 
+4440 - berth - INFO - 3
+4440 - berth - INFO - zhen 469, id: 0 cur_num_gds:4 
+4440 - berth - INFO - 3
+4440 - berth - INFO - zhen 469, id: 1 cur_num_gds:4 
+4440 - berth - INFO - 3
+4440 - berth - INFO - zhen 469, id: 2 cur_num_gds:6 
+4443 - berth - INFO - 3
+4443 - berth - INFO - zhen 471, id: 0 cur_num_gds:4 
+4443 - berth - INFO - 3
+4443 - berth - INFO - zhen 471, id: 1 cur_num_gds:4 
+4443 - berth - INFO - 3
+4443 - berth - INFO - zhen 471, id: 2 cur_num_gds:6 
+4445 - berth - INFO - 3
+4445 - berth - INFO - zhen 472, id: 0 cur_num_gds:4 
+4445 - berth - INFO - 3
+4445 - berth - INFO - zhen 472, id: 1 cur_num_gds:4 
+4445 - berth - INFO - 3
+4445 - berth - INFO - zhen 472, id: 2 cur_num_gds:6 
+4447 - berth - INFO - 3
+4447 - berth - INFO - zhen 473, id: 0 cur_num_gds:4 
+4447 - berth - INFO - 3
+4447 - berth - INFO - zhen 473, id: 1 cur_num_gds:4 
+4447 - berth - INFO - 3
+4447 - berth - INFO - zhen 473, id: 2 cur_num_gds:6 
+4449 - berth - INFO - 3
+4449 - berth - INFO - zhen 474, id: 0 cur_num_gds:4 
+4449 - berth - INFO - 3
+4449 - berth - INFO - zhen 474, id: 1 cur_num_gds:4 
+4449 - berth - INFO - 3
+4449 - berth - INFO - zhen 474, id: 2 cur_num_gds:6 
+4451 - berth - INFO - 3
+4451 - berth - INFO - zhen 475, id: 0 cur_num_gds:4 
+4451 - berth - INFO - 3
+4451 - berth - INFO - zhen 475, id: 1 cur_num_gds:4 
+4451 - berth - INFO - 3
+4451 - berth - INFO - zhen 475, id: 2 cur_num_gds:6 
+4453 - berth - INFO - 3
+4453 - berth - INFO - zhen 476, id: 0 cur_num_gds:4 
+4453 - berth - INFO - 3
+4453 - berth - INFO - zhen 476, id: 1 cur_num_gds:4 
+4453 - berth - INFO - 3
+4453 - berth - INFO - zhen 476, id: 2 cur_num_gds:6 
+4455 - berth - INFO - 3
+4455 - berth - INFO - zhen 477, id: 0 cur_num_gds:4 
+4455 - berth - INFO - 3
+4455 - berth - INFO - zhen 477, id: 1 cur_num_gds:4 
+4455 - berth - INFO - 3
+4455 - berth - INFO - zhen 477, id: 2 cur_num_gds:6 
+4457 - berth - INFO - 3
+4457 - berth - INFO - zhen 478, id: 0 cur_num_gds:4 
+4457 - berth - INFO - 3
+4457 - berth - INFO - zhen 478, id: 1 cur_num_gds:4 
+4457 - berth - INFO - 3
+4457 - berth - INFO - zhen 478, id: 2 cur_num_gds:6 
+4458 - berth - INFO - 3
+4458 - berth - INFO - zhen 479, id: 0 cur_num_gds:4 
+4458 - berth - INFO - 3
+4458 - berth - INFO - zhen 479, id: 1 cur_num_gds:4 
+4459 - berth - INFO - 3
+4459 - berth - INFO - zhen 479, id: 2 cur_num_gds:6 
+4462 - berth - INFO - 3
+4462 - berth - INFO - zhen 481, id: 0 cur_num_gds:4 
+4462 - berth - INFO - 3
+4462 - berth - INFO - zhen 481, id: 1 cur_num_gds:4 
+4462 - berth - INFO - 3
+4462 - berth - INFO - zhen 481, id: 2 cur_num_gds:6 
+4463 - berth - INFO - 3
+4463 - berth - INFO - zhen 482, id: 0 cur_num_gds:4 
+4463 - berth - INFO - 3
+4463 - berth - INFO - zhen 482, id: 1 cur_num_gds:4 
+4463 - berth - INFO - 3
+4463 - berth - INFO - zhen 482, id: 2 cur_num_gds:6 
+4465 - berth - INFO - 3
+4465 - berth - INFO - zhen 483, id: 0 cur_num_gds:4 
+4465 - berth - INFO - 3
+4465 - berth - INFO - zhen 483, id: 1 cur_num_gds:4 
+4465 - berth - INFO - 3
+4465 - berth - INFO - zhen 483, id: 2 cur_num_gds:6 
+4466 - berth - INFO - 3
+4466 - berth - INFO - zhen 484, id: 0 cur_num_gds:4 
+4466 - berth - INFO - 3
+4466 - berth - INFO - zhen 484, id: 1 cur_num_gds:4 
+4466 - berth - INFO - 3
+4466 - berth - INFO - zhen 484, id: 2 cur_num_gds:6 
+4467 - berth - INFO - 3
+4467 - berth - INFO - zhen 485, id: 0 cur_num_gds:4 
+4468 - berth - INFO - 3
+4468 - berth - INFO - zhen 485, id: 1 cur_num_gds:4 
+4468 - berth - INFO - 3
+4468 - berth - INFO - zhen 485, id: 2 cur_num_gds:6 
+4469 - berth - INFO - 3
+4469 - berth - INFO - zhen 486, id: 0 cur_num_gds:4 
+4469 - berth - INFO - 3
+4469 - berth - INFO - zhen 486, id: 1 cur_num_gds:4 
+4469 - berth - INFO - 3
+4469 - berth - INFO - zhen 486, id: 2 cur_num_gds:6 
+4471 - berth - INFO - 3
+4471 - berth - INFO - zhen 487, id: 0 cur_num_gds:4 
+4471 - berth - INFO - 3
+4471 - berth - INFO - zhen 487, id: 1 cur_num_gds:4 
+4471 - berth - INFO - 3
+4471 - berth - INFO - zhen 487, id: 2 cur_num_gds:6 
+4473 - berth - INFO - 3
+4473 - berth - INFO - zhen 488, id: 0 cur_num_gds:4 
+4473 - berth - INFO - 3
+4473 - berth - INFO - zhen 488, id: 1 cur_num_gds:4 
+4473 - berth - INFO - 3
+4473 - berth - INFO - zhen 488, id: 2 cur_num_gds:6 
+4475 - berth - INFO - 3
+4475 - berth - INFO - zhen 489, id: 0 cur_num_gds:4 
+4475 - berth - INFO - 3
+4475 - berth - INFO - zhen 489, id: 1 cur_num_gds:4 
+4475 - berth - INFO - 3
+4475 - berth - INFO - zhen 489, id: 2 cur_num_gds:6 
+4481 - berth - INFO - 3
+4481 - berth - INFO - zhen 491, id: 0 cur_num_gds:4 
+4481 - berth - INFO - 3
+4481 - berth - INFO - zhen 491, id: 1 cur_num_gds:4 
+4481 - berth - INFO - 3
+4481 - berth - INFO - zhen 491, id: 2 cur_num_gds:6 
+4483 - berth - INFO - 3
+4483 - berth - INFO - zhen 492, id: 0 cur_num_gds:4 
+4483 - berth - INFO - 3
+4483 - berth - INFO - zhen 492, id: 1 cur_num_gds:4 
+4483 - berth - INFO - 3
+4483 - berth - INFO - zhen 492, id: 2 cur_num_gds:6 
+4485 - berth - INFO - 3
+4485 - berth - INFO - zhen 493, id: 0 cur_num_gds:4 
+4485 - berth - INFO - 3
+4485 - berth - INFO - zhen 493, id: 1 cur_num_gds:4 
+4485 - berth - INFO - 3
+4485 - berth - INFO - zhen 493, id: 2 cur_num_gds:6 

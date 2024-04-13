@@ -22,6 +22,13 @@ robot_logger = logging.getLogger('robot')
 # 
 boat_logger = logging.getLogger('boat')
 
+# 记录港口货物数量和价值信息
+berth_logger = logging.getLogger('berth')
+
+
+# 记录货物的基础信息
+goods_logger = logging.getLogger('goods')
+
 if RELEASE == False:
     fh_for_root_logger = logging.FileHandler('solution/log/root.log', mode="w+")
     fh_for_root_logger.setLevel(logging.ERROR)
@@ -45,12 +52,24 @@ if RELEASE == False:
 
     boat_logger.setLevel(logging.DEBUG)
     fh_for_boat_logger = logging.FileHandler("solution/log/boat.log", mode="w+")
-    fh_for_boat_logger.setFormatter(fmt)
+    # fh_for_boat_logger.setFormatter(fmt)
     boat_logger.addHandler(fh_for_boat_logger)
+
+    berth_logger.setLevel(logging.INFO)
+    fh_for_berth_logger = logging.FileHandler("solution/log/berth.log", mode="w+")
+    fh_for_berth_logger.setFormatter(fmt)
+    berth_logger.addHandler(fh_for_berth_logger)
+
+    goods_logger.setLevel(logging.INFO)
+    fh_for_goods_logger = logging.FileHandler("solution/log/goods.log", mode="w+")
+    fh_for_goods_logger.setFormatter(fmt)
+    goods_logger.addHandler(fh_for_goods_logger)
 else:
     root_logger.addHandler(null_handler)
     main_logger.addHandler(null_handler)
     scheduler_logger.addHandler(null_handler)
     root_logger.addHandler(null_handler)
     boat_logger.addHandler(null_handler)
+    berth_logger.addHandler(null_handler)
+    goods_logger.addHandler(null_handler)
 

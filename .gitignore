@@ -1,9 +1,7 @@
-solution/__pycache__/
-solution/log/__pycache__/
-solution/path_planing/__pycache__/
-solution/scheduler/__pycache__/
-solution/core/__pycache__/
-replay/
+replay/*
+!replay/demo.rep
+__pycache__/
+
 solution/log/main.log
 solution/log/robot.log
 solution/log/root.log

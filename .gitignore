@@ -4,4 +4,4 @@ replay/*
 
 __pycache__/
 
-solution/log/
+solution/log/*.log

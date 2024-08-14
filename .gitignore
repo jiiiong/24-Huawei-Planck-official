@@ -1,5 +1,6 @@
 replay/*
 !replay/demo.rep
+!replay/maza-demo.rep
 
 __pycache__/
 

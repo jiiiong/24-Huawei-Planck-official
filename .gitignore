@@ -1,13 +1,6 @@
 replay/*
 !replay/demo.rep
+
 __pycache__/
 
-solution/log/main.log
-solution/log/robot.log
-solution/log/root.log
-solution/log/scheduler.log
-input.txt
-solution/core/__pycache__/boat.cpython-37.pyc
-solution/core/__pycache__/env.cpython-37.pyc
-solution/core/__pycache__/utils.cpython-37.pyc
-input.txt
+solution/log/
